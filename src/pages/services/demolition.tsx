@@ -1,11 +1,11 @@
-import React, {useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import classes from "@/styles/Service.module.css";
-import Image from 'next/image';
-import homeOne from '../../../public/imgs/new-home.jpg'
-import homeTwo from "../../../public/imgs/new-home-2.jpg";
-import homeThree from "../../../public/imgs/new-home-3.jpg";
+import Image from "next/image";
+import demolitionOne from "../../../public/imgs/demolition.jpg";
+import demolitionTwo from "../../../public/imgs/demolition-2.jpg";
+import demolitionThree from "../../../public/imgs/demolition-3.jpg";
 
-const newconstruction: React.FC = () => {
+const demolition: React.FC = () => {
   // Parallax effect for Header
   const [offsetY, setOffsetY] = useState<number>(0);
   const handleScroll = () => {
@@ -20,18 +20,18 @@ const newconstruction: React.FC = () => {
   return (
     <div className={classes["service-page"]}>
       <header
-        className={`${classes["service-hero"]} ${classes["construction-hero"]}`}
+        className={`${classes["service-hero"]} ${classes["demolition-hero"]}`}
         style={{ transform: `translateY(${offsetY * 0.5}px)` }}
       >
         <div className={classes["service-hero-overlay"]}>
           <div className={classes["hero-text"]}>
-            <h1>New Construction</h1>
-            <h2>From The Ground Up</h2>
+            <h1>Demolition</h1>
+            <h2>Bring it Down Safe and Fast</h2>
           </div>
         </div>
       </header>
       <section className={classes["service-section"]}>
-        <h1>Starting New</h1>
+        <h1>Clearing Space</h1>
         <p>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi
           pariatur nihil recusandae voluptates soluta rem, id mollitia quisquam,
@@ -46,13 +46,13 @@ const newconstruction: React.FC = () => {
         </p>
         <div className={classes["service-section__imgs"]}>
           <div className={classes["service-section__img-container"]}>
-            <Image src={homeOne} alt="new home" />
+            <Image src={demolitionOne} alt="Nice remodeled kitchen" />
           </div>
           <div className={classes["service-section__img-container"]}>
-            <Image src={homeTwo} alt="new home" />
+            <Image src={demolitionTwo} alt="Nice remodeled bathroom" />
           </div>
           <div className={classes["service-section__img-container"]}>
-            <Image src={homeThree} alt="new home" />
+            <Image src={demolitionThree} alt="Nice remodeled kitchen" />
           </div>
         </div>
       </section>
@@ -60,4 +60,4 @@ const newconstruction: React.FC = () => {
   );
 };
 
-export default newconstruction;
+export default demolition;
