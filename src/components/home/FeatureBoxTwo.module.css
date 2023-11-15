@@ -4,8 +4,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #fff;
-   z-index: 1;
+  background-color: var(--color-bg-light);
 }
 
 .feature-box {
@@ -36,7 +35,7 @@
   padding: 0 4rem;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: start;
 }
 
 .feature-box__text-container h1 {

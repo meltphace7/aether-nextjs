@@ -1,0 +1,33 @@
+.hero {
+    width: 100%;
+    height: 70rem;
+    background-image: url('../../../public/imgs/city-blackandwhite.jpg');
+    background-size: cover;
+    z-index: -1;
+}
+
+.hero-overlay {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.406);
+}
+
+.hero-text {
+    min-width: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.hero-text h1 {
+    font-size: var(--hero-font-size-h1);
+}
+
+.hero-text h2 {
+    font-size: var(--hero-font-size-h2);
+    color: var(--color-primary);
+}

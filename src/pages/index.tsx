@@ -3,10 +3,15 @@ import { Inter } from 'next/font/google'
 import classes from '@/styles/Home.module.css'
 import Hero from '../components/home/Hero';
 import FeatureBox from '../components/home/FeatureBox';
+import SplitFeatureBox from '../components/home/SplitFeatureBox';
+import FeatureBoxTwo from "../components/home/FeatureBoxTwo";
+import FeatureOverlay from "../components/home/FeatureOverlay";
+
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+
   return (
     <>
       <Head>
@@ -18,7 +23,10 @@ export default function Home() {
       <main className={`${classes.main} ${inter.className}`}>
         <Hero />
         <FeatureBox />
+        <SplitFeatureBox />
+        <FeatureBoxTwo />
+        <FeatureOverlay />
       </main>
     </>
-  )
+  );
 }

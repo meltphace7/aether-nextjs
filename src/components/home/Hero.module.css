@@ -4,6 +4,7 @@
     background-color: rgb(0, 111, 111);
     background-image: url('../../../public/imgs/SUNSET.jpg');
     background-size: cover;
+    z-index: 0;
 }
 
 .hero-text-container {

@@ -15,7 +15,7 @@ const Navigation: React.FC = () => {
       <Link href="/">
         <Logo />
       </Link>
-      <ul className={classes['nav-menu']}>
+      <ul className={classes["nav-menu"]}>
         <li>
           <Link href="/" className={pathname === "/" ? classes.active : ""}>
             Home
@@ -32,32 +32,52 @@ const Navigation: React.FC = () => {
           <ul className={classes["dropdown-menu"]}>
             <li>
               <Link
-                href="/services/service-1"
+                href="/services"
                 className={
                   pathname === "/services/service-1" ? classes.active : ""
                 }
               >
-                Service One
+                All Services
               </Link>
             </li>
             <li>
               <Link
-                href="/services/service-2"
+                href="/services/new-construction"
                 className={
                   pathname === "/services/service-2" ? classes.active : ""
                 }
               >
-                Service Two
+                New Construction
               </Link>
             </li>
             <li>
               <Link
-                href="/services/service-3"
+                href="/services/remodeling"
                 className={
                   pathname === "/services/service-3" ? classes.active : ""
                 }
               >
-                Service Three
+                Remodeling
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/services/demolition"
+                className={
+                  pathname === "/services/service-3" ? classes.active : ""
+                }
+              >
+                Demolition
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/services/excavation"
+                className={
+                  pathname === "/services/service-3" ? classes.active : ""
+                }
+              >
+                Excavation
               </Link>
             </li>
           </ul>

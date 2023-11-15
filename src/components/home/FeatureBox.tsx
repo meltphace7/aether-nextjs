@@ -12,7 +12,7 @@ const FeatureOne:React.FC = () => {
                     <Image src={abstractOne} alt="abstract Image" />
                 </div>
                 <div className={classes['feature-box__text-container']}>
-                    <h1>Dedication To Perfection</h1>
+                    <h1>Dedicated Perfection</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste incidunt distinctio aspernatur eligendi excepturi laboriosam obcaecati, cupiditate placeat, fugit quae tempore quidem ullam iusto vero.</p>
                     <Link href="/about" className="button">Read More</Link>
                 </div>

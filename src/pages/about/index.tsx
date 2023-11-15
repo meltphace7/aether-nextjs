@@ -3,6 +3,7 @@ import Head from "next/head";
 import Image from "next/image";
 import brockImg from "../../../public/imgs/BROCK-DALLMAN_PORTRAIT.jpg";
 import classes from "@/styles/About.module.css";
+import Hero from '../../components/about/Hero';
 
 const AboutPage: React.FC = () => {
   return (
@@ -12,7 +13,7 @@ const AboutPage: React.FC = () => {
         <meta name="description" content="About page for TEST CORP" />
       </Head>
       <div className={classes['about-page']}>
-        <h1 className={classes["page-title"]}>About</h1>
+        <Hero />
         <div className={classes["bio-container"]}>
           <Image
             className={classes["bio-image"]}
