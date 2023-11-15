@@ -1,0 +1,33 @@
+.footer {
+    width: 100%;
+    height: 12rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--color-bg-footer);
+    color: var(--color-text-light);
+}
+
+.logo-container {
+    margin: 0rem 2rem;
+}
+
+.link-list {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.link-logo {
+    padding: .25rem;
+    width: 4rem;
+    height: auto;
+    background-color: #FFF;
+    border-radius: 100rem;
+    transition: all 250ms ease-in;
+}
+
+.link-logo:hover {
+    background-color: var(--color-primary);
+}

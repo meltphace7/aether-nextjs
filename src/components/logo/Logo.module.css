@@ -1,0 +1,22 @@
+.logo {
+    margin: 0 2rem;
+    min-width: 5rem;
+    display: flex;
+    align-items: center;
+}
+
+.logo-icon {
+    margin-right: 1rem;
+    width: 5rem;
+    height: auto;
+}
+
+@media (max-width: 35em) {
+    .logo-icon {
+        width: 3.5rem;
+    }
+
+    .logo h1 {
+        font-size: 2.5rem;
+    }
+}
