@@ -2,6 +2,7 @@ import Head from 'next/head'
 import { Inter } from 'next/font/google'
 import classes from '@/styles/Home.module.css'
 import Hero from '../components/home/Hero';
+import FeatureBox from '../components/home/FeatureBox';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -15,7 +16,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={`${classes.main} ${inter.className}`}>
-       <Hero />
+        <Hero />
+        <FeatureBox />
       </main>
     </>
   )

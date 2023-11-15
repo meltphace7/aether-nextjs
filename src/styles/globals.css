@@ -1,6 +1,8 @@
 :root {
-  --color-primary: #0595c9;
-  --color-bg: #1d1d1d;
+  --color-primary: #f0ce0b;
+  --color-bg-dark: #1b1918;
+
+  --color-bg-light: #efede7;
 
   --color-bg-nav: rgba(0, 0, 0, 0.249);
   --color-bg-footer: #000000;
@@ -20,21 +22,21 @@
 }
 
 @font-face {
-  font-family: "Clash_Display";
+  font-family: "Clash-Display";
   src: url("../../public/fonts/ClashDisplay-Bold.woff2") format("woff");
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Clash_Display";
+  font-family: "Clash-Display";
   src: url("../../public/fonts/ClashDisplay-Extralight.woff2") format("woff");
   font-weight: 100;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Clash_Display";
+  font-family: "Clash-Display";
   src: url("../../public/fonts/ClashDisplay-Semibold.woff2") format("woff");
   font-weight: 500;
   font-style: normal;
@@ -73,12 +75,18 @@ html {
 body {
   position: relative;
   font-family: "Clash-Display", sans-serif;
-  background-color: var(--color-bg);
+  background-color: var(--color-bg-dark);
 }
 
 @media (max-width: 55em) {
   html {
     font-size: 55%;
+  }
+}
+
+@media (max-width: 45em) {
+  html {
+    font-size: 50%;
   }
 }
 
@@ -131,15 +139,16 @@ button {
   border-radius: 2px;
   font-size: 2rem;
   color: var(--color-text-light);
-  background-color: var(--color-primary);
+  
   border: 1px solid var(--color-primary);
   transition: all 250ms ease-in;
-  box-shadow: var(--box-shadow);
+  /* box-shadow: var(--box-shadow);
 -webkit-box-shadow: var(--box-shadow);
--moz-box-shadow: var(--box-shadow);
+-moz-box-shadow: var(--box-shadow); */
 }
 
 .button:hover {
-  color: var(--color-primary);
-  background-color: #FFF;
+  color: #000;
+  background-color: var(--color-primary);
+
 }

@@ -9,7 +9,7 @@ export default function App({ Component, pageProps }: AppProps) {
       <Head>
         <title>TEST CORP Official Site</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <meta name="description" content="Brock Dallman Art Official Site" />
+        <meta name="description" content="Test Corp Official Site" />
       </Head>
       <Component {...pageProps} />
     </Layout>
