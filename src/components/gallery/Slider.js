@@ -49,12 +49,14 @@ const SliderOverlay = (props) => {
   return (
     <div className={classes.slider}>
       <div className={classes.slide}>
-        {props.images && <Image
-          src={props.images[curSlide]}
-          alt="sdsd"
-          width={300}
-          height={300}
-        />}
+        {props.images && (
+          <Image
+            src={props.images[curSlide]}
+            alt="sdsd"
+            width={1200}
+            height={800}
+          />
+        )}
       </div>
       <div className={classes["slider-controls"]}>
         <button onClick={prevSlideHandler}>
@@ -65,10 +67,15 @@ const SliderOverlay = (props) => {
           <Image src={nextIcon} alt="next icon" />
         </button>
       </div>
-      <div className={classes["slide-count"]}>{`${curSlide + 1} / ${
-        maxSlide + 1
-      }`}</div>
-      <button onClick={closeSliderHandler} className={classes['close-button']}>X</button>
+      <div className={classes["slide-count"]}>
+        <p>{`${curSlide + 1} / ${maxSlide + 1}`}</p>
+        <button
+          onClick={closeSliderHandler}
+          className={classes["close-button"]}
+        >
+          X
+        </button>
+      </div>
     </div>
   );
 };

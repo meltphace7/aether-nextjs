@@ -69,6 +69,11 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: opacity 300ms ease-in;
+}
+
+.grid-item img:hover {
+    opacity: 0.75;
 }
 
 .overlay {

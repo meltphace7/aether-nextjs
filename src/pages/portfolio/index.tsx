@@ -164,8 +164,6 @@ const PortfolioPage: React.FC = () => {
               />
             </div>
           </div>
-
-          <button onClick={toggleModalHandler}>SHOW Slider</button>
           {modalVisible && (
             <Slider
               images={sliderImages}
