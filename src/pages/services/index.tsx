@@ -8,7 +8,7 @@ import remodel from "../../../public/imgs/construction-remodel.jpg";
 import demolition from "../../../public/imgs/demolition.jpg";
 import excavation from "../../../public/imgs/excavation.jpg";
 
-const Services: React.FC = () => {
+const ServicesPage: React.FC = () => {
   // Parallax effect for Header
   const [offsetY, setOffsetY] = useState<number>(0);
   const handleScroll = () => {
@@ -138,4 +138,4 @@ const Services: React.FC = () => {
   );
 };
 
-export default Services;
+export default ServicesPage;

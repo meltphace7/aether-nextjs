@@ -35,7 +35,7 @@
   padding: 0 4rem;
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: flex-start;
 }
 
 .feature-box__text-container h1 {

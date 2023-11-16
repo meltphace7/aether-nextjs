@@ -2,7 +2,7 @@ import React, { Fragment } from 'react'
 import Head from 'next/head';
 import classes from "@/styles/FAQ.module.css";
 
-const Faq:React.FC = () => {
+const FaqPage:React.FC = () => {
     return (
       <Fragment>
         <Head>
@@ -75,4 +75,4 @@ const Faq:React.FC = () => {
     );
 }
 
-export default Faq;
+export default FaqPage;

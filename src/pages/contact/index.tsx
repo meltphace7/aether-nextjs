@@ -7,7 +7,7 @@ import phoneIcon from "../../../public/icons/call-outline.svg";
 import emailIcon from "../../../public/icons/mail-outline.svg";
 import addressIcon from "../../../public/icons/location-outline.svg";
 
-const Contact: React.FC = () => {
+const ContactPage: React.FC = () => {
   // Parallax effect for Header
   const [offsetY, setOffsetY] = useState<number>(0);
   const handleScroll = () => {
@@ -72,4 +72,4 @@ const Contact: React.FC = () => {
   );
 };
 
-export default Contact;
+export default ContactPage;

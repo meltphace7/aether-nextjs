@@ -7,7 +7,6 @@ import SplitFeatureBox from '../components/home/SplitFeatureBox';
 import FeatureBoxTwo from "../components/home/FeatureBoxTwo";
 import FeatureOverlay from "../components/home/FeatureOverlay";
 
-
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {

@@ -1,11 +1,12 @@
-import React, { useState, useEffect } from "react";
+import React, { Fragment, useState, useEffect } from "react";
 import classes from "@/styles/Service.module.css";
+import Head from "next/head";
 import Image from "next/image";
 import remodelOne from "../../../public/imgs/remodel.jpg";
 import remodelTwo from "../../../public/imgs/remodel-2.jpg";
 import remodelThree from "../../../public/imgs/remodel-3.jpg";
 
-const remodeling: React.FC = () => {
+const RemodelingPage: React.FC = () => {
   // Parallax effect for Header
   const [offsetY, setOffsetY] = useState<number>(0);
   const handleScroll = () => {
@@ -18,6 +19,14 @@ const remodeling: React.FC = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
   return (
+    <Fragment>
+      <Head>
+      <title>TEST CORP - Demolition Service</title>
+        <meta
+          name="description"
+          content="Excavation service page for TEST CORP"
+        />
+      </Head>
     <div className={classes["service-page"]}>
       <header
         className={`${classes["service-hero"]} ${classes["remodel-hero"]}`}
@@ -57,7 +66,8 @@ const remodeling: React.FC = () => {
         </div>
       </section>
     </div>
+    </Fragment>
   );
 };
 
-export default remodeling;
+export default RemodelingPage;
