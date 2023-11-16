@@ -1,0 +1,81 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 20;
+  background-color: rgba(0, 0, 0, 0.75);
+  color: #fff;
+}
+
+.slider {
+  position: fixed;
+  /* top: 20vh; */
+  top: 10%;
+  left: 50%;
+  /* transform: translate(-50%, -50%); */
+  /* width: 40rem; */
+  min-height: 65rem;
+  z-index: 30;
+  animation: slide-down 300ms ease-out forwards;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider button {
+    z-index: 35;
+    margin: 3rem;
+}
+
+.slider button img {
+    height: 3rem;
+    width: auto;
+}
+
+@media (min-width: 768px) {
+  .slider {
+    width: 150rem;
+    left: calc(50% - 75rem);
+  }
+}
+
+/* .slide {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+} */
+
+.slider img {
+    width: 90rem;
+    height: auto;
+    object-fit: cover;
+}
+
+
+/* @media (max-width: 48em) {
+  .slider {
+    width: 60%;
+    left: 11%;
+  }
+} */
+
+.slide-count {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: var(--color-primary);
+}
+
+@keyframes slide-down {
+  from {
+    opacity: 0;
+    transform: translateY(-3rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

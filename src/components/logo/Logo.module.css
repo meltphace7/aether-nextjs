@@ -12,6 +12,16 @@
 }
 
 @media (max-width: 35em) {
+   .logo-icon {
+        width: 4rem;
+    }
+
+    .logo h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 35em) {
     .logo-icon {
         width: 3.5rem;
     }

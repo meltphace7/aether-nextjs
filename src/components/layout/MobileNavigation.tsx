@@ -67,6 +67,16 @@ const MobileNavigation: React.FC = () => {
               <Link
                 onClick={closeMenuHandler}
                 className={classes["navigation__link"]}
+                href="/portfolio"
+              >
+                Portfolio
+              </Link>
+            </li>
+
+            <li className={classes["navigation__item"]}>
+              <Link
+                onClick={closeMenuHandler}
+                className={classes["navigation__link"]}
                 href="/faq"
               >
                 FAQ

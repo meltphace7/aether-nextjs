@@ -92,6 +92,14 @@ const Navigation: React.FC = () => {
         </li>
         <li>
           <Link
+            href="/portfolio"
+            className={pathname === "/portfolio" ? classes.active : ""}
+          >
+            Portfolio
+          </Link>
+        </li>
+        <li>
+          <Link
             href="/faq"
             className={pathname === "/faq" ? classes.active : ""}
           >

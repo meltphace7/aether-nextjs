@@ -12,7 +12,7 @@
 }
 
 .nav-menu {
-  width: 55%;
+  width: 65%;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -74,6 +74,12 @@
   100% {
     height: 21rem;
     opacity: 1;
+  }
+}
+
+@media (max-width: 55em) {
+  .nav-menu {
+      width: 85%;
   }
 }
 
