@@ -30,7 +30,9 @@ const Contact: React.FC = () => {
           className={classes["contact-hero"]}
           style={{ transform: `translateY(${offsetY * 0.5}px)` }}
         >
-          <h1>Let's Get In Touch</h1>
+          <div className={classes['hero-overlay']}>
+            <h1>Let's Get In Touch</h1>
+          </div>
         </header>
         <section className={classes["contact-main"]}>
           <div className={classes["contact-row"]}>

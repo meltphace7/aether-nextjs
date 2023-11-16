@@ -31,3 +31,9 @@
     font-size: var(--hero-font-size-h2);
     color: var(--color-primary);
 }
+
+@media (max-width: 35em) {
+    .hero {
+    height: 50rem;
+}
+}

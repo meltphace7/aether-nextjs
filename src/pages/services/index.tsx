@@ -42,6 +42,7 @@ const Services: React.FC = () => {
         <section className={classes["services-section"]}>
           <div className={classes["services-blurb"]}>
             <h1>Building On Purpose</h1>
+            <div className={classes.accent}></div>
             <p>
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse
               nisi provident exercitationem, modi sequi architecto tenetur
@@ -58,6 +59,7 @@ const Services: React.FC = () => {
             </div>
             <div className={classes["service__text-container"]}>
               <h1>New Construction</h1>
+              <div className={classes.accent}></div>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
                 reiciendis error iusto velit distinctio blanditiis, totam
@@ -77,6 +79,7 @@ const Services: React.FC = () => {
             </div>
             <div className={classes["service__text-container"]}>
               <h1>Remodeling</h1>
+              <div className={classes.accent}></div>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
                 reiciendis error iusto velit distinctio blanditiis, totam
@@ -96,6 +99,7 @@ const Services: React.FC = () => {
             </div>
             <div className={classes["service__text-container"]}>
               <h1>Demolition</h1>
+              <div className={classes.accent}></div>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
                 reiciendis error iusto velit distinctio blanditiis, totam
@@ -115,6 +119,7 @@ const Services: React.FC = () => {
             </div>
             <div className={classes["service__text-container"]}>
               <h1>Excavation</h1>
+              <div className={classes.accent}></div>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
                 reiciendis error iusto velit distinctio blanditiis, totam

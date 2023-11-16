@@ -3,8 +3,6 @@ import Logo from '../logo/Logo';
 import classes from "./MobileNavigation.module.css";
 import Link from "next/link";
 
-
-
 const MobileNavigation: React.FC = () => {
   const [isChecked, setIsChecked] = useState(false);
 
@@ -82,16 +80,6 @@ const MobileNavigation: React.FC = () => {
                 href="/contact"
               >
                 Contact
-              </Link>
-            </li>
-
-            <li className={classes["navigation__item"]}>
-              <Link
-                onClick={closeMenuHandler}
-                className={classes["navigation__link"]}
-                href="/cart"
-              >
-                Cart
               </Link>
             </li>
           </ul>
