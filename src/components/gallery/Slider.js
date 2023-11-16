@@ -7,13 +7,23 @@ import nextIcon from "../../../public/icons/chevron-forward-outline.svg";
 
 import remodel from '../../../public/imgs/gallery/remodel-2.jpg'
 
-const Backdrop = () => {
+//<Image src={props.images[curSlide]} alt="sdsd" width={300} height={300} />;
+
+const Backdrop = (props) => {
+
   return <div className={classes.backdrop} />;
 };
 
 const SliderOverlay = (props) => {
   const [curSlide, setCurSlide] = useState(0);
   const maxSlide = props.images.length - 1;
+
+  useEffect(() => {
+    console.log(props)
+    const slide = +props.image - 1;
+    console.log('INCOMING SLIDE', slide)
+    setCurSlide(slide)
+  }, [])
 
   const nextSlideHandler = function () {
     if (curSlide === maxSlide) {
@@ -32,19 +42,33 @@ const SliderOverlay = (props) => {
     }
   };
 
-  console.log(props.images)
+  const closeSliderHandler = function () {
+    props.close();
+  }
+
   return (
     <div className={classes.slider}>
-      <button onClick={prevSlideHandler}>
-        <Image src={prevIcon} alt="previous icon" />
-      </button>
-      <Image src={props.images[curSlide]} alt="sdsd" width={300} height={300} />
-      <button onClick={nextSlideHandler}>
-        <Image src={nextIcon} alt="next icon" />
-      </button>
-      <div className={classes['slide-count']}>{`${curSlide + 1} / ${maxSlide + 1}`}</div>
+      <div className={classes.slide}>
+        {props.images && <Image
+          src={props.images[curSlide]}
+          alt="sdsd"
+          width={300}
+          height={300}
+        />}
+      </div>
+      <div className={classes["slider-controls"]}>
+        <button onClick={prevSlideHandler}>
+          <Image src={prevIcon} alt="previous icon" />
+        </button>
 
-      <div className={classes['slider-controls']}></div>
+        <button onClick={nextSlideHandler}>
+          <Image src={nextIcon} alt="next icon" />
+        </button>
+      </div>
+      <div className={classes["slide-count"]}>{`${curSlide + 1} / ${
+        maxSlide + 1
+      }`}</div>
+      <button onClick={closeSliderHandler} className={classes['close-button']}>X</button>
     </div>
   );
 };
@@ -62,7 +86,7 @@ const Slider = (props) => {
     <Fragment>
       {ReactDOM.createPortal(<Backdrop />, portalElement)}
       {ReactDOM.createPortal(
-        <SliderOverlay images={props.images} />,
+        <SliderOverlay images={props.images} close={props.close} image={props.image} />,
         portalElement
       )}
     </Fragment>

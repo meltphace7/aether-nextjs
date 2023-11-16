@@ -15,21 +15,36 @@ import remodelTen from "../../../public/imgs/gallery/remodel-10.jpg";
 import remodelEleven from "../../../public/imgs/gallery/remodel-11.jpg";
 import remodelTwelve from "../../../public/imgs/gallery/remodel-12.jpg";
 
-import Slider from '../../components/gallery/Slider';
+import Slider from "../../components/gallery/Slider";
 
 const sliderImages = [
-    remodelOne,
-    remodelTwo,
-    remodelThree,
-    remodelFour,
-    remodelFive,
+  remodelOne,
+  remodelTwo,
+  remodelThree,
+  remodelFour,
+  remodelFive,
+  remodelSix,
+  remodelSeven,
+  remodelEight,
+  remodelNine,
+    remodelTen,
+    remodelEleven,
+  remodelTwelve
 ];
 
 const PortfolioPage: React.FC = () => {
-    const [modalVisible, setModalVisible] = useState<boolean>(true);
+    const [modalVisible, setModalVisible] = useState<boolean>(false);
+    const [selectedImage, setSelectedImage] = useState<string>('')
 
-    const toggleModalHandler = function () {
-        setModalVisible(prevstate => !prevstate);
+  const toggleModalHandler = function () {
+    setModalVisible((prevstate) => !prevstate);
+  };
+    
+    const imageClickHandler = function (event: React.MouseEvent<HTMLDivElement>) {
+        const image = event.currentTarget.dataset!.image || '';
+        console.log(image);
+        setSelectedImage(image);
+        toggleModalHandler();
     }
 
   return (
@@ -53,56 +68,111 @@ const PortfolioPage: React.FC = () => {
         <section className={classes["portfolio-section"]}>
           <div className={classes["grid-gallery"]}>
             <div className={classes["grid-item"]}>
-              <Image src={remodelOne} alt="remodel" />
+              <Image
+                onClick={imageClickHandler}
+                data-image="1"
+                src={remodelOne}
+                alt="remodel"
+              />
             </div>
             <div className={classes["grid-item"]}>
-              <Image src={remodelTwo} alt="remodel" />
+              <Image
+                onClick={imageClickHandler}
+                data-image="2"
+                src={remodelTwo}
+                alt="remodel"
+              />
             </div>
             <div className={classes["grid-item"]}>
-              <Image src={remodelThree} alt="remodel" />
+              <Image
+                onClick={imageClickHandler}
+                data-image="3"
+                src={remodelThree}
+                alt="remodel"
+              />
             </div>
             <div className={classes["grid-item"]}>
-              <Image src={remodelFour} alt="remodel" />
+              <Image
+                onClick={imageClickHandler}
+                data-image="4"
+                src={remodelFour}
+                alt="remodel"
+              />
             </div>
             <div className={classes["grid-item"]}>
-              <Image src={remodelFive} alt="remodel" />
+              <Image
+                onClick={imageClickHandler}
+                data-image="5"
+                src={remodelFive}
+                alt="remodel"
+              />
             </div>
             <div className={classes["grid-item"]}>
-              <Image src={remodelSix} alt="remodel" />
+              <Image
+                onClick={imageClickHandler}
+                data-image="6"
+                src={remodelSix}
+                alt="remodel"
+              />
             </div>
             <div className={classes["grid-item"]}>
-              <Image src={remodelSeven} alt="remodel" />
+              <Image
+                onClick={imageClickHandler}
+                data-image="7"
+                src={remodelSeven}
+                alt="remodel"
+              />
             </div>
             <div className={classes["grid-item"]}>
-              <Image src={remodelEight} alt="remodel" />
+              <Image
+                onClick={imageClickHandler}
+                data-image="8"
+                src={remodelEight}
+                alt="remodel"
+              />
             </div>
             <div className={classes["grid-item"]}>
-              <Image src={remodelNine} alt="remodel" />
+              <Image
+                onClick={imageClickHandler}
+                data-image="9"
+                src={remodelNine}
+                alt="remodel"
+              />
             </div>
             <div className={classes["grid-item"]}>
-              <Image src={remodelTen} alt="remodel" />
+              <Image
+                onClick={imageClickHandler}
+                data-image="10"
+                src={remodelTen}
+                alt="remodel"
+              />
             </div>
             <div className={classes["grid-item"]}>
-              <Image src={remodelEleven} alt="remodel" />
+              <Image
+                onClick={imageClickHandler}
+                data-image="11"
+                src={remodelEleven}
+                alt="remodel"
+              />
             </div>
             <div className={classes["grid-item"]}>
-              <Image src={remodelTwelve} alt="remodel" />
+              <Image
+                onClick={imageClickHandler}
+                data-image="12"
+                src={remodelTwelve}
+                alt="remodel"
+              />
             </div>
           </div>
 
-                  <button onClick={toggleModalHandler} >SHOW Slider</button>
-         {modalVisible && <Slider images={sliderImages} />}
-          {/* <div className={classes["gallery-slider"]}>
-            <div className={classes["slide"]}>
-              <Image src={remodelOne} alt="remodel" />
-            </div>
-            <div className={classes["slide"]}>
-              <Image src={remodelTwo} alt="remodel" />
-            </div>
-            <div className={classes["slide"]}>
-              <Image src={remodelThree} alt="remodel" />
-            </div>
-          </div> */}
+          <button onClick={toggleModalHandler}>SHOW Slider</button>
+          {modalVisible && (
+            <Slider
+              images={sliderImages}
+              close={toggleModalHandler}
+              image={selectedImage}
+            />
+          )}
         </section>
       </div>
     </Fragment>

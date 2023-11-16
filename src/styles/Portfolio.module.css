@@ -62,6 +62,7 @@
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .grid-item img {
