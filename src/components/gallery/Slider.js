@@ -23,7 +23,7 @@ const SliderOverlay = (props) => {
     const slide = +props.image - 1;
     console.log('INCOMING SLIDE', slide)
     setCurSlide(slide)
-  }, [])
+  }, [props])
 
   const nextSlideHandler = function () {
     if (curSlide === maxSlide) {

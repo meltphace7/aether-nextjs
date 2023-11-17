@@ -82,3 +82,16 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.664);
 }
+
+@media (max-width: 45em) {
+    .grid-gallery {
+   
+    grid-template-columns: repeat(2, 1fr);
+}
+}
+
+@media (max-width: 35em) {
+    .grid-gallery {
+    grid-template-columns: repeat(1, 1fr);
+}
+}

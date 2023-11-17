@@ -27,8 +27,8 @@ const sliderImages = [
   remodelSeven,
   remodelEight,
   remodelNine,
-    remodelTen,
-    remodelEleven,
+  remodelTen,
+  remodelEleven,
   remodelTwelve
 ];
 
