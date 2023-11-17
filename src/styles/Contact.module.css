@@ -26,6 +26,7 @@
 .contact-hero h1 {
   font-size: var(--hero-font-size-h1);
   color: var(--color-primary);
+  margin: 1rem;
 }
 
 .contact-main {
