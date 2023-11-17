@@ -67,6 +67,10 @@
 }
 
 @media (max-width: 35em) {
+    .feature-box-section {
+         padding: 0 0 2rem 0;
+    }
+
   .feature-box {
     flex-direction: column;
   }
