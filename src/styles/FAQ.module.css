@@ -12,6 +12,7 @@
   background-image: url('../../public/imgs/city-park.jpg');
   background-size: cover;
   background-position: 0% 50%;
+  z-index: -1;
 }
 
 .hero-overlay {
@@ -36,6 +37,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+   z-index: 2;
 }
 
 .faq {

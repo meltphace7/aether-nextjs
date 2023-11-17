@@ -58,31 +58,44 @@ homeOne,
 ];
 
 const PortfolioPage: React.FC = () => {
+  // Parallax effect for Header
+  const [offsetY, setOffsetY] = useState<number>(0);
   const [sliderVisible, setSliderVisible] = useState<boolean>(false);
-    const [selectedImage, setSelectedImage] = useState<string>("");
-    
-    const [galleryImages, setGalleryImages] = useState<StaticImageData[]>(remodelImages);
+  const [selectedImage, setSelectedImage] = useState<string>("");
+  const [galleryImages, setGalleryImages] =
+    useState<StaticImageData[]>(remodelImages);
 
   const toggleSliderVisibilityHandler = function () {
     setSliderVisible((prevstate) => !prevstate);
   };
 
   const imageClickHandler = function (event: React.MouseEvent<HTMLDivElement>) {
-      const image = event.currentTarget.dataset!.image || "";
-      const gallery = event.currentTarget.dataset!.gallery || "";
-      console.log('gallery', gallery)
+    const image = event.currentTarget.dataset!.image || "";
+    const gallery = event.currentTarget.dataset!.gallery || "";
+    console.log("gallery", gallery);
 
-      if (gallery === "1") {
-          setGalleryImages(remodelImages);
-      }
-      if (gallery === "2") {
-          setGalleryImages(homeImages);
-      }
-      console.log(image);
-      
+    if (gallery === "1") {
+      setGalleryImages(remodelImages);
+    }
+    if (gallery === "2") {
+      setGalleryImages(homeImages);
+    }
+    console.log(image);
+
     setSelectedImage(image);
     toggleSliderVisibilityHandler();
   };
+
+  // Parallax effect for Header
+  const handleScroll = () => {
+    setOffsetY(window.pageYOffset);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <Fragment>
@@ -94,7 +107,10 @@ const PortfolioPage: React.FC = () => {
         />
       </Head>
       <div className={classes["portfolio-page"]}>
-        <header className={classes["portfolio-hero"]}>
+        <header
+          className={classes["portfolio-hero"]}
+          style={{ transform: `translateY(${offsetY * 0.5}px)` }}
+        >
           <div className={classes["hero-overlay"]}>
             <div className={classes["hero-text"]}>
               <h1>Portfolio</h1>

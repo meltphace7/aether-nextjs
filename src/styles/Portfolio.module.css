@@ -11,6 +11,7 @@
     height: 50rem;
     background-image: url('../../public/imgs/remodel-3.jpg');
     background-size: cover;
+    z-index: -1;
 }
 
 .hero-overlay {

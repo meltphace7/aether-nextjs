@@ -1,18 +1,33 @@
-import React, { Fragment } from 'react'
+import React, { Fragment, useState, useEffect } from 'react'
 import Head from 'next/head';
 import classes from "@/styles/FAQ.module.css";
 
-const FaqPage:React.FC = () => {
-    return (
-      <Fragment>
-        <Head>
-          <title>TEST CORP - FAQ</title>
-          <meta
-            name="description"
-            content="Frequently Asked Questions page for TEST CORP"
-          />
-        </Head>
-        <header className={classes["faq-hero"]}>
+const FaqPage: React.FC = () => {
+  // Parallax effect for Header
+  const [offsetY, setOffsetY] = useState<number>(0);
+  const handleScroll = () => {
+    setOffsetY(window.pageYOffset);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+  return (
+    <Fragment>
+      <Head>
+        <title>TEST CORP - FAQ</title>
+        <meta
+          name="description"
+          content="Frequently Asked Questions page for TEST CORP"
+        />
+      </Head>
+      <div className={classes["faq-page"]}>
+        <header
+          className={classes["faq-hero"]}
+          style={{ transform: `translateY(${offsetY * 0.5}px)` }}
+        >
           <div className={classes["hero-overlay"]}>
             <div className={classes["hero-text"]}>
               <h1>Frequently Asked Questions</h1>
@@ -71,8 +86,9 @@ const FaqPage:React.FC = () => {
             </p>
           </div>
         </section>
-      </Fragment>
-    );
+      </div>
+    </Fragment>
+  );
 }
 
 export default FaqPage;
