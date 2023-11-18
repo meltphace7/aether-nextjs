@@ -33,7 +33,7 @@
 }
 
 .slider-display p {
-  color: #fff;
+  color: var(--color-primary);
 }
 
 .slider-display div {
@@ -121,6 +121,25 @@
   }
 
   .slider-controls button {
-  margin: 1rem;
+    margin: 1rem;
+  }
+}
+
+@media (max-width: 35em) {
+   .slide {
+    width: 98%;
+  }
+
+  .slider-display {
+    top: 15%;
+  }
+
+  .slider-controls {
+  top: 80%;
+  left: 50%;
+}
+
+  .slider-controls button img {
+  height: 4rem;
 }
 }
