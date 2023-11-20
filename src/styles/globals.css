@@ -5,7 +5,7 @@
   --color-bg-light: #efede7;
 
   --color-bg-nav: rgba(0, 0, 0, 0.249);
-  --color-bg-footer: #000000;
+  --color-bg-footer: #1b1918;
 
   --color-text-light: #fff;
   --color-text-gray-light: #acacac;
@@ -77,7 +77,7 @@ html {
 body {
   position: relative;
   font-family: "Clash-Display", sans-serif;
-  background-color: var(--color-bg-dark);
+  background-color: var(#fff);
 }
 
 @media (max-width: 55em) {

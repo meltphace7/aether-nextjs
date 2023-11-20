@@ -1,12 +1,30 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import classes from "./FeatureOverlay.module.css";
 import Link from "next/link";
 import Image from "next/image";
 import cityScape from "../../../public/imgs/city-lights.jpg";
+import { useInView } from "react-intersection-observer";
 
 const FeatureOverlay: React.FC = () => {
+  // Intersection Observer pop-up / fade animation
+  const [sectionRevealed, setSectionRevealed] = useState<boolean>(false);
+
+  const options = { root: null, threshold: 0.2 };
+
+  const { ref: sectionRef, inView: sectionIsVisible } = useInView(options);
+
+  useEffect(() => {
+    if (sectionIsVisible) {
+      setSectionRevealed(true);
+    }
+  }, [sectionIsVisible]);
   return (
-    <section className={classes["feature-overlay"]}>
+    <section
+      ref={sectionRef}
+      className={`${classes["feature-overlay"]} ${
+        !sectionRevealed ? classes["feature--hidden"] : ""
+      }`}
+    >
       <div className={classes["feature-overlay__text-container"]}>
         <h1>Building Better for Life</h1>
         <div className={classes.accent}></div>

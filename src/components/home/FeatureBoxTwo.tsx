@@ -1,12 +1,31 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import classes from "./FeatureBoxTwo.module.css";
 import Image from "next/image";
 import abstractTwo from "../../../public/imgs/abstract-fractal-2.jpg";
 import Link from "next/link";
+import { useInView } from "react-intersection-observer";
 
 const FeatureTwo: React.FC = () => {
+  // Intersection Observer pop-up / fade animation
+  const [sectionRevealed, setSectionRevealed] = useState<boolean>(false);
+
+  const options = { root: null, threshold: 0.2 };
+
+  const { ref: sectionRef, inView: sectionIsVisible } = useInView(options);
+
+  useEffect(() => {
+    if (sectionIsVisible) {
+      setSectionRevealed(true);
+    }
+  }, [sectionIsVisible]);
+
   return (
-    <section className={classes["feature-box-section"]}>
+    <section
+      ref={sectionRef}
+      className={`${classes["feature-box-section"]} ${
+        !sectionRevealed ? classes["feature--hidden"] : ""
+      }`}
+    >
       <div className={classes["feature-box"]}>
         <div className={classes["feature-box__img-container"]}>
           <Image src={abstractTwo} alt="abstract Image" />

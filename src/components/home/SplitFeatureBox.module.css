@@ -3,6 +3,8 @@
   min-height: 70rem;
   display: flex;
   align-items: center;
+  background-color: var(--color-bg-dark);
+  transition: all 300ms ease-in;
 }
 
 .split-feature-box__text-container {
@@ -34,10 +36,6 @@
   color: #fff;
 }
 
-/* .split-feature-box__text-container a {
-  color: #000;
-} */
-
 .split-feature-box__img-container {
   width: 50%;
   min-height: 70rem;
@@ -49,6 +47,11 @@
   height: 100%;
   object-fit: cover;
 }
+
+.feature--hidden {
+   opacity: 0;
+   transform: translateY(8rem);
+ }
 
 @media (max-width: 35em) {
   .split-feature-box {
