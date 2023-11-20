@@ -30,8 +30,9 @@ export default function Home() {
         <FeatureOverlay />
         <Feature
           title="This is what we do"
-          content="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur nam consequatur non! Blanditiis sapiente, exercitationem labore sed ipsam earum provident! Quia ullam consectetur atque autem, laudantium ratione asperiores aliquid itaque, ea saepe corrupti necessitatibus animi nemo officiis nobis fugit officia. Quisquam omnis quos, sequi fuga vero quis deleniti atque soluta?"
+          content="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur nam consequatur non! Blanditiis sapiente, exercitationem labore sed ipsam earum provident! Quia ullam consectetur atque autem, laudantium ratione asperiores aliquid itaque, ea saepe corrupti necessitatibus."
           buttonText="Learn More"
+          path={'/about'}
           imgSrc={remodelImg}
         />
       </main>

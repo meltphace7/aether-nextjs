@@ -13,6 +13,7 @@ const FeatureTwo: React.FC = () => {
         </div>
         <div className={classes["feature-box__text-container"]}>
           <h1>Dedicated Perfection</h1>
+          <div className={classes.accent}></div>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
             incidunt distinctio aspernatur eligendi excepturi laboriosam

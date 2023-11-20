@@ -40,13 +40,20 @@
 }
 
 .feature-box__text-container h1 {
-  font-size: 5vw;
+  font-size: 4rem;
   line-height: 4.5vw;
   font-weight: bold;
 }
 
+.accent {
+  margin: 1rem 0;
+  width: 9rem;
+  height: .2rem;
+  background-color: var(--color-primary);
+}
+
 .feature-box__text-container p {
-  margin: 3rem 0rem 3rem 0;
+  margin: 1rem 0rem 3rem 0;
   font-size: 2rem;
   line-height: 2.5rem;
 }

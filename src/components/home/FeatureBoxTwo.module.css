@@ -44,6 +44,13 @@
   font-weight: bold;
 }
 
+.accent {
+  margin: 1rem 0;
+  width: 9rem;
+  height: .2rem;
+  background-color: var(--color-primary);
+}
+
 .feature-box__text-container p {
   margin: 3rem 0rem 3rem 0;
   font-size: 2rem;

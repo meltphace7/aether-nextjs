@@ -9,6 +9,7 @@ const FeatureOverlay: React.FC = () => {
     <section className={classes["feature-overlay"]}>
       <div className={classes["feature-overlay__text-container"]}>
         <h1>Building Better for Life</h1>
+        <div className={classes.accent}></div>
         <p>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur
           odit deleniti laboriosam eveniet velit rem quisquam maxime eum, quia
@@ -18,8 +19,8 @@ const FeatureOverlay: React.FC = () => {
         <Link href="/services" className="button">
           Our Work
         </Link>
-          </div>
-          <Image src={cityScape} alt="city scape" />
+      </div>
+      <Image src={cityScape} alt="city scape" />
     </section>
   );
 };
