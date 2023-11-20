@@ -18,6 +18,18 @@ const FeatureOverlay: React.FC = () => {
       setSectionRevealed(true);
     }
   }, [sectionIsVisible]);
+
+  // Parallax effect for Header
+  const [offsetY, setOffsetY] = useState(0);
+  const handleScroll = () => {
+    setOffsetY(window.pageYOffset);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
   return (
     <section
       ref={sectionRef}
@@ -38,7 +50,11 @@ const FeatureOverlay: React.FC = () => {
           Our Work
         </Link>
       </div>
-      <Image src={cityScape} alt="city scape" />
+      <Image
+        src={cityScape}
+        alt="city scape"
+        style={{ transform: `translateY(${240 - (offsetY * .10)}px)` }}
+      />
     </section>
   );
 };

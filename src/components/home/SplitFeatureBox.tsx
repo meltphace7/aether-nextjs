@@ -39,8 +39,9 @@ const SplitFeatureBox: React.FC = () => {
           About Us
         </Link>
       </div>
-      <div className={classes["split-feature-box__img-container"]}>
-        <Image src={cityLights} alt="City lights" />
+          <div className={classes["split-feature-box__img-container"]}>
+              
+        <Image src={cityLights} alt="City lights"  />
       </div>
     </section>
   );

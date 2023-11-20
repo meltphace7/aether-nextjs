@@ -6,7 +6,7 @@
     background-color: rgba(0, 0, 0, 0.514);
     display: flex;
     align-items: center;
-    transition: all 300ms ease-in;
+    transition: all 500ms ease-in;
 }
 
 .feature-overlay__text-container {
@@ -47,7 +47,7 @@ position: relative;
 
 .feature-overlay img {
     width: 100%;
-    height:70rem;
+    height:85rem;
     position: absolute;
     top: 0;
     z-index: -1;
