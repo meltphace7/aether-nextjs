@@ -4,18 +4,15 @@ import Head from "next/head";
 import Image, { StaticImageData } from "next/image";
 import Link from 'next/link';
 // GALLERY ONE
-import remodelOne from "../../../public/imgs/gallery/remodel.jpg";
-import remodelTwo from "../../../public/imgs/gallery/remodel-2.jpg";
-import remodelThree from "../../../public/imgs/gallery/remodel-3.jpg";
-import remodelFour from "../../../public/imgs/gallery/remodel-4.jpg";
-import remodelFive from "../../../public/imgs/gallery/remodel-5.jpg";
-import remodelSix from "../../../public/imgs/gallery/remodel-6.jpg";
-import remodelSeven from "../../../public/imgs/gallery/remodel-7.jpg";
-import remodelEight from "../../../public/imgs/gallery/remodel-8.jpg";
-import remodelNine from "../../../public/imgs/gallery/remodel-9.jpg";
-import remodelTen from "../../../public/imgs/gallery/remodel-10.jpg";
-import remodelEleven from "../../../public/imgs/gallery/remodel-11.jpg";
-import remodelTwelve from "../../../public/imgs/gallery/remodel-12.jpg";
+import comOne from "../../../public/imgs/gallery-3/commercial-1.jpg";
+import comTwo from "../../../public/imgs/gallery-3/commercial-2.jpg";
+import comThree from "../../../public/imgs/gallery-3/commercial-3.jpg";
+import comFour from "../../../public/imgs/gallery-3/commercial-4.jpg";
+import comFive from "../../../public/imgs/gallery-3/commercial-5.jpg";
+import comSix from "../../../public/imgs/gallery-3/commercial-6.jpg";
+import comSeven from "../../../public/imgs/gallery-3/commercial-7.jpg";
+import comEight from "../../../public/imgs/gallery-3/commercial-8.jpg";
+import comNine from "../../../public/imgs/gallery-3/commercial-9.jpg";
 // GALLERY TWO
 import homeOne from "../../../public/imgs/gallery-2/home-1.jpg";
 import homeTwo from "../../../public/imgs/gallery-2/home-2.jpg";
@@ -28,6 +25,20 @@ import homeEight from "../../../public/imgs/gallery-2/home-8.jpg";
 import homeNine from "../../../public/imgs/gallery-2/home-9.jpg";
 
 import Slider from "../../components/gallery/Slider";
+// GALLERY THREE
+import remodelOne from "../../../public/imgs/gallery/remodel.jpg";
+import remodelTwo from "../../../public/imgs/gallery/remodel-2.jpg";
+import remodelThree from "../../../public/imgs/gallery/remodel-3.jpg";
+import remodelFour from "../../../public/imgs/gallery/remodel-4.jpg";
+import remodelFive from "../../../public/imgs/gallery/remodel-5.jpg";
+import remodelSix from "../../../public/imgs/gallery/remodel-6.jpg";
+import remodelSeven from "../../../public/imgs/gallery/remodel-7.jpg";
+import remodelEight from "../../../public/imgs/gallery/remodel-8.jpg";
+import remodelNine from "../../../public/imgs/gallery/remodel-9.jpg";
+import remodelTen from "../../../public/imgs/gallery/remodel-10.jpg";
+import remodelEleven from "../../../public/imgs/gallery/remodel-11.jpg";
+import remodelTwelve from "../../../public/imgs/gallery/remodel-12.jpg";
+
 
 const remodelImages = [
   remodelOne,
@@ -57,6 +68,18 @@ homeOne,
   
 ];
 
+const commercialImages = [
+  comOne,
+  comTwo,
+  comThree,
+  comFour,
+  comFive,
+  comSix,
+  comSeven,
+  comEight,
+  comNine,
+];
+
 const PortfolioPage: React.FC = () => {
   // Parallax effect for Header
   const [offsetY, setOffsetY] = useState<number>(0);
@@ -79,6 +102,9 @@ const PortfolioPage: React.FC = () => {
     }
     if (gallery === "2") {
       setGalleryImages(homeImages);
+    }
+    if (gallery === "3") {
+      setGalleryImages(commercialImages);
     }
     console.log(image);
 
@@ -120,7 +146,185 @@ const PortfolioPage: React.FC = () => {
         </header>
         <section className={classes["portfolio-section"]}>
           <div className={classes["gallery-container"]}>
-            <h1 className={classes["gallery-h1"]}>Kitchen Remodels</h1>
+            <h1 className={classes["gallery-h1"]}>Commercial</h1>
+            <div className={classes["grid-gallery"]}>
+              <div className={classes["grid-item"]}>
+                <Image
+                  onClick={imageClickHandler}
+                  data-gallery="3"
+                  data-image="1"
+                  src={comOne}
+                  alt="remodel"
+                />
+              </div>
+              <div className={classes["grid-item"]}>
+                <Image
+                  onClick={imageClickHandler}
+                  data-gallery="3"
+                  data-image="2"
+                  src={comTwo}
+                  alt="remodel"
+                />
+              </div>
+              <div className={classes["grid-item"]}>
+                <Image
+                  onClick={imageClickHandler}
+                  data-gallery="3"
+                  data-image="3"
+                  src={comThree}
+                  alt="remodel"
+                />
+              </div>
+              <div className={classes["grid-item"]}>
+                <Image
+                  onClick={imageClickHandler}
+                  data-gallery="3"
+                  data-image="4"
+                  src={comFour}
+                  alt="remodel"
+                />
+              </div>
+              <div className={classes["grid-item"]}>
+                <Image
+                  onClick={imageClickHandler}
+                  data-gallery="3"
+                  data-image="5"
+                  src={comFive}
+                  alt="remodel"
+                />
+              </div>
+              <div className={classes["grid-item"]}>
+                <Image
+                  onClick={imageClickHandler}
+                  data-gallery="3"
+                  data-image="6"
+                  src={comSix}
+                  alt="remodel"
+                />
+              </div>
+              <div className={classes["grid-item"]}>
+                <Image
+                  onClick={imageClickHandler}
+                  data-gallery="3"
+                  data-image="7"
+                  src={comSeven}
+                  alt="remodel"
+                />
+              </div>
+              <div className={classes["grid-item"]}>
+                <Image
+                  onClick={imageClickHandler}
+                  data-gallery="3"
+                  data-image="8"
+                  src={comEight}
+                  alt="remodel"
+                />
+              </div>
+              <div className={classes["grid-item"]}>
+                <Image
+                  onClick={imageClickHandler}
+                  data-gallery="3"
+                  data-image="9"
+                  src={comNine}
+                  alt="remodel"
+                />
+              </div>
+            </div>
+            <Link href="/services/new-construction" className="button">
+              Learn More About Commercial
+            </Link>
+          </div>
+          <div className={classes["gallery-container"]}>
+            <h1 className={classes["gallery-h1"]}>New Homes</h1>
+            <div className={classes["grid-gallery"]}>
+              <div className={classes["grid-item"]}>
+                <Image
+                  onClick={imageClickHandler}
+                  data-gallery="2"
+                  data-image="1"
+                  src={homeOne}
+                  alt="remodel"
+                />
+              </div>
+              <div className={classes["grid-item"]}>
+                <Image
+                  onClick={imageClickHandler}
+                  data-gallery="2"
+                  data-image="2"
+                  src={homeTwo}
+                  alt="remodel"
+                />
+              </div>
+              <div className={classes["grid-item"]}>
+                <Image
+                  onClick={imageClickHandler}
+                  data-gallery="2"
+                  data-image="3"
+                  src={homeThree}
+                  alt="remodel"
+                />
+              </div>
+              <div className={classes["grid-item"]}>
+                <Image
+                  onClick={imageClickHandler}
+                  data-gallery="2"
+                  data-image="4"
+                  src={homeFour}
+                  alt="remodel"
+                />
+              </div>
+              <div className={classes["grid-item"]}>
+                <Image
+                  onClick={imageClickHandler}
+                  data-gallery="2"
+                  data-image="5"
+                  src={homeFive}
+                  alt="remodel"
+                />
+              </div>
+              <div className={classes["grid-item"]}>
+                <Image
+                  onClick={imageClickHandler}
+                  data-gallery="2"
+                  data-image="6"
+                  src={homeSix}
+                  alt="remodel"
+                />
+              </div>
+              <div className={classes["grid-item"]}>
+                <Image
+                  onClick={imageClickHandler}
+                  data-gallery="2"
+                  data-image="7"
+                  src={homeSeven}
+                  alt="remodel"
+                />
+              </div>
+              <div className={classes["grid-item"]}>
+                <Image
+                  onClick={imageClickHandler}
+                  data-gallery="2"
+                  data-image="8"
+                  src={homeEight}
+                  alt="remodel"
+                />
+              </div>
+              <div className={classes["grid-item"]}>
+                <Image
+                  onClick={imageClickHandler}
+                  data-gallery="2"
+                  data-image="9"
+                  src={homeNine}
+                  alt="remodel"
+                />
+              </div>
+            </div>
+            <Link href="/services/new-construction" className="button">
+              Learn More About New Homes
+            </Link>
+          </div>
+          <div className={classes["gallery-container"]}>
+            <h1 className={classes["gallery-h1"]}>Remodels</h1>
             <div className={classes["grid-gallery"]}>
               <div className={classes["grid-item"]}>
                 <Image
@@ -232,98 +436,10 @@ const PortfolioPage: React.FC = () => {
               </div>
             </div>
             <Link href="/services/remodeling" className="button">
-              Learn More About Kitchen Remodels
+              Learn More About Remodels
             </Link>
           </div>
-          <div className={classes["gallery-container"]}>
-            <h1 className={classes["gallery-h1"]}>New Homes</h1>
-            <div className={classes["grid-gallery"]}>
-              <div className={classes["grid-item"]}>
-                <Image
-                  onClick={imageClickHandler}
-                  data-gallery="2"
-                  data-image="1"
-                  src={homeOne}
-                  alt="remodel"
-                />
-              </div>
-              <div className={classes["grid-item"]}>
-                <Image
-                  onClick={imageClickHandler}
-                  data-gallery="2"
-                  data-image="2"
-                  src={homeTwo}
-                  alt="remodel"
-                />
-              </div>
-              <div className={classes["grid-item"]}>
-                <Image
-                  onClick={imageClickHandler}
-                  data-gallery="2"
-                  data-image="3"
-                  src={homeThree}
-                  alt="remodel"
-                />
-              </div>
-              <div className={classes["grid-item"]}>
-                <Image
-                  onClick={imageClickHandler}
-                  data-gallery="2"
-                  data-image="4"
-                  src={homeFour}
-                  alt="remodel"
-                />
-              </div>
-              <div className={classes["grid-item"]}>
-                <Image
-                  onClick={imageClickHandler}
-                  data-gallery="2"
-                  data-image="5"
-                  src={homeFive}
-                  alt="remodel"
-                />
-              </div>
-              <div className={classes["grid-item"]}>
-                <Image
-                  onClick={imageClickHandler}
-                  data-gallery="2"
-                  data-image="6"
-                  src={homeSix}
-                  alt="remodel"
-                />
-              </div>
-              <div className={classes["grid-item"]}>
-                <Image
-                  onClick={imageClickHandler}
-                  data-gallery="2"
-                  data-image="7"
-                  src={homeSeven}
-                  alt="remodel"
-                />
-              </div>
-              <div className={classes["grid-item"]}>
-                <Image
-                  onClick={imageClickHandler}
-                  data-gallery="2"
-                  data-image="8"
-                  src={homeEight}
-                  alt="remodel"
-                />
-              </div>
-              <div className={classes["grid-item"]}>
-                <Image
-                  onClick={imageClickHandler}
-                  data-gallery="2"
-                  data-image="9"
-                  src={homeNine}
-                  alt="remodel"
-                />
-              </div>
-            </div>
-            <Link href="/services/new-construction" className="button">
-              Learn More About New Homes
-            </Link>
-          </div>
+
           {sliderVisible && (
             <Slider
               images={galleryImages}
