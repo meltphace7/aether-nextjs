@@ -22,7 +22,7 @@ const Footer: React.FC = () => {
         </div>
         <div className={classes["contact"]}>
           <Image src={emailIcon} alt="Phone icon" />
-          <p>testcorp@gmail.com</p>
+          <p>tieton.construction@gmail.com</p>
         </div>
         <div className={classes["contact"]}>
           <Image src={addressIcon} alt="Phone icon" />
@@ -37,7 +37,7 @@ const Footer: React.FC = () => {
       </div>
       <div className={classes["footer-bottom-row"]}>
         <div className={classes["footer-text"]}>
-          <p>&copy; 2023 Test Corp All Right Reserved</p>
+          <p>&copy; 2023 Tieton Construction All Right Reserved</p>
           <p>Website by Brock Dallman</p>
         </div>
 
