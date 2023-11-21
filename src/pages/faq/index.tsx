@@ -40,8 +40,7 @@ const FaqPage: React.FC = () => {
               What services do you provide?
             </h2>
             <p className={classes["answer"]}>
-              We provide a multitude of services from brand new construction and
-              remodeling to demolition and excavation.
+              We provide a multitude of services from commercial and residential construction to home additions and remodeling.
             </p>
           </div>
 
@@ -51,16 +50,6 @@ const FaqPage: React.FC = () => {
             </h2>
             <p className={classes["answer"]}>
               The typical bathroom takes around 3 - 5 weeks.
-            </p>
-          </div>
-
-          <div className={classes["faq"]}>
-            <h2 className={classes["question"]}>
-              How long does it take to build a brand new home?
-            </h2>
-            <p className={classes["answer"]}>
-              Usually in under 8 - 9 months with ideal circumstances. Weather
-              and permiting issues can lengthen the process.
             </p>
           </div>
 

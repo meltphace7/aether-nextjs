@@ -56,7 +56,7 @@ const ContactPage: React.FC = () => {
               <Image src={emailIcon} alt="email icon" />
               <h1>Email</h1>
               <div className={classes.accent}></div>
-              <h2>testcorp@gmail.com</h2>
+              <h2>tieton.construction@gmail.com</h2>
             </div>
             <div className={classes["contact-container"]}>
               <Image src={addressIcon} alt="address icon" />

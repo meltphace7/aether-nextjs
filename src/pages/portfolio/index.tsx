@@ -230,7 +230,7 @@ const PortfolioPage: React.FC = () => {
                 />
               </div>
             </div>
-            <Link href="/services/new-construction" className="button">
+            <Link href="/services/commercial-construction" className="button">
               Learn More About Commercial
             </Link>
           </div>
@@ -319,7 +319,7 @@ const PortfolioPage: React.FC = () => {
                 />
               </div>
             </div>
-            <Link href="/services/new-construction" className="button">
+            <Link href="/services/residential-construction" className="button">
               Learn More About New Homes
             </Link>
           </div>
