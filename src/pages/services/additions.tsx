@@ -46,11 +46,12 @@ const AdditionsPage: React.FC = () => {
               space according to your imagination—no limits, no settling. We
               believe in enhancing your home to match your dreams. Beyond
               aesthetic appeal, our additions bring both financial and personal
-              value, providing an investment in your lifestyle. Whether it's
-              expanding living areas, creating a new deck, or adding functional
-              spaces, our team ensures every addition seamlessly integrates with
-              your existing home, creating a harmonious and enriched living
-              environment tailored to your unique vision and needs.
+              value, providing an investment in your lifestyle. Whether
+              it&apos;s expanding living areas, creating a new deck, or adding
+              functional spaces, our team ensures every addition seamlessly
+              integrates with your existing home, creating a harmonious and
+              enriched living environment tailored to your unique vision and
+              needs.
             </p>
             <div className={classes["service-section__imgs"]}>
               <div className={classes["service-section__img-container"]}>

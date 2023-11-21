@@ -44,7 +44,7 @@ const ResidentialConstructionPage: React.FC = () => {
             <p>
               At Tieton Construction, our residential construction service
               crafts homes that epitomize elegance, functionality, and
-              timelessness. Each residence is more than a dwelling; it's a
+              timelessness. Each residence is more than a dwelling; it&apos;s a
               thoughtful investment in your future. Our commitment to quality
               ensures not just beautiful structures but enduring homes, designed
               for comfort and growth. With meticulous attention to detail and a

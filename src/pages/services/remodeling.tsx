@@ -44,9 +44,9 @@ const RemodelingPage: React.FC = () => {
           <p>
             At Tieton Construction, our home remodeling service turns your
             vision into reality, transcending the limits of possibility. Whether
-            it's a rejuvenated kitchen, a luxurious bathroom, or a complete home
-            transformation, our skilled team excels at making dreams come to
-            life. With a commitment to quality and attention to detail, we
+            it&apos;s a rejuvenated kitchen, a luxurious bathroom, or a complete
+            home transformation, our skilled team excels at making dreams come
+            to life. With a commitment to quality and attention to detail, we
             ensure each remodel enhances the functionality, beauty, and overall
             value of your home. Experience the profound impact of our remodeling
             expertise as we reimagine and elevate your living spaces, creating a

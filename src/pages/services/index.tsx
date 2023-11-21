@@ -50,7 +50,7 @@ const ServicesPage: React.FC = () => {
               construction, home additions, and remodels that transform living
               spaces, our versatile team excels in every project. Committed to
               excellence and quality, we bring expertise to each service,
-              ensuring the highest standards of craftsmanship. Whether it's
+              ensuring the highest standards of craftsmanship. Whether it&apos;s
               building the future of commercial spaces or enhancing the warmth
               of homes, Tieton Construction stands as a trusted partner in
               delivering unparalleled construction solutions.
@@ -105,10 +105,10 @@ const ServicesPage: React.FC = () => {
               <h1>Additions</h1>
               <div className={classes.accent}></div>
               <p>
-                Tieton Construction's home additions service seamlessly expands
-                your living space. Whether a new deck or a wing, we deliver
-                top-notch quality, minimizing disruption to your lifestyle for a
-                stress-free enhancement.
+                Tieton Construction&apos;s home additions service seamlessly
+                expands your living space. Whether a new deck or a wing, we
+                deliver top-notch quality, minimizing disruption to your
+                lifestyle for a stress-free enhancement.
               </p>
               <Link href="/services/additions" className="button">
                 Learn More
@@ -124,10 +124,10 @@ const ServicesPage: React.FC = () => {
               <h1>Remodeling</h1>
               <div className={classes.accent}></div>
               <p>
-                Elevate your living experience with Tieton Construction's home
-                remodeling service. Transform your space into a dream sanctuary
-                where functionality meets style, creating a harmonious and
-                personalized environment.
+                Elevate your living experience with Tieton Construction&apos;s
+                home remodeling service. Transform your space into a dream
+                sanctuary where functionality meets style, creating a harmonious
+                and personalized environment.
               </p>
               <Link href="/services/remodeling" className="button">
                 Learn More

@@ -50,7 +50,7 @@ const AboutPage: React.FC = () => {
               Tieton Construction, our team is a dynamic blend of adaptability,
               efficiency, friendliness, and talent. Hailing from diverse
               backgrounds, we are united by a common cause—to build beautiful,
-              functional projects that fulfill our customers' needs. With a
+              functional projects that fulfill our customers&apos; needs. With a
               shared commitment to perfection, our team collaborates seamlessly,
               ensuring every project is a success. Embrace a construction
               experience where professionalism meets warmth, and where expertise

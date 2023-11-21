@@ -8,6 +8,7 @@ import downIcon from "../../../public/icons/chevron-down-outline.svg";
 
 const Navigation: React.FC = () => {
   const pathname = usePathname();
+  console.log(pathname)
 
   return (
     <nav className={classes.navigation}>
