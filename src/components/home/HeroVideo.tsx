@@ -9,7 +9,8 @@ const HeroVideo:React.FC = () => {
           src={require("../../../public/videos/construction-video(720p).mp4")}
           autoPlay
           muted
-          loop
+                loop
+                playsInline
           className={classes["bg-video"]}
         />
         <div className={classes["bg-video__overlay"]}>
