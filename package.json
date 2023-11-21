@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "next": "14.0.2",
+    "next-videos": "^1.4.1",
     "react": "^18",
     "react-dom": "^18",
     "react-intersection-observer": "^9.5.3"

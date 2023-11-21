@@ -3,6 +3,7 @@ import Head from 'next/head'
 import { Inter } from 'next/font/google'
 import classes from '@/styles/Home.module.css'
 import Hero from '../components/home/Hero';
+import HeroVideo from "../components/home/HeroVideo";
 import FeatureBox from '../components/home/FeatureBox';
 import SplitFeatureBox from '../components/home/SplitFeatureBox';
 import FeatureBoxTwo from "../components/home/FeatureBoxTwo";
@@ -26,7 +27,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={`${classes.main} ${inter.className}`}>
-        <Hero />
+        <HeroVideo />
+        {/* <Hero /> */}
           <FeatureBox />
           <SplitFeatureBox />
         <FeatureBoxTwo />
