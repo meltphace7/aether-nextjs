@@ -37,16 +37,15 @@ const FeatureOverlay: React.FC = () => {
         !sectionRevealed ? classes["feature--hidden"] : ""
       }`}
     >
-      <div className={classes["feature-overlay__text-container"]}>
+      <div className={classes["feature-box__text-container"]}>
         <h1>
           Building <span>Better</span> for Life
         </h1>
         <div className={classes.accent}></div>
         <p>
           Explore our portfolio for a showcase of modern design, functional
-          living spaces, and timeless elegance.  We create
-          homes that harmonize contemporary aesthetics with practical, luxurious
-          living.
+          living spaces, and timeless elegance. We create homes that harmonize
+          contemporary aesthetics with practical, luxurious living.
         </p>
         <Link href="/services" className="button">
           Our Work
@@ -55,7 +54,7 @@ const FeatureOverlay: React.FC = () => {
       <Image
         src={modernOne}
         alt="city scape"
-        style={{ transform: `translateY(${240 - offsetY * 0.1}px)` }}
+        style={{ transform: `translateY(${240 - offsetY * 0.05}px)` }}
       />
     </section>
   );

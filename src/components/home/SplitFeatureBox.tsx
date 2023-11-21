@@ -26,7 +26,7 @@ const SplitFeatureBox: React.FC = () => {
         !sectionRevealed ? classes["feature--hidden"] : ""
       }`}
     >
-      <div className={classes["split-feature-box__text-container"]}>
+      <div className={classes["feature-box__text-container"]}>
         <h1>
           Our <span>Roots</span> Run Deep
         </h1>

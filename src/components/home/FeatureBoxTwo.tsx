@@ -31,11 +31,10 @@ const FeatureTwo: React.FC = () => {
           <Image src={modern} alt="abstract Image" />
         </div>
         <div className={classes["feature-box__text-container"]}>
-          <h1>Form</h1>
           <h1>
-            <span>Function</span>
+            Form <span>Function</span> Future
           </h1>
-          <h1>Future</h1>
+
           <div className={classes.accent}></div>
           <p>
             Dedicated to sustainability, modernity, and functionality, we
