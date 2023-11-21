@@ -11,7 +11,7 @@ import FeatureOverlay from "../components/home/FeatureOverlay";
 import { useInView } from "react-intersection-observer";
 //
 import Feature from "../components/home/Feature";
-import remodelImg from '../../public/imgs/remodel-2.jpg';
+import remodelImg from '../../public/imgs/remodel.jpg';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -29,13 +29,13 @@ export default function Home() {
       <main className={`${classes.main} ${inter.className}`}>
         <HeroVideo />
         {/* <Hero /> */}
-          <FeatureBox />
-          <SplitFeatureBox />
+        <FeatureBox />
+        <SplitFeatureBox />
         <FeatureBoxTwo />
         <FeatureOverlay />
         <Feature
-          title="This is what we do"
-          content="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur nam consequatur non! Blanditiis sapiente, exercitationem labore sed ipsam earum provident! Quia ullam consectetur atque autem, laudantium ratione asperiores aliquid itaque, ea saepe corrupti necessitatibus."
+          title="Quality. Inside &amp; Out"
+          content="Crafting both stunning interiors and captivating exteriors, we specialize in new builds and remodels. Elevate your living spaces with our commitment to beauty, functionality, and enduring design."
           buttonText="Learn More"
           path={"/about"}
           imgSrc={remodelImg}

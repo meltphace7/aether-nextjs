@@ -27,6 +27,10 @@ position: relative;
   color: #FFF;
 }
 
+.feature-overlay__text-container span {
+   color: var(--color-primary);
+}
+
 .accent {
   margin: 1rem 0;
   width: 9rem;

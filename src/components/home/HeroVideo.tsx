@@ -6,7 +6,7 @@ const HeroVideo:React.FC = () => {
     return (
       <header className={classes["video-header"]}>
         <video
-          src={require("../../../public/videos/construction-video(720p).mp4")}
+          src={require("../../../public/videos/skyscraper(720p).mp4")}
           autoPlay
           muted
                 loop

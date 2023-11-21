@@ -13,19 +13,22 @@
 }
 
 .construction-hero {
-      background-image: url('../../public/imgs/construction-new.jpg');
+      background-image: url('../../public/imgs/gallery-3/commercial-3.jpg');
 }
 
-.remodel-hero {
-      background-image: url('../../public/imgs/remodel-4.jpg');
+.residential-hero {
+      background-image: url('../../public/imgs/modern-house.jpg');
+    
 }
 
-.demolition-hero {
-      background-image: url('../../public/imgs/demolition.jpg');
+.additions-hero {
+      background-image: url('../../public/imgs/addition-2.jpg');
+      background-position: 50% 50%;
 }
 
-.excavation-hero {
-    background-image: url('../../public/imgs/excavation.jpg');
+.remodels-hero {
+    background-image: url('../../public/imgs/gallery/remodel.jpg');
+    background-position: 50% 50%;
 }
 
 .service-hero-overlay {

@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import classes from './FeatureBox.module.css';
 import Image from 'next/image';
-import abstractOne from '../../../public/imgs/abstract-fractal.jpg';
+import modernFour from '../../../public/imgs/modern-4.jpg';
 import Link from 'next/link';
 import { useInView } from "react-intersection-observer";
 
@@ -27,18 +27,18 @@ const FeatureOne: React.FC = () => {
     >
       <div className={classes["feature-box"]}>
         <div className={classes["feature-box__img-container"]}>
-          <Image src={abstractOne} alt="abstract Image" />
+          <Image src={modernFour} alt="abstract Image" />
         </div>
         <div className={classes["feature-box__text-container"]}>
-          <h1>Dedicated Perfection</h1>
+          <h1>Dedicated to Perfection</h1>
           <div className={classes.accent}></div>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
-            incidunt distinctio aspernatur eligendi excepturi laboriosam
-            obcaecati, cupiditate placeat, fugit quae tempore quidem ullam iusto
-            vero.
+            Committed to excellence, Tieton construction strives for
+            perfection in every project. From meticulous planning to precise
+            execution, we deliver unmatched quality, ensuring client
+            satisfaction and enduring success.
           </p>
-          <Link href="/about" className="button">
+          <Link href="/services" className="button">
             Read More
           </Link>
         </div>

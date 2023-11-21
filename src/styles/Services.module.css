@@ -9,7 +9,7 @@
 .services-hero {
   width: 100%;
   height: 65rem;
-  background-image: url("../../public/imgs/construction.jpg");
+  background-image: url("../../public/imgs/services-header.jpg");
   background-size: cover;
   z-index: -1;
 }

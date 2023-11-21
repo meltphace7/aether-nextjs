@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from "react";
 import classes from "./FeatureBoxTwo.module.css";
 import Image from "next/image";
-import abstractTwo from "../../../public/imgs/abstract-fractal-2.jpg";
+import modern from "../../../public/imgs/modern.jpg";
 import Link from "next/link";
 import { useInView } from "react-intersection-observer";
 
@@ -28,16 +28,20 @@ const FeatureTwo: React.FC = () => {
     >
       <div className={classes["feature-box"]}>
         <div className={classes["feature-box__img-container"]}>
-          <Image src={abstractTwo} alt="abstract Image" />
+          <Image src={modern} alt="abstract Image" />
         </div>
         <div className={classes["feature-box__text-container"]}>
-          <h1>Dedicated Perfection</h1>
+          <h1>Form</h1>
+          <h1>
+            <span>Function</span>
+          </h1>
+          <h1>Future</h1>
           <div className={classes.accent}></div>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
-            incidunt distinctio aspernatur eligendi excepturi laboriosam
-            obcaecati, cupiditate placeat, fugit quae tempore quidem ullam iusto
-            vero.
+            Dedicated to sustainability, modernity, and functionality, we
+            seamlessly integrate eco-friendly practices with cutting-edge
+            design. Building the future with innovation and a commitment to
+            lasting excellence.
           </p>
           <Link href="/about" className="button">
             Read More

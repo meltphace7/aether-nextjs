@@ -3,10 +3,10 @@ import Head from "next/head";
 import classes from "@/styles/Services.module.css";
 import Image from "next/image";
 import Link from "next/link";
-import newConstruction from "../../../public/imgs/construction-new.jpg";
-import remodel from "../../../public/imgs/construction-remodel.jpg";
-import demolition from "../../../public/imgs/demolition.jpg";
-import excavation from "../../../public/imgs/excavation.jpg";
+import commercial from "../../../public/imgs/modern-2.jpg";
+import residential from "../../../public/imgs/modern-5.jpg";
+import additions from "../../../public/imgs/additions.jpg";
+import remodel from "../../../public/imgs/gallery/remodel-3.jpg";
 
 const ServicesPage: React.FC = () => {
   // Parallax effect for Header
@@ -44,30 +44,32 @@ const ServicesPage: React.FC = () => {
             <h1>Building On Purpose</h1>
             <div className={classes.accent}></div>
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse
-              nisi provident exercitationem, modi sequi architecto tenetur
-              porro, magnam velit cum explicabo assumenda maxime, ullam vitae
-              magni quos excepturi odit natus! Necessitatibus repellendus harum
-              quaerat, natus repellat quod et cumque quisquam id fuga. Possimus
-              dolore consectetur doloremque fuga ea eaque, aliquam numquam
-              quibusdam libero iure, dicta quidem, ducimus sequi neque corporis.
+              At Tieton Construction, our comprehensive services cover the
+              spectrum of construction needs. From commercial construction that
+              establishes solid foundations for businesses to residential
+              construction, home additions, and remodels that transform living
+              spaces, our versatile team excels in every project. Committed to
+              excellence and quality, we bring expertise to each service,
+              ensuring the highest standards of craftsmanship. Whether it's
+              building the future of commercial spaces or enhancing the warmth
+              of homes, Tieton Construction stands as a trusted partner in
+              delivering unparalleled construction solutions.
             </p>
           </div>
           <div className={classes["service"]}>
             <div className={classes["service__img-container"]}>
-              <Image src={newConstruction} alt="new construction" />
+              <Image src={commercial} alt="new construction" />
             </div>
             <div className={classes["service__text-container"]}>
-              <h1>New Construction</h1>
+              <h1>Commercial Construction</h1>
               <div className={classes.accent}></div>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
-                reiciendis error iusto velit distinctio blanditiis, totam
-                excepturi placeat accusamus, ab voluptate rerum fugiat omnis
-                architecto laborum numquam laudantium id doloribus. Ipsam eum
-                quisquam eligendi vel.
+                At Tieton Construction, our commercial construction service
+                guarantees efficiency. Our dedicated team consistently delivers
+                projects ahead of schedule and under budget, ensuring optimal
+                value for our clients.
               </p>
-              <Link href="/services/new-construction" className="button">
+              <Link href="/services/commercial-construction" className="button">
                 Learn More
               </Link>
             </div>
@@ -75,59 +77,59 @@ const ServicesPage: React.FC = () => {
 
           <div className={`${classes["service"]} ${classes["service-alt"]}`}>
             <div className={classes["service__img-container"]}>
-              <Image src={remodel} alt="remodeling" />
+              <Image src={residential} alt="remodeling" />
+            </div>
+            <div className={classes["service__text-container"]}>
+              <h1>Residential Construction</h1>
+              <div className={classes.accent}></div>
+              <p>
+                Tieton Construction brings dreams to life with our residential
+                construction service. Crafting homes with timeless elegance, we
+                create more than houses; we build cherished homes, tailored to
+                reflect your unique vision.
+              </p>
+              <Link
+                href="/services/residential-construction"
+                className="button"
+              >
+                Learn More
+              </Link>
+            </div>
+          </div>
+
+          <div className={classes["service"]}>
+            <div className={classes["service__img-container"]}>
+              <Image src={additions} alt="new construction" />
+            </div>
+            <div className={classes["service__text-container"]}>
+              <h1>Additions</h1>
+              <div className={classes.accent}></div>
+              <p>
+                Tieton Construction's home additions service seamlessly expands
+                your living space. Whether a new deck or a wing, we deliver
+                top-notch quality, minimizing disruption to your lifestyle for a
+                stress-free enhancement.
+              </p>
+              <Link href="/services/additions" className="button">
+                Learn More
+              </Link>
+            </div>
+          </div>
+
+          <div className={`${classes["service"]} ${classes["service-alt"]}`}>
+            <div className={classes["service__img-container"]}>
+              <Image src={remodel} alt="new construction" />
             </div>
             <div className={classes["service__text-container"]}>
               <h1>Remodeling</h1>
               <div className={classes.accent}></div>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
-                reiciendis error iusto velit distinctio blanditiis, totam
-                excepturi placeat accusamus, ab voluptate rerum fugiat omnis
-                architecto laborum numquam laudantium id doloribus. Ipsam eum
-                quisquam eligendi vel.
+                Elevate your living experience with Tieton Construction's home
+                remodeling service. Transform your space into a dream sanctuary
+                where functionality meets style, creating a harmonious and
+                personalized environment.
               </p>
               <Link href="/services/remodeling" className="button">
-                Learn More
-              </Link>
-            </div>
-          </div>
-
-          <div className={classes["service"]}>
-            <div className={classes["service__img-container"]}>
-              <Image src={demolition} alt="new construction" />
-            </div>
-            <div className={classes["service__text-container"]}>
-              <h1>Demolition</h1>
-              <div className={classes.accent}></div>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
-                reiciendis error iusto velit distinctio blanditiis, totam
-                excepturi placeat accusamus, ab voluptate rerum fugiat omnis
-                architecto laborum numquam laudantium id doloribus. Ipsam eum
-                quisquam eligendi vel.
-              </p>
-              <Link href="/services/demolition" className="button">
-                Learn More
-              </Link>
-            </div>
-          </div>
-
-          <div className={`${classes["service"]} ${classes["service-alt"]}`}>
-            <div className={classes["service__img-container"]}>
-              <Image src={excavation} alt="new construction" />
-            </div>
-            <div className={classes["service__text-container"]}>
-              <h1>Excavation</h1>
-              <div className={classes.accent}></div>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
-                reiciendis error iusto velit distinctio blanditiis, totam
-                excepturi placeat accusamus, ab voluptate rerum fugiat omnis
-                architecto laborum numquam laudantium id doloribus. Ipsam eum
-                quisquam eligendi vel.
-              </p>
-              <Link href="/services/excavation" className="button">
                 Learn More
               </Link>
             </div>

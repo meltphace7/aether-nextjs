@@ -15,6 +15,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+   overflow: hidden;
 }
 
 .feature-box__img-container {
@@ -44,6 +45,10 @@
    font-size: 5vw;
   line-height: 4.5vw;
   font-weight: bold;
+}
+
+.feature-box__text-container span {
+   color: var(--color-primary);
 }
 
 .accent {

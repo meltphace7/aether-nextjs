@@ -41,12 +41,32 @@ const Navigation: React.FC = () => {
             </li>
             <li>
               <Link
-                href="/services/new-construction"
+                href="/services/commercial-construction"
                 className={
                   pathname === "/services/service-2" ? classes.active : ""
                 }
               >
-                New Construction
+                Commercial
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/services/residential-construction"
+                className={
+                  pathname === "/services/service-3" ? classes.active : ""
+                }
+              >
+                Residential
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/services/additions"
+                className={
+                  pathname === "/services/service-3" ? classes.active : ""
+                }
+              >
+                Additions
               </Link>
             </li>
             <li>
@@ -57,26 +77,6 @@ const Navigation: React.FC = () => {
                 }
               >
                 Remodeling
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/services/demolition"
-                className={
-                  pathname === "/services/service-3" ? classes.active : ""
-                }
-              >
-                Demolition
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/services/excavation"
-                className={
-                  pathname === "/services/service-3" ? classes.active : ""
-                }
-              >
-                Excavation
               </Link>
             </li>
           </ul>
