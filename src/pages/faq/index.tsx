@@ -17,10 +17,10 @@ const FaqPage: React.FC = () => {
   return (
     <Fragment>
       <Head>
-        <title>TEST CORP - FAQ</title>
+        <title>FAQ | Tieton Construction</title>
         <meta
           name="description"
-          content="Frequently Asked Questions page for TEST CORP"
+          content="Frequently Asked Questions page for Tieton Construction"
         />
       </Head>
       <div className={classes["faq-page"]}>

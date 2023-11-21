@@ -10,7 +10,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <title>TEST CORP Official Site</title>
         <link rel="icon" href="/favicon.svg" sizes="any" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <meta name="description" content="Test Corp Official Site" />
+        <meta name="description" content="Tieton Construction Official Site" />
       </Head>
       <Component {...pageProps} />
     </Layout>

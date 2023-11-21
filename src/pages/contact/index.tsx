@@ -22,8 +22,8 @@ const ContactPage: React.FC = () => {
   return (
     <Fragment>
       <Head>
-        <title>TEST CORP - Contact</title>
-        <meta name="description" content="Contact page for TEST CORP" />
+        <title>Contact | Tieton Construction</title>
+        <meta name="description" content="Contact page for Tieton Construction" />
       </Head>
       <div className={classes["contact-page"]}>
         <header

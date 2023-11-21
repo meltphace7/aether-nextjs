@@ -10,8 +10,8 @@ const AboutPage: React.FC = () => {
   return (
     <Fragment>
       <Head>
-        <title>TEST CORP - About</title>
-        <meta name="description" content="About page for TEST CORP" />
+        <title>About | Tieton Construction</title>
+        <meta name="description" content="About page for Tieton Construction" />
       </Head>
       <div className={classes["about-page"]}>
         <Hero />

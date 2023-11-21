@@ -21,8 +21,8 @@ const DemolitionPage: React.FC = () => {
     return (
       <Fragment>
         <Head>
-          <title>TEST CORP - Demolition Service</title>
-          <meta name="description" content="Demolition service page for TEST CORP" />
+          <title>Demolition | Tieton Construction</title>
+          <meta name="description" content="Demolition service page for Tieton Construction" />
         </Head>
         <div className={classes["service-page"]}>
           <header
