@@ -21,7 +21,7 @@ const CommericialConstructionPage: React.FC = () => {
   return (
     <Fragment>
       <Head>
-        <title>Commercial Construction</title>
+        <title>Commercial Construction | Tieton Construction</title>
         <meta
           name="description"
           content="Commercial Construction service page for Tieton Construction"

@@ -7,7 +7,7 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <Layout>
       <Head>
-        <title>TEST CORP Official Site</title>
+        <title>Tieton Construction Official Site</title>
         <link rel="icon" href="/favicon.svg" sizes="any" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta name="description" content="Tieton Construction Official Site" />

@@ -1,9 +1,11 @@
 import React, { useState } from "react";
-import Logo from '../logo/Logo';
+import Logo from "../logo/Logo";
 import classes from "./MobileNavigation.module.css";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const MobileNavigation: React.FC = () => {
+  const pathname = usePathname();
   const [isChecked, setIsChecked] = useState(false);
 
   const handleCheck = () => {
@@ -37,8 +39,12 @@ const MobileNavigation: React.FC = () => {
             <li className={classes["navigation__item"]}>
               <Link
                 onClick={closeMenuHandler}
-                className={classes["navigation__link"]}
                 href="/"
+                className={
+                  pathname === "/"
+                    ? `${classes.active} ${classes["navigation__link"]}`
+                    : classes["navigation__link"]
+                }
               >
                 Home
               </Link>
@@ -46,8 +52,12 @@ const MobileNavigation: React.FC = () => {
             <li className={classes["navigation__item"]}>
               <Link
                 onClick={closeMenuHandler}
-                className={classes["navigation__link"]}
                 href="/services"
+                className={
+                  pathname === "/services"
+                    ? `${classes.active} ${classes["navigation__link"]}`
+                    : classes["navigation__link"]
+                }
               >
                 Services
               </Link>
@@ -56,8 +66,12 @@ const MobileNavigation: React.FC = () => {
             <li className={classes["navigation__item"]}>
               <Link
                 onClick={closeMenuHandler}
-                className={classes["navigation__link"]}
                 href="/about"
+                className={
+                  pathname === "/about"
+                    ? `${classes.active} ${classes["navigation__link"]}`
+                    : classes["navigation__link"]
+                }
               >
                 About
               </Link>
@@ -66,7 +80,11 @@ const MobileNavigation: React.FC = () => {
             <li className={classes["navigation__item"]}>
               <Link
                 onClick={closeMenuHandler}
-                className={classes["navigation__link"]}
+                className={
+                  pathname === "/portfolio"
+                    ? `${classes.active} ${classes["navigation__link"]}`
+                    : classes["navigation__link"]
+                }
                 href="/portfolio"
               >
                 Portfolio
@@ -76,8 +94,12 @@ const MobileNavigation: React.FC = () => {
             <li className={classes["navigation__item"]}>
               <Link
                 onClick={closeMenuHandler}
-                className={classes["navigation__link"]}
                 href="/faq"
+                className={
+                  pathname === "/faq"
+                    ? `${classes.active} ${classes["navigation__link"]}`
+                    : classes["navigation__link"]
+                }
               >
                 FAQ
               </Link>
@@ -86,8 +108,12 @@ const MobileNavigation: React.FC = () => {
             <li className={classes["navigation__item"]}>
               <Link
                 onClick={closeMenuHandler}
-                className={classes["navigation__link"]}
                 href="/contact"
+                className={
+                  pathname === "/contact"
+                    ? `${classes.active} ${classes["navigation__link"]}`
+                    : classes["navigation__link"]
+                }
               >
                 Contact
               </Link>

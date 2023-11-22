@@ -24,7 +24,7 @@ const ResidentialConstructionPage: React.FC = () => {
           <title>Residential Construction | Tieton Construction</title>
           <meta
             name="description"
-            content="Demolition service page for Tieton Construction"
+            content="Residential Construction service page for Tieton Construction"
           />
         </Head>
         <div className={classes["service-page"]}>

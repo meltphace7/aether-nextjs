@@ -11,7 +11,6 @@ import facebookLogo from "../../../public/icons/logo-facebook.svg";
 import instagramLogo from "../../../public/icons/logo-instagram.svg";
 import googleLogo from "../../../public/icons/logo-google.svg";
 
-
 const Footer: React.FC = () => {
   return (
     <footer className={classes.footer}>

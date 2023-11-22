@@ -1,7 +1,6 @@
 import React, { Fragment } from "react";
 import Head from "next/head";
 import Image from "next/image";
-import brockImg from "../../../public/imgs/BROCK-DALLMAN_PORTRAIT.jpg";
 import classes from "@/styles/About.module.css";
 import Hero from '../../components/about/Hero';
 import team from '../../../public/imgs/team-members.jpg';
