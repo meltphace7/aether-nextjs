@@ -3,6 +3,7 @@ import classes from "@/styles/Portfolio.module.css";
 import Head from "next/head";
 import Image, { StaticImageData } from "next/image";
 import Link from 'next/link';
+import Slider from "../../components/gallery/Slider";
 // GALLERY ONE
 import comOne from "../../../public/imgs/gallery-3/commercial-1.jpg";
 import comTwo from "../../../public/imgs/gallery-3/commercial-2.jpg";
@@ -24,7 +25,6 @@ import homeSeven from "../../../public/imgs/gallery-2/home-7.jpg";
 import homeEight from "../../../public/imgs/gallery-2/home-8.jpg";
 import homeNine from "../../../public/imgs/gallery-2/home-9.jpg";
 
-import Slider from "../../components/gallery/Slider";
 // GALLERY THREE
 import remodelOne from "../../../public/imgs/gallery/remodel.jpg";
 import remodelTwo from "../../../public/imgs/gallery/remodel-2.jpg";

@@ -2,9 +2,12 @@ import React, { Fragment, useState, useEffect } from "react";
 import classes from "@/styles/Service.module.css";
 import Head from "next/head";
 import Image from "next/image";
+import Slider from "../../components/gallery/Slider";
 import remodelOne from "../../../public/imgs/gallery/remodel-11.jpg";
 import remodelTwo from "../../../public/imgs/remodel-2.jpg";
 import remodelThree from "../../../public/imgs/remodel-3.jpg";
+
+const remodelImages = [remodelOne, remodelTwo, remodelThree];
 
 const RemodelingPage: React.FC = () => {
   // Parallax effect for Header
@@ -18,6 +21,21 @@ const RemodelingPage: React.FC = () => {
 
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  // Image Slider
+  const [sliderVisible, setSliderVisible] = useState<boolean>(false);
+  const [selectedImage, setSelectedImage] = useState<string>("");
+
+  const toggleSliderVisibilityHandler = function () {
+    setSliderVisible((prevstate) => !prevstate);
+  };
+
+  const imageClickHandler = function (event: React.MouseEvent<HTMLDivElement>) {
+    const image = event.currentTarget.dataset!.image || "";
+
+    setSelectedImage(image);
+    toggleSliderVisibilityHandler();
+  };
   return (
     <Fragment>
       <Head>
@@ -54,16 +72,38 @@ const RemodelingPage: React.FC = () => {
           </p>
           <div className={classes["service-section__imgs"]}>
             <div className={classes["service-section__img-container"]}>
-              <Image src={remodelTwo} alt="Nice remodeled kitchen" />
+              <Image
+                src={remodelOne}
+                alt="Nice remodeled kitchen"
+                data-image="1"
+                onClick={imageClickHandler}
+              />
             </div>
             <div className={classes["service-section__img-container"]}>
-              <Image src={remodelOne} alt="Nice remodeled bathroom" />
+              <Image
+                src={remodelTwo}
+                alt="Nice remodeled bathroom"
+                data-image="2"
+                onClick={imageClickHandler}
+              />
             </div>
             <div className={classes["service-section__img-container"]}>
-              <Image src={remodelThree} alt="Nice remodeled kitchen" />
+              <Image
+                src={remodelThree}
+                alt="Nice remodeled kitchen"
+                data-image="3"
+                onClick={imageClickHandler}
+              />
             </div>
           </div>
         </section>
+        {sliderVisible && (
+          <Slider
+            images={remodelImages}
+            close={toggleSliderVisibilityHandler}
+            image={selectedImage}
+          />
+        )}
       </div>
     </Fragment>
   );

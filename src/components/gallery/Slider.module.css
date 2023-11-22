@@ -126,7 +126,7 @@
 }
 
 @media (max-width: 35em) {
-   .slide {
+  .slide {
     width: 98%;
   }
 
@@ -135,11 +135,11 @@
   }
 
   .slider-controls {
-  top: 80%;
-  left: 50%;
-}
+    top: 80%;
+    left: 50%;
+  }
 
   .slider-controls button img {
-  height: 4rem;
-}
+    height: 4rem;
+  }
 }
