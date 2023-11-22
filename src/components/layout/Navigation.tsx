@@ -33,7 +33,7 @@ const Navigation: React.FC = () => {
               <Link
                 href="/services"
                 className={
-                  pathname === "/services/services" ? classes.active : ""
+                  pathname === "/services" ? classes.active : ""
                 }
               >
                 All Services
