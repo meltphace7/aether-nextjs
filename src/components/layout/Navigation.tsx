@@ -33,7 +33,7 @@ const Navigation: React.FC = () => {
               <Link
                 href="/services"
                 className={
-                  pathname === "/services/service-1" ? classes.active : ""
+                  pathname === "/services/services" ? classes.active : ""
                 }
               >
                 All Services
@@ -43,7 +43,9 @@ const Navigation: React.FC = () => {
               <Link
                 href="/services/commercial-construction"
                 className={
-                  pathname === "/services/service-2" ? classes.active : ""
+                  pathname === "/services/commercial-construction"
+                    ? classes.active
+                    : ""
                 }
               >
                 Commercial
@@ -53,7 +55,9 @@ const Navigation: React.FC = () => {
               <Link
                 href="/services/residential-construction"
                 className={
-                  pathname === "/services/service-3" ? classes.active : ""
+                  pathname === "/services/residential-construction"
+                    ? classes.active
+                    : ""
                 }
               >
                 Residential
@@ -63,7 +67,7 @@ const Navigation: React.FC = () => {
               <Link
                 href="/services/additions"
                 className={
-                  pathname === "/services/service-3" ? classes.active : ""
+                  pathname === "/services/additions" ? classes.active : ""
                 }
               >
                 Additions
@@ -73,7 +77,7 @@ const Navigation: React.FC = () => {
               <Link
                 href="/services/remodeling"
                 className={
-                  pathname === "/services/service-3" ? classes.active : ""
+                  pathname === "/services/remodeling" ? classes.active : ""
                 }
               >
                 Remodeling
