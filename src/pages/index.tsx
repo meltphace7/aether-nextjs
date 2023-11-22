@@ -37,7 +37,7 @@ export default function Home() {
           title="Quality. Inside &amp; Out"
           content="Crafting both stunning interiors and captivating exteriors, we specialize in new builds and remodels. Elevate your living spaces with our commitment to beauty, functionality, and enduring design."
           buttonText="Learn More"
-          path={"/about"}
+          path={"/services/remodeling"}
           imgSrc={remodelImg}
         />
       </main>

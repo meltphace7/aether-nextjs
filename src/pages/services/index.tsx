@@ -44,7 +44,7 @@ const ServicesPage: React.FC = () => {
             <h1>Building On Purpose</h1>
             <div className={classes.accent}></div>
             <p>
-              At Tieton Construction, our comprehensive services cover the
+              Our comprehensive services cover the
               spectrum of construction needs. From commercial construction that
               establishes solid foundations for businesses to residential
               construction, home additions, and remodels that transform living
@@ -64,7 +64,7 @@ const ServicesPage: React.FC = () => {
               <h1>Commercial Construction</h1>
               <div className={classes.accent}></div>
               <p>
-                At Tieton Construction, our commercial construction service
+                Our commercial construction service
                 guarantees efficiency. Our dedicated team consistently delivers
                 projects ahead of schedule and under budget, ensuring optimal
                 value for our clients.
@@ -83,7 +83,7 @@ const ServicesPage: React.FC = () => {
               <h1>Residential Construction</h1>
               <div className={classes.accent}></div>
               <p>
-                Tieton Construction brings dreams to life with our residential
+                We bring dreams to life with our residential
                 construction service. Crafting homes with timeless elegance, we
                 create more than houses; we build cherished homes, tailored to
                 reflect your unique vision.

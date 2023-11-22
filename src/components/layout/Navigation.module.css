@@ -54,7 +54,7 @@
   background-color: var(--color-bg-dark);
   border-radius: 2px;
   animation: dropdown 300ms ease-in;
-  height: 21rem;
+  height: 19rem;
 }
 
 .dropdown-menu li {
@@ -72,7 +72,7 @@
   }
 
   100% {
-    height: 21rem;
+    height: 19rem;
     opacity: 1;
   }
 }

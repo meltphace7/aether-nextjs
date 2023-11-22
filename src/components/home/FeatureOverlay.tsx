@@ -47,7 +47,7 @@ const FeatureOverlay: React.FC = () => {
           living spaces, and timeless elegance. We create homes that harmonize
           contemporary aesthetics with practical, luxurious living.
         </p>
-        <Link href="/services" className="button">
+        <Link href="/portfolio" className="button">
           Our Work
         </Link>
       </div>
