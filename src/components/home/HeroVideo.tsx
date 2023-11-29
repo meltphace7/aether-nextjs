@@ -23,6 +23,7 @@ const HeroVideo:React.FC = () => {
               Contact Us
             </Link>
           </div>
+          <div className={classes.stripe}></div>
         </div>
       </header>
     );
