@@ -31,13 +31,12 @@ const FeatureOverlay: React.FC = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
   return (
-    <section
-      ref={sectionRef}
-      className={`${classes["feature-overlay"]} ${
-        !sectionRevealed ? classes["feature--hidden"] : ""
-      }`}
-    >
-      <div className={classes["feature-box__text-container"]}>
+    <section ref={sectionRef} className={classes["feature-overlay"]}>
+      <div
+        className={`${classes["feature-box__text-container"]} ${
+          !sectionRevealed ? classes["feature--hidden"] : ""
+        }`}
+      >
         <h1>
           Building <span>Better</span> for Life
         </h1>
@@ -51,6 +50,7 @@ const FeatureOverlay: React.FC = () => {
           Our Work
         </Link>
       </div>
+      <div className={classes.stripe}></div>
       <Image
         src={modernOne}
         alt="city scape"

@@ -1,8 +1,8 @@
-import React, {useState, useEffect } from 'react'
-import classes from './SplitFeatureBox.module.css';
-import Link from 'next/link';
-import Image from 'next/image';
-import seattle from '../../../public/imgs/seattle.jpg';
+import React, { useState, useEffect } from "react";
+import classes from "./SplitFeatureBox.module.css";
+import Link from "next/link";
+import Image from "next/image";
+import seattle from "../../../public/imgs/seattle.jpg";
 import { useInView } from "react-intersection-observer";
 
 const SplitFeatureBox: React.FC = () => {
@@ -18,24 +18,23 @@ const SplitFeatureBox: React.FC = () => {
       setSectionRevealed(true);
     }
   }, [sectionIsVisible]);
-    
+
   return (
-    <section
-      ref={sectionRef}
-      className={`${classes["split-feature-box"]} ${
-        !sectionRevealed ? classes["feature--hidden"] : ""
-      }`}
-    >
-      <div className={classes["feature-box__text-container"]}>
+    <section className={classes["split-feature-box"]}>
+      <div
+        ref={sectionRef}
+        className={`${classes["feature-box__text-container"]}  ${
+          !sectionRevealed ? classes["feature--hidden"] : ""
+        }`}
+      >
         <h1>
           Our <span>Roots</span> Run Deep
         </h1>
         <div className={classes.accent}></div>
         <p>
-          Rooted in the Pacific Northwest, we blend
-          regional charm with innovative solutions. Adaptable and committed, we
-          deliver quality projects, harmonizing craftsmanship with the
-          ever-changing landscape.
+          Rooted in the Pacific Northwest, we blend regional charm with
+          innovative solutions. Adaptable and committed, we deliver quality
+          projects, harmonizing craftsmanship with the ever-changing landscape.
         </p>
         <Link href="/about" className="button">
           About Us
@@ -46,6 +45,6 @@ const SplitFeatureBox: React.FC = () => {
       </div>
     </section>
   );
-}
+};
 
-export default SplitFeatureBox
+export default SplitFeatureBox;

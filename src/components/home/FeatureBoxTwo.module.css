@@ -6,7 +6,7 @@
   justify-content: center;
   background-color: var(--color-bg-light);
   z-index: 1;
-  transition: all 500ms ease-in;
+  transition: all 800ms ease-in;
 }
 
 .feature-box {

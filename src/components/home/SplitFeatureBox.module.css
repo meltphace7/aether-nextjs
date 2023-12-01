@@ -4,7 +4,6 @@
   display: flex;
   align-items: center;
   background-color: var(--color-bg-dark);
-  transition: all 800ms ease-in;
 }
 
 /*_____TEXT CONTAINER_____*/
@@ -15,6 +14,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+    transition: all 500ms ease-in;
 }
 
 .feature-box__text-container h1 {
@@ -62,7 +62,7 @@
 
 .feature--hidden {
   opacity: 0;
-  transform: translateY(8rem);
+  transform: translateY(6rem);
 }
 
 @media (max-width: 60em) {
