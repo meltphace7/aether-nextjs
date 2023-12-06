@@ -1,7 +1,7 @@
 .hero {
     width: 100%;
     height: 70rem;
-    background-image: url('../../../public/imgs/sparks.jpg');
+    background-image: url('../../../public/imgs/dark-abstract-1.jpg');
     background-size: cover;
     z-index: -1;
 }
@@ -20,6 +20,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    z-index: 2;
 
 }
 
@@ -30,6 +31,39 @@
 .hero-text h2 {
     font-size: var(--hero-font-size-h2);
     color: var(--color-primary);
+}
+
+.sphere {
+  position: absolute;
+  width: 55rem;
+  height: 55rem;
+  border-radius: 100rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  z-index: 1;
+  overflow: hidden;
+background: rgb(94,107,47);
+background: linear-gradient(180deg, rgba(94,107,47,1) 0%, rgba(53,60,26,1) 45%, rgba(38,43,19,1) 66%, rgba(22,24,11,1) 82%, rgba(0,0,0,1) 100%);
+}
+
+.sphere-overlay {
+  height: 90%;
+  width: 90%;
+  background-color: red;
+  border-radius: 300rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+/* backdrop-filter: blur(10px); */
+overflow: hidden;
+}
+
+.sphere-overlay img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 @media (max-width: 35em) {

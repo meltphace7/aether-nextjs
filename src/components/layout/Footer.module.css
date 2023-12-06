@@ -11,6 +11,11 @@
   margin: 2rem;
 }
 
+.logo-container img {
+  height: 2rem;
+  width: auto;
+}
+
 .footer-top-row,
 .footer-bottom-row {
   padding: 2rem 0;

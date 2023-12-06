@@ -17,7 +17,7 @@ const FaqPage: React.FC = () => {
   return (
     <Fragment>
       <Head>
-        <title>FAQ | Tieton Construction</title>
+        <title>FAQ | AETHER DESIGN</title>
         <meta
           name="description"
           content="Frequently Asked Questions page for Tieton Construction"

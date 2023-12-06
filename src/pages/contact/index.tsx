@@ -22,7 +22,7 @@ const ContactPage: React.FC = () => {
   return (
     <Fragment>
       <Head>
-        <title>Contact | Tieton Construction</title>
+        <title>Contact | AETHER DESIGN</title>
         <meta name="description" content="Contact page for Tieton Construction" />
       </Head>
       <div className={classes["contact-page"]}>

@@ -1,7 +1,8 @@
-import React, {useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import classes from "./FeatureBoxTwo.module.css";
 import Image from "next/image";
-import modern from "../../../public/imgs/modern.jpg";
+import sun from "../../../public/imgs/sun.jpg";
+import bg from "../../../public/imgs/dark-abstract-3.jpg";
 import Link from "next/link";
 import { useInView } from "react-intersection-observer";
 
@@ -19,34 +20,52 @@ const FeatureTwo: React.FC = () => {
     }
   }, [sectionIsVisible]);
 
+  // Parallax effect for Header
+  const [offsetY, setOffsetY] = useState(0);
+  const handleScroll = () => {
+    setOffsetY(window.pageYOffset);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <section
       ref={sectionRef}
-      className={`${classes["feature-box-section"]} ${
-        !sectionRevealed ? classes["feature--hidden"] : ""
-      }`}
+      className={classes["feature-box-section"]}
+      // className={`${classes["feature-box-section"]} ${
+      //   !sectionRevealed ? classes["feature--hidden"] : ""
+      // }`}
     >
       <div className={classes["feature-box"]}>
-        <div className={classes["feature-box__img-container"]}>
-          <Image src={modern} alt="abstract Image" />
-        </div>
         <div className={classes["feature-box__text-container"]}>
           <h1>
-            Form <span>Function</span> Future
+            BUILDING BETTER <span>WORLDS</span>
           </h1>
 
           <div className={classes.accent}></div>
           <p>
-            Dedicated to sustainability, modernity, and functionality, we
-            seamlessly integrate eco-friendly practices with cutting-edge
-            design. Building the future with innovation and a commitment to
-            lasting excellence.
+            Let us help you expand your business. We foster growth by providing
+            bold style, and presence to all availbale customers.
           </p>
           <Link href="/about" className="button">
-            Read More
+            OUR WORK
           </Link>
         </div>
+        <div className={classes["feature-box__img-container"]}>
+          <Image src={sun} alt="abstract Image" />
+        </div>
       </div>
+      <div className={classes.overlay}></div>
+      <Image
+        style={{ transform: `translateY(${240 - offsetY * 0.09}px)` }}
+        className={classes["bg-img"]}
+        src={bg}
+        alt="dunes"
+      />
     </section>
   );
 };

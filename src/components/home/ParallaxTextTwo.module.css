@@ -1,26 +1,40 @@
-.split-feature-box {
+.feature-overlay {
+  margin-bottom: 2rem;
+  position: relative;
   width: 100%;
   height: 70rem;
+  overflow: hidden;
+   background-color: #121207bb;
   display: flex;
   align-items: center;
-  background-color: var(--color-bg-dark);
+    z-index: 1;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+      background-color: var(--color-green-overlay);
+      z-index: 2;
 }
 
 /*_____TEXT CONTAINER_____*/
-
 .feature-box__text-container {
-  width: 50%;
+  margin-left: 10rem;
+  width: 55rem;
   padding: 0 4rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-    transition: all 500ms ease-in;
+  transition: all 500ms ease-in;
+  z-index: 3;
 }
 
 .feature-box__text-container h1 {
   margin-top: 2rem;
-  font-size: 5vw;
-  line-height: 4.5vw;
+  font-size: 6rem;
+ line-height: 5rem;
   font-weight: bold;
   color: #fff;
 }
@@ -43,21 +57,14 @@
   color: #fff;
 }
 
-.feature-box__text-container a {
-  color: #fff;
-}
 
 /*_____IMAGE_____*/
-.split-feature-box__img-container {
-  width: 50%;
-  height: 70rem;
-  overflow: hidden;
-}
-
-.split-feature-box__img-container img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.bg-img {
+  width: 110%;
+  height: auto;
+  position: absolute;
+  top: 10rem;
+  z-index: 1;
 }
 
 .feature--hidden {
@@ -65,37 +72,34 @@
   transform: translateY(6rem);
 }
 
-@media (max-width: 60em) {
-  .feature-box__text-container {
-    width: 40%;
-    padding: 0 2rem;
+@media (max-width: 70em) {
+  .bg-img {
+    height: 90rem;
+    width: auto;
+    top: 13rem;
   }
 }
 
 @media (max-width: 35em) {
-  .split-feature-box {
-    padding-bottom: 2rem;
-    flex-direction: column-reverse;
-  }
-
-  .split-feature-box__img-container {
-    width: 100%;
-    height: 40rem;
+  .bg-img {
+    top: 18rem;
   }
 
   .feature-box__text-container {
     width: 100%;
+    margin: 0;
   }
 
   .feature-box__text-container h1 {
-    font-size: 3.4rem;
-  }
+  font-size: 5rem;
+ line-height: 4rem;
+}
 
   .accent {
     margin: 2rem 0;
   }
 
   .feature-box__text-container p {
-    margin: 0rem 0 1.5rem 0;
+    margin: 0rem 4rem 2rem 0;
   }
 }

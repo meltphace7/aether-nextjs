@@ -1,11 +1,11 @@
-import React, {useState, useEffect} from 'react';
-import classes from './FeatureBox.module.css';
-import Image from 'next/image';
-import modernFour from '../../../public/imgs/modern-4.jpg';
-import Link from 'next/link';
+import React, {useState, useEffect} from "react";
+import classes from "./FeatureBox.module.css";
+import Image from "next/image";
+import modern from "../../../public/imgs/forest.jpg";
+import Link from "next/link";
 import { useInView } from "react-intersection-observer";
 
-const FeatureOne: React.FC = () => {
+const FeatureTwo: React.FC = () => {
   // Intersection Observer pop-up / fade animation
   const [sectionRevealed, setSectionRevealed] = useState<boolean>(false);
 
@@ -18,33 +18,40 @@ const FeatureOne: React.FC = () => {
       setSectionRevealed(true);
     }
   }, [sectionIsVisible]);
+
   return (
     <section
       ref={sectionRef}
-      className={`${classes["feature-box-section"]} ${
-        !sectionRevealed ? classes["feature--hidden"] : ""
-      }`}
+      className={classes["feature-box-section"]}
+      // className={`${classes["feature-box-section"]} ${
+      //   !sectionRevealed ? classes["feature--hidden"] : ""
+      // }`}
     >
       <div className={classes["feature-box"]}>
-        <div className={classes["feature-box__img-container"]}>
-          <Image src={modernFour} alt="abstract Image" />
-        </div>
-        <div className={classes["feature-box__text-container"]}>
-          <h1>Dedicated to Perfection</h1>
-          <div className={classes.accent}></div>
-          <p>
-            Committed to excellence, Tieton construction strives for
-            perfection in every project. From meticulous planning to precise
-            execution, we deliver unmatched quality, ensuring client
-            satisfaction and enduring success.
-          </p>
-          <Link href="/services" className="button">
-            Read More
-          </Link>
+        <div className={classes["feature-box__overlay"]}>
+          <div className={classes["feature-box__img-container"]}>
+            <Image src={modern} alt="abstract Image" />
+          </div>
+          <div className={classes["feature-box__text-container"]}>
+            <h1>
+              GROW WITH <span>US</span>
+            </h1>
+
+            <div className={classes.accent}></div>
+            <p>
+              Our mission is to expand your business by the merger of form and
+              functionality. We cultivate your brands growth with creativity and
+              technology to deliver a dynamic, outstanding user experience for
+              your customers.
+            </p>
+            <Link href="/about" className="button">
+              About Us
+            </Link>
+          </div>
         </div>
       </div>
     </section>
   );
-}
+};
 
-export default FeatureOne
+export default FeatureTwo;

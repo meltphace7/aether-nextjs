@@ -1,0 +1,155 @@
+.section {
+    position: relative;
+  width: 100%;
+  padding: 35rem 4rem 5rem 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.bg {
+position: absolute;
+top: 0;
+width: 100%;
+height: 90rem;
+z-index: -2;
+background: rgb(59,59,27);
+background: radial-gradient(circle, rgba(59,59,27,1) 9%, rgba(38,38,17,1) 26%, rgba(11,13,6,1) 54%);
+}
+
+.sphere {
+position: absolute;
+top: 25rem;
+width: 200vw;
+height: 200vw;
+border-radius: 400rem;
+background-color: var(--color-bg-dark);
+z-index: -1;
+}
+
+.section-text {
+    min-width: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-text h1{
+  color: #fff;
+  font-size: 7rem;
+}
+
+.highlight-1 {
+    color: var(--color-primary);
+}
+
+.highlight-2 {
+    color: var(--color-gray-med-light);
+}
+
+.accent {
+    margin: .5rem 0 1rem 0;
+    width: 20rem;
+    height: 1rem;
+    background-color: var(--color-primary);
+    transform: skew(-25deg);
+}
+
+.section-text h2{
+margin: 2rem 8rem 9rem 8rem;
+  color: var(--color-cream);
+  font-size: 2.5rem;
+  font-weight: 100;
+}
+
+/*____ FEATURE BOX LARGE ________*/
+
+.feature {
+    margin-bottom: 3rem;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+     color: var(--color-gray-light);
+}
+
+.feature-title__container {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+.feature-title__container h1 {
+ 
+    position: relative;
+    font-size: 5rem;
+    color: var(--color-cream);
+}
+
+
+.feature-title__container img {
+    margin-right: 2rem;
+    height: 5rem;
+    width: auto;
+}
+
+.feature p {
+    margin-top: 1.5rem;
+    font-size: 2rem;
+    margin-right: 10rem;
+}
+
+@media (max-width: 60em ) {
+    .section-text h1{
+  font-size: 7vw;
+}
+
+.feature-title__container h1 {
+    font-size: 5vw;
+}
+}
+
+@media (max-width: 40em ) {
+    .section {
+  padding: 20rem 1rem 5rem 1rem;
+}
+
+.bg {
+width: 100%;
+height: 40rem;
+}
+
+.sphere {
+top: 13rem;
+}
+
+    .section-text h1{
+  font-size: 7.5vw;
+}
+
+.section-text h2{
+margin: 2rem 1rem 4rem 1rem;
+line-height: 2rem;
+
+}
+
+.feature {
+    padding: 1rem;
+}
+
+.feature-title__container {
+    flex-direction: column;
+}
+
+.feature-title__container h1 {
+    font-size: 6vw;
+}
+
+.feature p {
+    margin-right: 0rem;
+}
+}

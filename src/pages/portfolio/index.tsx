@@ -126,7 +126,7 @@ const PortfolioPage: React.FC = () => {
   return (
     <Fragment>
       <Head>
-        <title>Portfolio | Tieton Construction</title>
+        <title>Portfolio | AETHER DESIGN</title>
         <meta
           name="description"
           content="Demolition service page for TEST CORP"

@@ -1,56 +1,89 @@
 .hero {
+  position: relative;
   width: 100%;
   min-height: 80rem;
-  background-color: rgb(0, 111, 111);
-  background-image: url("../../../public/imgs/SUNSET.jpg");
-  background-size: cover;
+  background-color: rgb(29, 29, 29);
   z-index: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: rgb(94, 107, 47);
+  background: radial-gradient(
+    circle,
+    rgba(94, 107, 47, 1) 0%,
+    rgba(53, 60, 26, 1) 33%,
+    rgba(38, 43, 19, 1) 41%,
+    rgba(22, 24, 11, 1) 49%,
+    rgba(0, 0, 0, 1) 100%
+  );
 }
 
-.hero-text-container {
-  min-width: 10rem;
-  margin: 35rem auto 0 3rem;
+.sphere {
+  position: absolute;
+  width: 55rem;
+  height: 55rem;
+  border-radius: 100rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  z-index: 2;
+  overflow: hidden;
+background: rgb(94,107,47);
+background: linear-gradient(180deg, rgba(94,107,47,1) 0%, rgba(53,60,26,1) 45%, rgba(38,43,19,1) 66%, rgba(22,24,11,1) 82%, rgba(0,0,0,1) 100%);
+}
+
+.sphere-overlay {
+  height: 100%;
+  width: 100%;
+  border-radius: 300rem;
+backdrop-filter: blur(10px);
+}
+
+.shard {
+  position: absolute;
+  height: 180rem;
+  width: auto;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hero-text {
+  margin: 0 2rem;
+  z-index: 8;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
 }
 
-.hero-text-container h1 {
-  color: transparent;
-  font-weight: bold;
-  font-size: 6rem;
-  background-image: linear-gradient(to right, #fff, var(--color-primary));
-  background-clip: text;
-  -webkit-background-clip: text;
+.hero-text h1 {
+  font-family: "General-Station", sans-serif;
+  font-weight: 300;
+  font-size: 5vw;
+  color: rgba(255, 255, 255, 0.925);
 }
 
-.hero-text-container h2 {
-  font-size: 3rem;
-  color: var(--color-text-light);
-  margin-bottom: 3rem;
+.hero-text .highlight-1 {
+  color: var(--color-gray-light);
+}
+
+.hero-text .highlight-2 {
+  color: var(--color-primary);
 }
 
 @media (max-width: 35em) {
   .hero {
-    min-height: 50rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  min-height: 70rem;
+}
+  .sphere {
+    width: 80vw;
+    height: 80vw;
   }
 
-  .hero-text-container {
-    min-width: 10rem;
-    margin: 12rem 1rem 2rem 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+  .hero-text h1 {
+  font-size: 7vw;
 
-  .hero-text-container h1 {
-    font-size: 3rem;
-  }
-
-  .hero-text-container h2 {
-    font-size: 2rem;
-  }
+}
 }

@@ -1,20 +1,37 @@
 :root {
-  --color-primary: #f0ce0b;
-  --color-bg-dark: #1b1918;
+  --color-primary: #cce967;
+  --color-bg-dark: #0c0c05;
+
+  --color-gray-light: #e4e4e4;
+   --color-gray-med-light: #9b9b9b;
+  --color-gray-med: #6c6c6c;
+  --color-gray-dark: #515151;
+
+  --color-cream: #f3efdc;
+  --color-green-overlay: #121207bb;
+
+  --color-green-dark: #16180b;
+  --color-green-darkest: #0c0c05;
 
   --color-bg-light: #efede7;
-
-  --color-bg-nav: rgba(0, 0, 0, 0.249);
+  --color-bg-nav: #0000003f;
   --color-bg-footer: #1b1918;
 
   --color-text-light: #fff;
   --color-text-gray-light: #acacac;
   --color-text-dark: #000000;
 
-  --box-shadow: 0px 3px 13px -2px rgba(0,0,0,0.68);
+  --box-shadow: 0px 3px 13px -2px #000000ad;
 
   --hero-font-size-h1: 6rem;
   --hero-font-size-h2: 2.5rem;
+
+  --border-radius: 2rem;
+
+  --feature-bg: #0c0c05;
+  --feature-bg-gradient: linear-gradient(180deg, #0c0c05 0%, #1c1f0f 89%);
+  --feature-bg-gradient-radial: radial-gradient(circle, #262611 0%, #0b0d06 89%);
+
 }
 
 @font-face {
@@ -42,6 +59,64 @@
   font-family: "Clash-Display";
   src: url("../../public/fonts/ClashDisplay-Semibold.woff2") format("woff");
   font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "General-Station";
+  src:url('../../public/fonts/GeneraleStation-Regular.woff2') format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "General-Station";
+  src: url("../../public/fonts/GeneraleStation-SemiExtended.woff2") format("woff");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "General-Station";
+  src: url("../../public/fonts/GeneraleStation-Extended.woff2") format("woff");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "General-Station";
+  src: url("../../public/fonts/GeneraleStation-UltraExtended.woff2") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+
+
+@font-face {
+  font-family: "Expose";
+  src:url('../../public/fonts/Expose-Regular.woff2') format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Expose";
+  src: url("../../public/fonts/Expose-Medium.woff2") format("woff");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Expose";
+  src: url("../../public/fonts/Expose-Bold.woff2") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Expose";
+  src: url("../../public/fonts/Expose-Black.woff2") format("woff");
+  font-weight: 200;
   font-style: normal;
 }
 
@@ -77,7 +152,7 @@ html {
 body {
   position: relative;
   font-family: "Clash-Display", sans-serif;
-  background-color: var(#fff);
+  background-color: var(--color-bg-dark);
 }
 
 @media (max-width: 55em) {
@@ -121,7 +196,6 @@ a {
 }
 
 a:hover {
-   font-family: "Clash-Display", sans-serif;
   color: var(--color-primary);
 }
 
@@ -138,19 +212,32 @@ button {
   align-items: center;
   justify-content: center;
   padding: 2rem 4rem;
-  border-radius: 2px;
+  border-radius: 20rem;
   font-size: 2rem;
-  color: var(--color-text-light);
-  
+  color: var(--color-primary);
   border: 1px solid var(--color-primary);
   transition: all 250ms ease-in;
-  /* box-shadow: var(--box-shadow);
--webkit-box-shadow: var(--box-shadow);
--moz-box-shadow: var(--box-shadow); */
 }
 
 .button:hover {
   color: #000;
   background-color: var(--color-primary);
+}
 
+.highlight-1 {
+  color: var(--color-primary);
+}
+
+.highlight-2 {
+  color: var(--color-cream);
+}
+
+.highlight-3 {
+  color: var( --color-gray-med-light);
+}
+
+.accent {
+  width: 12rem;
+  height: .3rem;
+  background-color: var(--color-primary);
 }

@@ -1,25 +1,10 @@
 .logo {
     position: relative;
-    margin: 1rem 4rem;
     min-width: 5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-    .logo h1 {
-        font-size: 3rem;
-        line-height: 3rem;
-    }
-
-        .logo p {
-        line-height: .3rem;
-        font-weight: 100;
-    }
-
-.logo-icon {
-    height: 4rem;
-    width: auto;
-}
 
 

@@ -14,6 +14,7 @@ const MobileNavigation: React.FC = () => {
 
   const closeMenuHandler = () => {
     setIsChecked((prevState) => !prevState);
+    console.log('clicked')
   };
 
   return (

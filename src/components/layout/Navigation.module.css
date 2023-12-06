@@ -1,90 +1,290 @@
-.navigation {
+.nav-bar {
   position: absolute;
-  top: 0;
   width: 100%;
   height: 10rem;
-  /* background-color: var(--color-bg-nav); */
-  color: var(--color-text-light);
+  color: #fff;
+  background-color: #000;
   display: flex;
   align-items: center;
   justify-content: space-between;
   z-index: 2;
 }
 
-.nav-menu {
-  width: 65%;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+.logo-container {
+  margin-left: 5rem;
+  z-index: 999999;
 }
 
-.nav-menu li a {
-  font-size: 2rem;
-  letter-spacing: 0.2rem;
-  padding-bottom: 1rem;
-  color: var(--color-text-light);
-  transition: all 250ms ease-in;
-}
-
-.nav-menu li a:hover {
-  color: var(--color-primary);
-}
-
-.active {
-  border-bottom: 1px solid var(--color-primary);
-}
-
-.dropdown {
-  position: relative;
-}
-
-.dropdown img {
-  margin-left: 0.25rem;
-  position: absolute;
-  top: 0.25rem;
+.logo-container img {
   height: 2rem;
   width: auto;
 }
 
-.dropdown-menu {
+.nav-container {
+  min-width: 15rem;
+  display: flex;
+  align-items: center;
+}
+
+.contact {
+  font-family: "General-Station", sans-serif;
+  font-weight: 100;
+  padding: 1rem 3rem;
+  border: 1px solid #fff;
+  margin-right: 9rem;
+   font-weight: 100;
+  letter-spacing: .1rem;
+}
+
+/*______HAMBURGER MENU_______*/
+.nav__nav {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 999999;
+  opacity: 0;
+  width: 0;
+  transition: all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  background-color: #000;
+}
+
+.nav__button {
+  height: 4.5rem;
+  width: 4.5rem;
+  border-radius: 50%;
+  position: fixed;
+  top: 2.5rem;
+  right: 2rem;
+  z-index: 99999999;
+  box-shadow: 0 1rem 3rem rgba(#000000, 0.1);
+  text-align: center;
+  cursor: pointer;
+  background-color: black;
+  border: 1px solid #000;
+  transition: all 300ms ease-in-out;
+}
+
+.nav__button:hover {
+  border: 1px solid var(--color-primary);
+}
+
+.nav__background {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
+  transition: transform 500ms ease-in;
+}
+
+/*______LIST, LINK, ITEMS_______*/
+.nav__list {
+  margin-top: 10rem;
+  padding-left: 10rem;
   position: absolute;
-  top: 2.25rem;
-  min-width: 26rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.nav__link {
+  font-family: inherit;
   display: none;
-  background-color: var(--color-bg-dark);
-  border-radius: 2px;
-  animation: dropdown 300ms ease-in;
-  height: 19rem;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  font-weight: 100;
+  letter-spacing: .1rem;
 }
 
-.dropdown-menu li {
-  padding: 0.5rem 0.5rem 0.5rem 1rem;
+.nav__link span {
+  font-size: 1.25rem;
 }
 
-.nav-menu li:hover .dropdown-menu {
+.active {
+  color: var(--color-primary);
+}
+
+.nav__item {
+  margin-bottom: 2rem;
+}
+
+.nav__checkbox {
+  display: none;
+}
+
+.dropdown-btn {
+  display: flex;
+  align-items: center;
+}
+
+.dropdown-btn p {
+  font-size: 2rem;
+   font-weight: 100;
+  letter-spacing: .1rem;
+
+}
+
+.dropdown-btn img {
+  margin-left: 1rem;
+  height: 2rem;
+  width: auto;
+  transition: transform 300ms ease-in-out;
+}
+
+.arrow-down {
+ transform: rotate(0deg);
+}
+
+.arrow-up {
+ transform: rotate(180deg);
+}
+
+.dropdown div {
+  transition: color 300ms ease-in-out;
+}
+
+.dropdown div:hover {
+color: var(--color-primary);
+}
+
+
+/*______ SUB MENU _______*/
+
+.sub-menu {
+  padding-top: 1.5rem;
+  height: 17rem;
+  margin-left: 2rem;
+  transition: all 500ms ease-in-out;
+}
+
+.animate-out {
+  padding-top: 0rem;
+  height: 0rem;
+  opacity: 0;
+}
+
+.animate-in {
+  height: 17rem;
+  opacity: 1;
+}
+
+/*______ MENU OPEN EFFECTS _______*/
+.nav__checkbox:checked ~ .nav__background {
+  transform: scale(60);
+  background-color: rgba(0, 0, 0, 0.329)
+}
+
+.nav__checkbox:checked ~ .nav__nav {
+  opacity: 1;
+  width: 35rem;
+}
+
+.nav__checkbox:checked ~ .nav__nav .nav__list .nav__item .nav__link {
   display: block;
+  width: 100%;
 }
 
-@keyframes dropdown {
-  0% {
-    height: 0;
-    opacity: 0;
-  }
 
-  100% {
-    height: 19rem;
-    opacity: 1;
-  }
+
+/*______HAMBURGER ICON AND EFFECTS_______*/
+.nav__icon {
+  position: relative;
+  margin-top: 2rem;
 }
 
-@media (max-width: 55em) {
-  .nav-menu {
-      width: 85%;
-  }
+.nav__icon,
+.nav__icon::before,
+.nav__icon::after {
+  width: 3rem;
+  height: 2px;
+  background-color: white;
+  display: inline-block;
+ 
+  z-index: 2100;
+}
+
+.nav__icon::before,
+.nav__icon::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  transition: all 0.15s;
+}
+
+.nav__icon::before {
+  top: -0.8rem;
+}
+.nav__icon::after {
+  top: 0.8rem;
+}
+
+.nav__checkbox:checked + .nav__button .nav__icon {
+  background-color: transparent;
+}
+
+.nav__checkbox:checked + .nav__button .nav__icon::before {
+  top: 0;
+  transform: rotate(135deg);
+}
+
+.nav__checkbox:checked + .nav__button .nav__icon::after {
+  top: 0;
+  transform: rotate(-135deg);
 }
 
 @media (max-width: 35em) {
-  .navigation {
-    display: none;
-  }
+.nav__checkbox:checked ~ .nav__nav {
+  opacity: 1;
+  width: 100%;
+}
+
+.nav__background {
+  display: none;
+}
+
+.nav__list {
+  margin-top: 10rem;
+  position: absolute;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.nav__link {
+  font-size: 3.5rem;
+}
+
+.nav__item {
+  margin-bottom: 1rem;
+}
+
+.dropdown-btn p {
+  font-size: 3.5rem;
+}
+
+
+.sub-menu {
+  padding-top: .5rem;
+  height: 16rem;
+  margin-left: 2rem;
+  transition: all 500ms ease-in-out;
+}
+
+.animate-out {
+  padding-top: 0rem;
+  height: 0rem;
+  opacity: 0;
+}
+
+.animate-in {
+  height: 16rem;
+  opacity: 1;
+}
+
+.contact {
+  display: none;
+}
 }

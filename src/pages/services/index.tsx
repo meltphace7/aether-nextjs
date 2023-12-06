@@ -24,7 +24,7 @@ const ServicesPage: React.FC = () => {
   return (
     <Fragment>
       <Head>
-        <title>Services | Tieton Construction</title>
+        <title>Services | AETHER DESIGN</title>
         <meta name="description" content="Services page for Tieton Construction" />
       </Head>
       <div className={classes["services-page"]}>
