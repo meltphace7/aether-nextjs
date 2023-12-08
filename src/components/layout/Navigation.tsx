@@ -31,7 +31,7 @@ const Navigation: React.FC = () => {
       </Link>
 
       <div className={classes["nav-container"]}>
-        <Link className={classes.contact} href="#">
+        <Link className={classes.contact} href="/contact">
           CONTACT
         </Link>
 

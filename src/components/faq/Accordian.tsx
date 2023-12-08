@@ -18,7 +18,15 @@ const Accordian: React.FC<AccordianProps> = (props) => {
         <ul className={classes.accordian}>
             {props.content.map((item: { question: string; answer: string;}, index: number) => {
                 return (
-                  <li key={index}>
+                  <li
+                        key={index}
+                        // className={classes['question-active']}
+                    className={
+                      activeQuestion === index
+                        ? `${classes['question-active']}`
+                        : ``
+                    }
+                  >
                     <div
                       className={classes.question}
                       onClick={() => toggleQuestionHandler(index)}

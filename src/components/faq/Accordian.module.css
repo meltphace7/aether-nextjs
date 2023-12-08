@@ -10,6 +10,10 @@
     padding: 2rem;
 }
 
+.accordian .question-active {
+    border: 1px solid var(--color-primary);
+}
+
 .question {
     display: flex;
     align-items: center;
@@ -25,6 +29,7 @@
 }
 
 .answer {
+    padding-top: 2rem;
     max-height: 0;
     overflow: hidden;
     opacity: 0;
@@ -79,5 +84,12 @@
 
 .expanded::after {
       /* top: 50%; */
+      background-color: var(--color-primary);
   transform: rotate(-90deg); /* Rotate the horizontal bar for the plus to create a minus */
+}
+
+@media (max-width: 45em) {
+    .accordian {
+        width: 98%;
+    }
 }

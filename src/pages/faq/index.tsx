@@ -45,91 +45,22 @@ const FaqPage: React.FC = () => {
               },
               {
                 question:
-                  "How long does it take for the average website to be completer?",
+                  "How long does it take for the average website to be completed?",
                 answer:
                   "Usually around a couple weeks but it can vary greatly depending on complexity and features.",
               },
               {
-                question:
-                  "How much does a basic business website cost",
+                question: "How much for a completely customized website?",
                 answer:
-                  "A basic business web site with 5 pages costs two thousand dollars.  This includes three rounds of revisions so you can change it to your satisfaction.  Every revision session after that will cost an  additional 300 dollars."
+                  "A completey customized website can cost from five to eight thousand dollars depending on features and that amount of features.",
+              },
+              {
+                question: "How much does a basic business website cost",
+                answer:
+                  "A basic business web site with 5 pages costs two thousand dollars.  This includes three rounds of revisions so you can change it to your satisfaction.  Every revision session after that will cost an  additional 300 dollars.",
               },
             ]}
           />
-
-          {/* <ul className={classes.accordian}>
-            <li onClick={toggleActiveQuestion} data-question="1">
-              <div className={classes.question}>
-                <h2>What services do you offer?</h2>
-                <div>{activeQuestion === 1 ? "-" : "+"}</div>
-              </div>
-              <div
-                className={
-                  activeQuestion === 1
-                    ? `${classes.answer} ${classes.active}`
-                    : `${classes.answer}`
-                }
-              >
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Asperiores accusamus corporis amet facere nostrum dolores
-                  impedit magnam consectetur laboriosam assumenda. Nam corporis
-                  alias a ratione nesciunt suscipit maxime accusantium aperiam
-                  quae rerum debitis at facere est, magni et dolorem earum autem
-                  fugit modi reprehenderit atque animi. Officiis voluptatum
-                  nostrum quia!
-                </p>
-              </div>
-            </li>
-
-            <li onClick={toggleActiveQuestion} data-question="2">
-              <div className={classes.question}>
-                <h2>What services do you offer?</h2>
-                <div>{activeQuestion === 2 ? "-" : "+"}</div>
-              </div>
-              <div
-                className={
-                  activeQuestion === 2
-                    ? `${classes.answer} ${classes.active}`
-                    : `${classes.answer}`
-                }
-              >
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Asperiores accusamus corporis amet facere nostrum dolores
-                  impedit magnam consectetur laboriosam assumenda. Nam corporis
-                  alias a ratione nesciunt suscipit maxime accusantium aperiam
-                  quae rerum debitis at facere est, magni et dolorem earum autem
-                  fugit modi reprehenderit atque animi. Officiis voluptatum
-                  nostrum quia!
-                </p>
-              </div>
-            </li>
-            <li onClick={toggleActiveQuestion} data-question="3">
-              <div className={classes.question}>
-                <h2>What services do you offer?</h2>
-                <div>{activeQuestion === 3 ? "-" : "+"}</div>
-              </div>
-              <div
-                className={
-                  activeQuestion === 3
-                    ? `${classes.answer} ${classes.active}`
-                    : `${classes.answer}`
-                }
-              >
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Asperiores accusamus corporis amet facere nostrum dolores
-                  impedit magnam consectetur laboriosam assumenda. Nam corporis
-                  alias a ratione nesciunt suscipit maxime accusantium aperiam
-                  quae rerum debitis at facere est, magni et dolorem earum autem
-                  fugit modi reprehenderit atque animi. Officiis voluptatum
-                  nostrum quia!
-                </p>
-              </div>
-            </li>
-          </ul> */}
         </section>
       </div>
     </Fragment>

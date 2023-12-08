@@ -5,15 +5,22 @@
     font-size: 1.7rem;
 }
 
+.message{
+    color: #fff;
+}
+
 .ok-btn {
     margin-top: 4rem;
      height: 5rem;
     width: 15rem;
     transition: all 150ms ease-in;
+    color: var(--color-primary);
+    border-radius: 200rem;
+    border: 1px solid var(--color-primary);
 }
 
 .ok-btn:hover {
-    color: var(--color-secondary-green);
-    border: 1px solid var(--color-secondary-green);
+    background-color: var(--color-primary);
+    color: #000;
 }
 

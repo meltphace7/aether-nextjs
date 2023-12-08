@@ -31,7 +31,7 @@
 
 .faq-section {
   width: 100%;
-  padding: 8rem 10rem;
+  padding: 8rem 2rem;
   min-height: 80rem;
   background-color: #fff;
   display: flex;
@@ -39,44 +39,6 @@
   align-items: center;
   background-color: var(--color-bg-dark);
   color: #fff;
-}
-
-.accordian {
-  width: 70rem;
-}
-
-.accordian li {
-  width: 100%;
-  padding: 2rem;
-   cursor: pointer;
-    border: 1px solid #fff;
-    margin-bottom: 2rem;
-}
-
-.question {
-  margin-bottom: 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.question div {
-  font-size: 3rem;
-}
-
-.answer {
-  font-size: 2rem;
-  height: 0;
-  overflow:hidden;
-  transition: all 500ms ease-in-out;
-}
-
-.active {
-  height: 20rem;
-}
-
-.answer p {
-  font-size: 2rem;
 }
 
 @media (max-width: 55em) { 
