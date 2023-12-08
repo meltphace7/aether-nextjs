@@ -11,7 +11,9 @@
     height: 77rem;
     background-image: url('../../public/imgs/bg-art-tunnel.jpg');
     background-size: cover;
+    background-position: 50% 100%;
     z-index: -1;
+    overflow: hidden;
 }
 
 .hero-overlay {
@@ -24,20 +26,37 @@
 }
 
 .hero-text {
+    margin-top: 10rem;
     min-width: 20rem;
     display: flex;
     flex-direction: column;
     align-items: center;
+    z-index: 1;
 }
 
 .hero-text h1 {
+    font-family: "General-Station";
+    font-weight: 300;
     color: #fff;
-    font-size: var(--hero-font-size-h1);
+    font-size: 6vw;
 }
 
 .hero-text h2 {
     color: var(--color-primary);
-    font-size: var(--hero-font-size-h2);
+    font-size: 8vw;
+    font-weight: 100;
+}
+
+.bg-circle {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    width: 95vw;
+    height: 95vw;
+    transform: translate(-50%, -50%);
+    border-radius: 200rem;
+    border: 5vw solid #cde9679c;
+    z-index: 0;
 }
 
 .portfolio-section {
@@ -49,4 +68,11 @@
     align-items: center;
     background-color: var(--color-bg-dark);
     color: #fff;
+}
+
+.projects {
+    width: 90%;
+   display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
 }

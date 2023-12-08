@@ -1,0 +1,50 @@
+.project {
+    position: relative;
+    margin: 1rem;
+    width: 55rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-primary);
+    color: #000;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.img-container {
+    width: 100%;
+    height: 45rem;
+        opacity: 1;
+            transition: all 500ms ease-in-out;
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.text {
+    padding: 1rem;
+    width: 100%;
+    height: 20rem;
+    position: absolute;
+    top: 90%;
+    min-height: 7rem;
+    background-color: var(--color-primary);
+    z-index: 2;
+    transition: all 500ms ease-in-out;
+    /* animation: activePrj .500ms ease-in-out; */
+}
+
+.project:hover .text {
+  top: 70%;
+}
+
+.project:hover .img-container {
+ opacity: .8;
+}
+
+.text h1 {
+    text-transform: uppercase;
+}

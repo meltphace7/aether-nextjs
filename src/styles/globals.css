@@ -196,9 +196,9 @@ a {
   transition: color 250ms ease-in;
 }
 
-a:hover {
+/* a:hover {
   color: var(--color-primary);
-}
+} */
 
 button {
    font-family: "Clash-Display", sans-serif;
