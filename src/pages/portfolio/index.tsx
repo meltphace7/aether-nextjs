@@ -46,6 +46,26 @@ const PortfolioPage: React.FC = () => {
           <div className={classes["bg-circle"]}></div>
         </header>
         <section className={classes["portfolio-section"]}>
+          <div className={classes["aesthetic-stripes"]}>
+            <span>&nbsp;</span>
+            <span>&nbsp;</span>
+            <span>&nbsp;</span>
+            <span>&nbsp;</span>
+            <span>&nbsp;</span>
+            <span>&nbsp;</span>
+            <span>&nbsp;</span>
+            <span>&nbsp;</span>
+            <span>&nbsp;</span>
+            <span>&nbsp;</span>
+            <span>&nbsp;</span>
+            <span>&nbsp;</span>
+            <span>&nbsp;</span>
+            <span>&nbsp;</span>
+            <span>&nbsp;</span>
+            <span>&nbsp;</span>
+            <span>&nbsp;</span>
+            <span>&nbsp;</span>
+          </div>
           <div className={classes.projects}>
             <Project
               name="Trail Tracker"

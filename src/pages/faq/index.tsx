@@ -1,6 +1,7 @@
 import React, { Fragment, useState, useEffect } from 'react'
 import Head from 'next/head';
 import classes from "@/styles/FAQ.module.css";
+import Accordian from '../../components/faq/Accordian';
 
 const FaqPage: React.FC = () => {
   // Parallax effect for Header
@@ -35,45 +36,100 @@ const FaqPage: React.FC = () => {
           </div>
         </header>
         <section className={classes["faq-section"]}>
-          <div className={classes["faq"]}>
-            <h2 className={classes["question"]}>
-              What services do you provide?
-            </h2>
-            <p className={classes["answer"]}>
-              We provide a multitude of services from commercial and residential construction to home additions and remodeling.
-            </p>
-          </div>
+          <Accordian
+            content={[
+              {
+                question: "What services do you provide?",
+                answer:
+                  "We provide web development, web design and general graphic design to help make your brand succesful.",
+              },
+              {
+                question:
+                  "How long does it take for the average website to be completer?",
+                answer:
+                  "Usually around a couple weeks but it can vary greatly depending on complexity and features.",
+              },
+              {
+                question:
+                  "How much does a basic business website cost",
+                answer:
+                  "A basic business web site with 5 pages costs two thousand dollars.  This includes three rounds of revisions so you can change it to your satisfaction.  Every revision session after that will cost an  additional 300 dollars."
+              },
+            ]}
+          />
 
-          <div className={classes["faq"]}>
-            <h2 className={classes["question"]}>
-              What is the typical time to complete a bathroom remodel?
-            </h2>
-            <p className={classes["answer"]}>
-              The typical bathroom takes around 3 - 5 weeks.
-            </p>
-          </div>
+          {/* <ul className={classes.accordian}>
+            <li onClick={toggleActiveQuestion} data-question="1">
+              <div className={classes.question}>
+                <h2>What services do you offer?</h2>
+                <div>{activeQuestion === 1 ? "-" : "+"}</div>
+              </div>
+              <div
+                className={
+                  activeQuestion === 1
+                    ? `${classes.answer} ${classes.active}`
+                    : `${classes.answer}`
+                }
+              >
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Asperiores accusamus corporis amet facere nostrum dolores
+                  impedit magnam consectetur laboriosam assumenda. Nam corporis
+                  alias a ratione nesciunt suscipit maxime accusantium aperiam
+                  quae rerum debitis at facere est, magni et dolorem earum autem
+                  fugit modi reprehenderit atque animi. Officiis voluptatum
+                  nostrum quia!
+                </p>
+              </div>
+            </li>
 
-          <div className={classes["faq"]}>
-            <h2 className={classes["question"]}>
-              How long does it take to build a brand new home?
-            </h2>
-            <p className={classes["answer"]}>
-              Usually in under 8 - 9 months with ideal circumstances. Weather
-              and permiting issues can lengthen the process.
-            </p>
-          </div>
-
-          <div className={classes["faq"]}>
-            <h2 className={classes["question"]}>
-              Do I need a Real Estate agent to purchase a new construction home?
-            </h2>
-            <p className={classes["answer"]}>
-              No, you do not need a real estate agent to purchase a home from
-              Summit Crest Construction. Of course, you are free to work with a
-              real estate agent if you choose or are currently working with one,
-              but it is not a requirement.
-            </p>
-          </div>
+            <li onClick={toggleActiveQuestion} data-question="2">
+              <div className={classes.question}>
+                <h2>What services do you offer?</h2>
+                <div>{activeQuestion === 2 ? "-" : "+"}</div>
+              </div>
+              <div
+                className={
+                  activeQuestion === 2
+                    ? `${classes.answer} ${classes.active}`
+                    : `${classes.answer}`
+                }
+              >
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Asperiores accusamus corporis amet facere nostrum dolores
+                  impedit magnam consectetur laboriosam assumenda. Nam corporis
+                  alias a ratione nesciunt suscipit maxime accusantium aperiam
+                  quae rerum debitis at facere est, magni et dolorem earum autem
+                  fugit modi reprehenderit atque animi. Officiis voluptatum
+                  nostrum quia!
+                </p>
+              </div>
+            </li>
+            <li onClick={toggleActiveQuestion} data-question="3">
+              <div className={classes.question}>
+                <h2>What services do you offer?</h2>
+                <div>{activeQuestion === 3 ? "-" : "+"}</div>
+              </div>
+              <div
+                className={
+                  activeQuestion === 3
+                    ? `${classes.answer} ${classes.active}`
+                    : `${classes.answer}`
+                }
+              >
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Asperiores accusamus corporis amet facere nostrum dolores
+                  impedit magnam consectetur laboriosam assumenda. Nam corporis
+                  alias a ratione nesciunt suscipit maxime accusantium aperiam
+                  quae rerum debitis at facere est, magni et dolorem earum autem
+                  fugit modi reprehenderit atque animi. Officiis voluptatum
+                  nostrum quia!
+                </p>
+              </div>
+            </li>
+          </ul> */}
         </section>
       </div>
     </Fragment>

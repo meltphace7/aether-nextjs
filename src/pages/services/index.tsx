@@ -41,7 +41,7 @@ const ServicesPage: React.FC = () => {
             <Image src={world} alt="world" />
           </div>
           <div className={classes["hero-text"]}>
-            <h1>OUR SERVICES</h1>
+            <h1>SERVICES</h1>
             <h2>MOLDING NEW REALITIES</h2>
           </div>
           <div className={classes["bg-circle"]}></div>
