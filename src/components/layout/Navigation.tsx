@@ -113,9 +113,9 @@ const Navigation: React.FC = () => {
                   <li className={classes["nav__item"]}>
                     <Link
                       onClick={closeMenuHandler}
-                      href="/services"
+                      href="/services/branding"
                       className={
-                        pathname === "/services"
+                        pathname === "/services/branding"
                           ? `${classes.active} ${classes["nav__link"]}`
                           : classes["nav__link"]
                       }
@@ -126,9 +126,9 @@ const Navigation: React.FC = () => {
                   <li className={classes["nav__item"]}>
                     <Link
                       onClick={closeMenuHandler}
-                      href="/services/commercial-construction"
+                      href="/services/design"
                       className={
-                        pathname === "/services/commercial-construction"
+                        pathname === "/services/design"
                           ? `${classes.active} ${classes["nav__link"]}`
                           : classes["nav__link"]
                       }
@@ -139,9 +139,9 @@ const Navigation: React.FC = () => {
                   <li className={classes["nav__item"]}>
                     <Link
                       onClick={closeMenuHandler}
-                      href="/services/residential-construction"
+                      href="/services/development"
                       className={
-                        pathname === "/services/residential-construction"
+                        pathname === "/services/development"
                           ? `${classes.active} ${classes["nav__link"]}`
                           : classes["nav__link"]
                       }

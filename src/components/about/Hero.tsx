@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Image from 'next/image';
 import classes from './Hero.module.css'
-import door from "../../../public/imgs/abstract-door.jpg";
+import core from "../../../public/imgs/circle-core.jpg";
 
 const Hero: React.FC = () => {
   // Parallax effect for Header
@@ -21,16 +21,17 @@ const Hero: React.FC = () => {
       style={{ transform: `translateY(${offsetY * 0.5}px)` }}
     >
       <div className={classes["hero-overlay"]}>
-        <div className={classes.sphere}>
-          <div className={classes["sphere-overlay"]}>
-            <Image src={door} alt="door" />
-          </div>
+        
+        <div className={classes.circle}>
+          <div className={classes["circle-overlay"]}></div>
+          <Image src={core} alt="core" />
         </div>
         <div className={classes["hero-text"]}>
           <h1>
-            <span className="highlight-1">PUSHING</span> BOUNDARIES
+            <span className="highlight-1">CREATIVE</span> TO THE CORE
           </h1>
         </div>
+        <div className={classes['bg-circle']}></div>
       </div>
     </header>
   );

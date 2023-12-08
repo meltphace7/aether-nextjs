@@ -1,9 +1,11 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useState } from "react";
 import Head from "next/head";
 import Image from "next/image";
 import classes from "@/styles/About.module.css";
 import Hero from '../../components/about/Hero';
-import team from '../../../public/imgs/team-members.jpg';
+import AboutOverlay from '../../components/about/AboutOverlay';
+import TeamMember from '../../components/about/TeamMember'
+import brock from '../../../public/imgs/BROCK-DALLMAN_PORTRAIT.jpg'
 
 const AboutPage: React.FC = () => {
   return (
@@ -15,47 +17,60 @@ const AboutPage: React.FC = () => {
       <div className={classes["about-page"]}>
         <Hero />
         <section className={classes["about-section"]}>
-          <h1>Our Dedication Runs Deep</h1>
+          <h1>DRIVEN BY CREATIVE PASSION</h1>
           <div className={classes.accent}></div>
           <p>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Founded
-            in 2006 by Mike Higgins, Tieton construction has thrived by
+            in 2023 by Brock Dallman, Aether has thrived by
             upholding core values of quality, integrity, and community. Evolving
             to meet the demands of our fast-paced world, we remain committed to
-            delivering exceptional construction services. With a focus on
-            craftsmanship and ethical practices, we build not only structures
-            but enduring relationships within the communities we serve. Explore
+            delivering exceptional web development services. With a focus on
+            craftsmanship and ethical practices, we build not only awesome websites
+            but enduring relationships with the clients serve. Explore
             our journey and discover how we transform visions into quality-built
             realities.
           </p>
           <p>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;At
-            Tieton Construction, our commitment revolves around you—the
+            Aether, our commitment revolves around you—the
             customer. Experience worry-free projects as we blend craftsmanship
             with efficiency, ensuring beautiful results delivered on time. Trust
             us to bring your vision to life, surpassing expectations with every
             detail and timeline met.
           </p>
-          <div className={classes["about-image__overlay"]}>
-            <h2>
-              We Get Things <span>Done.</span>
-            </h2>
-          </div>
-          <div className={classes["team-section"]}>
-            <h1>Our Team</h1>
-            <div className={classes.accent}></div>
-            <p>
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;At
-              Tieton Construction, our team is a dynamic blend of adaptability,
-              efficiency, friendliness, and talent. Hailing from diverse
-              backgrounds, we are united by a common cause—to build beautiful,
-              functional projects that fulfill our customers&apos; needs. With a
-              shared commitment to perfection, our team collaborates seamlessly,
-              ensuring every project is a success. Embrace a construction
-              experience where professionalism meets warmth, and where expertise
-              meets innovation.
-            </p>
-            <Image src={team} alt="team" className={classes["team-img"]} />
+        </section>
+        <AboutOverlay />
+        <section className={classes["team-section"]}>
+          <h1>Our Team</h1>
+          <div className={classes.accent}></div>
+          <p>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;At
+            Tieton Construction, our team is a dynamic blend of adaptability,
+            efficiency, friendliness, and talent. Hailing from diverse
+            backgrounds, we are united by a common cause—to build beautiful,
+            functional projects that fulfill our customers&apos; needs. With a
+            shared commitment to perfection, our team collaborates seamlessly,
+            ensuring every project is a success. Embrace a construction
+            experience where professionalism meets warmth, and where expertise
+            meets innovation.
+          </p>
+          <div className={classes["team-member"]}>
+            <div className={classes["tm-text"]}>
+              <h1>Brock Dalman</h1>
+              <h2>
+                Lead Designer <span>|</span> Developer <span>|</span> Creator
+              </h2>
+              <div className={classes['tm-accent']}></div>
+              <p>
+                Creating and learning things as always been my passion. I take
+                inspiration from everywhere and converge it all with a different
+                spin. As the core member of AETHER, I love a new challenge and
+                look forward to working with you to create something new!
+              </p>
+            </div>
+            <div className={classes["tm-img__container"]}>
+              <Image src={brock} alt="Brock Dallman" />
+            </div>
           </div>
         </section>
       </div>

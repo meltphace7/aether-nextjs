@@ -12,24 +12,20 @@
     z-index: -1;
 }
 
-.construction-hero {
-      background-image: url('../../public/imgs/gallery-3/commercial-3.jpg');
+.branding-hero {
+      background-image: url('../../public/imgs/abstract-door.jpg');
 }
 
-.residential-hero {
-      background-image: url('../../public/imgs/modern-house.jpg');
+.design-hero {
+      background-image: url('../../public/imgs/abstract-door-2.jpg');
     
 }
 
-.additions-hero {
-      background-image: url('../../public/imgs/addition-2.jpg');
+.development-hero {
+      background-image: url('../../public/imgs/abstract-drip.jpg');
       background-position: 50% 50%;
 }
 
-.remodels-hero {
-    background-image: url('../../public/imgs/gallery/remodel.jpg');
-    background-position: 50% 50%;
-}
 
 .service-hero-overlay {
     width: 100%;

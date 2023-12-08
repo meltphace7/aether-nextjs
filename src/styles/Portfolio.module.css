@@ -8,8 +8,8 @@
 
 .portfolio-hero {
     width: 100%;
-    height: 50rem;
-    background-image: url('../../public/imgs/remodel-3.jpg');
+    height: 77rem;
+    background-image: url('../../public/imgs/bg-art-tunnel.jpg');
     background-size: cover;
     z-index: -1;
 }
@@ -47,70 +47,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #fff;
-}
-
-.gallery-container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 5rem;
-}
-
-.gallery-h1 {
-    margin: 2rem;
-    font-weight: 100;
-}
-
-.grid-gallery {
-    width: 95%;
-    display: grid;
-    gap: .5rem;
-    grid-template-columns: repeat(3, 1fr);
-}
-
-.grid-item {
-    height: 30rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    cursor: pointer;
-}
-
-.grid-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: opacity 300ms ease-in;
-}
-
-.grid-item img:hover {
-    opacity: 0.75;
-}
-
-.gallery-container a {
-    margin: 3rem 1rem;
-    color: #000;
- }
-
-/* .overlay {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.664);
-} */
-
-@media (max-width: 45em) {
-    .grid-gallery {
-   
-    grid-template-columns: repeat(2, 1fr);
-}
-}
-
-@media (max-width: 35em) {
-    .grid-gallery {
-    grid-template-columns: repeat(1, 1fr);
-}
+    background-color: var(--color-bg-dark);
+    color: #fff;
 }

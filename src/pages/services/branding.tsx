@@ -1,15 +1,10 @@
 import React, { Fragment, useState, useEffect } from "react";
 import classes from "@/styles/Service.module.css";
-import Image from "next/image";
 import Head from "next/head";
+import Image from "next/image";
 import Slider from "../../components/gallery/Slider";
-import residentialOne from "../../../public/imgs/modern-house-3.jpg";
-import residentialTwo from "../../../public/imgs/modern-house-4.jpg";
-import residentialThree from "../../../public/imgs/gallery-2/home-8.jpg";
 
-const residentialImages = [residentialOne, residentialTwo, residentialThree];
-
-const ResidentialConstructionPage: React.FC = () => {
+const BrandingPage: React.FC = () => {
   // Parallax effect for Header
   const [offsetY, setOffsetY] = useState<number>(0);
   const handleScroll = () => {
@@ -36,45 +31,44 @@ const ResidentialConstructionPage: React.FC = () => {
     setSelectedImage(image);
     toggleSliderVisibilityHandler();
   };
-
   return (
     <Fragment>
       <Head>
-        <title>Residential Construction | Tieton Construction</title>
+        <title>Brainding | Aether</title>
         <meta
           name="description"
-          content="Residential Construction service page for Tieton Construction"
+          content="Branding service page for Aether"
         />
       </Head>
       <div className={classes["service-page"]}>
         <header
-          className={`${classes["service-hero"]} ${classes["residential-hero"]}`}
+          className={`${classes["service-hero"]} ${classes["branding-hero"]}`}
           style={{ transform: `translateY(${offsetY * 0.5}px)` }}
         >
           <div className={classes["service-hero-overlay"]}>
             <div className={classes["hero-text"]}>
-              <h1>Residential Construction</h1>
-              <h2>Elegant Dream Homes</h2>
+              <h1>Branding</h1>
+              <h2>Beautiful Transformations</h2>
             </div>
           </div>
         </header>
         <section className={classes["service-section"]}>
-          <h1>From Dream to Reality</h1>
+          <h1>Rejuvante Your Home</h1>
           <p>
-            At Tieton Construction, our residential construction service crafts
-            homes that epitomize elegance, functionality, and timelessness. Each
-            residence is more than a dwelling; it&apos;s a thoughtful investment
-            in your future. Our commitment to quality ensures not just beautiful
-            structures but enduring homes, designed for comfort and growth. With
-            meticulous attention to detail and a focus on timeless design, we
-            create spaces that are not only perfect for today but for the
-            cherished moments of tomorrow—a place where families can thrive and
-            create lasting memories.
+            At Tieton Construction, our home remodeling service turns your
+            vision into reality, transcending the limits of possibility. Whether
+            it&apos;s a rejuvenated kitchen, a luxurious bathroom, or a complete
+            home transformation, our skilled team excels at making dreams come
+            to life. With a commitment to quality and attention to detail, we
+            ensure each remodel enhances the functionality, beauty, and overall
+            value of your home. Experience the profound impact of our remodeling
+            expertise as we reimagine and elevate your living spaces, creating a
+            home that reflects your unique lifestyle and aspirations.
           </p>
-          <div className={classes["service-section__imgs"]}>
+          {/* <div className={classes["service-section__imgs"]}>
             <div className={classes["service-section__img-container"]}>
               <Image
-                src={residentialOne}
+                src={remodelOne}
                 alt="Nice remodeled kitchen"
                 data-image="1"
                 onClick={imageClickHandler}
@@ -82,7 +76,7 @@ const ResidentialConstructionPage: React.FC = () => {
             </div>
             <div className={classes["service-section__img-container"]}>
               <Image
-                src={residentialTwo}
+                src={remodelTwo}
                 alt="Nice remodeled bathroom"
                 data-image="2"
                 onClick={imageClickHandler}
@@ -90,24 +84,18 @@ const ResidentialConstructionPage: React.FC = () => {
             </div>
             <div className={classes["service-section__img-container"]}>
               <Image
-                src={residentialThree}
+                src={remodelThree}
                 alt="Nice remodeled kitchen"
                 data-image="3"
                 onClick={imageClickHandler}
               />
             </div>
-          </div>
+          </div> */}
         </section>
-        {sliderVisible && (
-          <Slider
-            images={residentialImages}
-            close={toggleSliderVisibilityHandler}
-            image={selectedImage}
-          />
-        )}
+    
       </div>
     </Fragment>
   );
 };
 
-export default ResidentialConstructionPage;
+export default BrandingPage;

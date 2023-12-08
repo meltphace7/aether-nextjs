@@ -1,0 +1,49 @@
+.section {
+  position: relative;
+  width: 100%;
+  height: 55rem;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
+}
+
+.text h1{
+    font-size: 5vw;
+}
+
+.text h1 span {
+    border-bottom: .5rem solid var(--color-primary);
+}
+
+.text h2{
+    margin-top: 2rem;
+    font-size: 2vw;
+    color: var(--color-primary);
+}
+
+.section img {
+  position: absolute;
+  top: -60rem;
+  left: -25rem;
+  width: 140%;
+  height: auto;
+
+  z-index: 0;
+}
+
+.section-overlay {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-green-overlay-light);
+  z-index: 1;
+}

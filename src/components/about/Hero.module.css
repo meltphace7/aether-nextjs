@@ -16,6 +16,7 @@
 }
 
 .hero-text {
+    margin-top: 9rem;
     min-width: 20rem;
     display: flex;
     flex-direction: column;
@@ -25,7 +26,10 @@
 }
 
 .hero-text h1 {
-    font-size: var(--hero-font-size-h1);
+    font-family: "General-Station";
+    font-weight: 200;
+    margin: 0 2rem;
+    font-size: 7vw;
 }
 
 .hero-text h2 {
@@ -33,38 +37,50 @@
     color: var(--color-primary);
 }
 
-.sphere {
-  position: absolute;
-  width: 55rem;
-  height: 55rem;
-  border-radius: 100rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  z-index: 1;
-  overflow: hidden;
-background: rgb(94,107,47);
-background: linear-gradient(180deg, rgba(94,107,47,1) 0%, rgba(53,60,26,1) 45%, rgba(38,43,19,1) 66%, rgba(22,24,11,1) 82%, rgba(0,0,0,1) 100%);
+
+.circle {
+    position: absolute;
+    width: 65rem;
+    height: 65rem;
+    border-radius: 500rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     box-shadow: 5px 6px 0px 10px rgba(205, 233, 103, 0.486);
+  -webkit-box-shadow: 5px 6px 0px 10px rgba(205, 233, 103, 0.308);
+  -moz-box-shadow: 5px 6px 0px 10px rgba(205, 233, 103, 0.342);
 }
 
-.sphere-overlay {
-  height: 90%;
-  width: 90%;
-  background-color: red;
-  border-radius: 300rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-/* backdrop-filter: blur(10px); */
-overflow: hidden;
-}
-
-.sphere-overlay img {
+.circle img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
+
+.circle-overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 500rem;
+    background-color: rgba(0, 0, 0, 0.283);
+background: rgb(90,90,43);
+background: radial-gradient(circle, rgba(90,90,43,0.2525603991596639) 2%, rgba(72,72,33,0.5438769257703081) 16%, rgba(38,38,17,0.6979385504201681) 30%, rgba(11,13,6,0.9252888655462185) 61%);
+}
+
+
+.bg-circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 90vw;
+    height: 90vw;
+    transform: translate(-50%, -50%);
+    border-radius: 200rem;
+    border: 5vw solid #cde96733;
+}
+
 
 @media (max-width: 35em) {
     .hero {

@@ -4,22 +4,24 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: var(--color-text-light);
+  color: #fff;
+
 }
 
 .about-section {
   padding: 5rem 0;
   width: 100%;
-  min-height: 70rem;
-  background-color: var(--color-bg-light);
+  background-color: var(--color-bg-dark);
   color: #000;
   display: flex;
   flex-direction: column;
   align-items: center;
+  z-index: 1;
 }
 
 .about-section h1 {
   font-size: 4rem;
+    color: #fff;
 }
 
 .accent {
@@ -33,6 +35,7 @@
   font-size: 2rem;
   padding: 0 15rem;
   margin-bottom: 2rem;
+  color: #fff;
 }
 
 .about-image__overlay {
@@ -50,6 +53,7 @@
   font-size: 5rem;
   letter-spacing: 0.15rem;
   color: #fff;
+    color: #fff;
 }
 
 .about-image__overlay h2 span {
@@ -59,15 +63,76 @@
 .team-section {
   padding: 5rem 0;
   width: 100%;
-  min-height: 50rem;
+  /* min-height: 50rem; */
   display: flex;
   flex-direction: column;
   align-items: center;
+   background-color: var(--color-bg-dark);
+    z-index: 1;
 }
 
-.team-img {
-  width: 65%;
-  height: auto;
+.team-section p {
+   font-size: 2rem;
+  padding: 0 15rem;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+
+.team-member {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+.tm-text {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.tm-text h1 {
+    font-size: 4rem;
+    color: var(--color-cream);
+}
+
+.tm-text h2 {
+color: var(--color-primary);
+}
+
+.tm-text h2 span {
+color: var(--color-cream);
+font-weight: 100;
+}
+
+.tm-accent {
+  margin: .5rem 0 1rem 0;
+  width: 9rem;
+  height: .3rem;
+  background-color: var(--color-primary);
+  transform: skew(-15deg);
+}
+
+.tm-text p{
+padding: 0 5rem 0 0;
+}
+
+.tm-img__container {
+    width: 35rem;
+    height: 35rem;
+    border-radius: 400rem;
+    overflow: hidden;
+       box-shadow: 5px 6px 0px 10px rgba(205, 233, 103, 0.486);
+  -webkit-box-shadow: 5px 6px 0px 10px rgba(205, 233, 103, 0.308);
+  -moz-box-shadow: 5px 6px 0px 10px rgba(205, 233, 103, 0.342);
+}
+
+.tm-img__container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 @media (max-width: 35em) {
@@ -75,7 +140,8 @@
     font-size: 3rem;
   }
 
-  .about-section p {
+  .about-section p,
+  .team-section p {
     font-size: 2rem;
     padding: 0 2rem;
     margin-bottom: 2rem;
@@ -93,8 +159,13 @@
     font-size: 4rem;
   }
 
-  .team-img {
-    width: 98%;
-    height: auto;
+  .team-member {
+    flex-direction: column-reverse;
   }
+
+  .tm-text {
+    margin-top: 2rem;
+    width: 98%;
+    
+}
 }
