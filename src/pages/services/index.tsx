@@ -70,7 +70,7 @@ const ServicesPage: React.FC = () => {
               />
             </div>
             <div className={classes["service__text-container"]}>
-              <h1>BRANDING</h1>
+              <h1>GRAPHIC DESIGN</h1>
               <div className={classes.accent}></div>
               <p>
                 Our commercial construction service guarantees efficiency. Our
@@ -88,7 +88,7 @@ const ServicesPage: React.FC = () => {
               <Image src={design} alt="design" className={classes['design-img']}/>
             </div>
             <div className={classes["service__text-container"]}>
-              <h1>DESIGN</h1>
+              <h1>WEB DESIGN</h1>
               <div className={classes.accent}></div>
               <p>
                 We bring dreams to life with our residential construction
@@ -110,7 +110,7 @@ const ServicesPage: React.FC = () => {
               <Image src={development} alt="development" className={classes['development-img']} />
             </div>
             <div className={classes["service__text-container"]}>
-              <h1>DEVELOPMENT</h1>
+              <h1>WEB DEVELOPMENT</h1>
               <div className={classes.accent}></div>
               <p>
                 Tieton Construction&apos;s home additions service seamlessly

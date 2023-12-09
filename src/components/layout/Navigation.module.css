@@ -80,7 +80,7 @@
 /*______LIST, LINK, ITEMS_______*/
 .nav__list {
   margin-top: 10rem;
-  padding-left: 10rem;
+  padding-left: 7rem;
   position: absolute;
   width: 100%;
   display: flex;
@@ -91,7 +91,7 @@
 .nav__link {
   font-family: inherit;
   display: none;
-  font-size: 2rem;
+  font-size: 3.5rem;
   color: white;
   cursor: pointer;
   font-weight: 100;
@@ -99,9 +99,12 @@
 }
 
 .nav__link span {
-  font-size: 1.25rem;
+  font-family: "General-Station";
+  font-weight: 200;
+  font-size: .75rem;
 }
 
+.nav__link:hover,
 .active {
   color: var(--color-primary);
 }
@@ -254,7 +257,7 @@ color: var(--color-primary);
 }
 
 .nav__link {
-  font-size: 3.5rem;
+  font-size: 5rem;
 }
 
 .nav__item {
@@ -265,8 +268,11 @@ color: var(--color-primary);
   font-size: 3.5rem;
 }
 
+.contact {
+  display: none;
+}
 
-.sub-menu {
+/* .sub-menu {
   padding-top: .5rem;
   height: 16rem;
   margin-left: 2rem;
@@ -282,9 +288,6 @@ color: var(--color-primary);
 .animate-in {
   height: 16rem;
   opacity: 1;
-}
+} */
 
-.contact {
-  display: none;
-}
 }

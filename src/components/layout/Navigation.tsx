@@ -67,7 +67,20 @@ const Navigation: React.FC = () => {
                   <span>01</span>&nbsp;HOME
                 </Link>
               </li>
-              <li className={`${classes["nav__item"]} ${classes["dropdown"]}`}>
+              <li className={classes["nav__item"]}>
+                <Link
+                  onClick={closeMenuHandler}
+                  href="/services"
+                  className={
+                    pathname === "/services"
+                      ? `${classes.active} ${classes["nav__link"]}`
+                      : classes["nav__link"]
+                  }
+                >
+                  <span>02</span>&nbsp;SERVICES
+                </Link>
+              </li>
+              {/* <li className={`${classes["nav__item"]} ${classes["dropdown"]}`}>
                 <div
                   onClick={serviceToggleHandler}
                   // href="/services"
@@ -150,7 +163,7 @@ const Navigation: React.FC = () => {
                     </Link>
                   </li>
                 </ul>
-              </li>
+              </li> */}
 
               <li className={classes["nav__item"]}>
                 <Link

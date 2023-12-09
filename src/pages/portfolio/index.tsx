@@ -65,8 +65,35 @@ const PortfolioPage: React.FC = () => {
             <span>&nbsp;</span>
             <span>&nbsp;</span>
             <span>&nbsp;</span>
+            <span>&nbsp;</span>
+            <span>&nbsp;</span>
+            <span>&nbsp;</span>
+            <span>&nbsp;</span>
+            <span>&nbsp;</span>
+            <span>&nbsp;</span>
+            <span>&nbsp;</span>
+            <span>&nbsp;</span>
+            <span>&nbsp;</span>
           </div>
           <div className={classes.projects}>
+            {/* <div className={classes["grid-item"]}>
+              <Image src={trailIMG} alt="img" />
+            </div>
+            <div className={classes["grid-item"]}>
+              <Image src={alipineIMG} alt="img" />
+            </div>
+            <div className={classes["grid-item"]}>
+              <Image src={bdArtIMG} alt="img" />
+            </div>
+            <div className={classes["grid-item"]}>
+              <Image src={trailIMG} alt="img" />
+            </div>
+            <div className={classes["grid-item"]}>
+              <Image src={bdPhotoIMG} alt="img" />
+            </div>
+            <div className={classes["grid-item"]}>
+              <Image src={trailIMG} alt="img" />
+            </div> */}
             <Project
               name="Trail Tracker"
               description="An app where you can discover and share hiking trails."
@@ -103,6 +130,7 @@ const PortfolioPage: React.FC = () => {
               image={rojosIMG}
               link="https://rojosmexicancuisine.vercel.app/"
             />
+           
           </div>
         </section>
       </div>

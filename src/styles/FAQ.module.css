@@ -8,7 +8,7 @@
 
 .faq-hero {
   width: 100%;
-  height: 28rem;
+  height: 35rem;
   background-image: url('../../public/imgs/dark-abstract-2.jpg');
   background-size: cover;
   background-position: 0% 50%;
@@ -24,8 +24,14 @@
   justify-content: center;
 }
 
+.hero-text {
+  margin-top: 10rem;
+}
+
 .hero-text h1 {
-  font-size: var(--hero-font-size-h1);
+  font-family: "General-Station";
+  font-weight: 200;
+  font-size: 4vw;
   color: var(--color-primary);
 }
 

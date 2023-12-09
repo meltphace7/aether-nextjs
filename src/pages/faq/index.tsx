@@ -31,7 +31,9 @@ const FaqPage: React.FC = () => {
         >
           <div className={classes["hero-overlay"]}>
             <div className={classes["hero-text"]}>
-              <h1>Frequently Asked Questions</h1>
+              <h1>FREQUENTLY</h1>
+              <h1>ASKED</h1>
+              <h1>QUESTIONS</h1>
             </div>
           </div>
         </header>
