@@ -6,7 +6,6 @@
   align-items: center;
   justify-content: center;
   z-index: 1;
-  transition: all 800ms ease-in;
 }
 
 .feature-box {
@@ -20,6 +19,7 @@
   border-radius: var(--border-radius);
   background-image: url("../../../public/imgs/roots.jpg");
   background-size: cover;
+   transition: all 800ms ease-in-out;
 }
 
 .feature-box__overlay {
@@ -91,9 +91,9 @@
   line-height: 2.5rem;
 }
 
-.feature--hidden {
+.hidden {
   opacity: 0;
-  transform: translateY(8rem);
+  transform: translateX(8rem);
 }
 
 @media (max-width: 60em) {

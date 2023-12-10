@@ -8,7 +8,6 @@
   justify-content: center;
   background-color: var(--color-bg-dark);
   z-index: 1;
-  transition: all 800ms ease-in;
   overflow: hidden;
 }
 
@@ -21,6 +20,7 @@
   overflow: hidden;
   color: #fff;
   z-index: 3;
+    transition: all 800ms ease-in-out;
 }
 
 /*_____IMAGE CONTAINER_____*/
@@ -96,6 +96,11 @@
     height: 100%;
       background-color: var(--color-green-overlay);
       z-index: 0;
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateX(-5rem);
 }
 
 @media (max-width: 60em) {

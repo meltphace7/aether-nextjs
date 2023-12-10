@@ -20,11 +20,13 @@ const FeatureTwo: React.FC = () => {
   }, [sectionIsVisible]);
 
   return (
-    <section
-      ref={sectionRef}
-      className={classes["feature-box-section"]}
-    >
-      <div className={classes["feature-box"]}>
+    <section ref={sectionRef} className={classes["feature-box-section"]}>
+      <div
+        // className={classes["feature-box"]}
+        className={`${classes["feature-box"]} ${
+          !sectionRevealed ? classes["hidden"] : ""
+        }`}
+      >
         <div className={classes["feature-box__overlay"]}>
           <div className={classes["feature-box__img-container"]}>
             <Image src={modern} alt="abstract Image" />
@@ -36,10 +38,10 @@ const FeatureTwo: React.FC = () => {
 
             <div className={classes.accent}></div>
             <p>
-              Our mission is to give your business an outstanding web presence by the merger of form and
-              functionality. We cultivate your brands growth with creativity and
-              technology to deliver a dynamic, outstanding user experience for
-              your customers.
+              Our mission is to give your business an outstanding web presence
+              by the merger of form and functionality. We cultivate your brands
+              growth with creativity and technology to deliver a dynamic,
+              outstanding user experience for your customers.
             </p>
             <Link href="/about" className="button">
               ABOUT US

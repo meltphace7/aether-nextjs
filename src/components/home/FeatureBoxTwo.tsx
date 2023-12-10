@@ -33,14 +33,12 @@ const FeatureTwo: React.FC = () => {
   }, []);
 
   return (
-    <section
-      ref={sectionRef}
-      className={classes["feature-box-section"]}
-      // className={`${classes["feature-box-section"]} ${
-      //   !sectionRevealed ? classes["feature--hidden"] : ""
-      // }`}
-    >
-      <div className={classes["feature-box"]}>
+    <section ref={sectionRef} className={classes["feature-box-section"]}>
+      <div
+        className={`${classes["feature-box"]} ${
+          !sectionRevealed ? classes["hidden"] : ""
+        }`}
+      >
         <div className={classes["feature-box__text-container"]}>
           <h1>
             BUILDING BETTER <span>WORLDS</span>
@@ -48,7 +46,9 @@ const FeatureTwo: React.FC = () => {
 
           <div className={classes.accent}></div>
           <p>
-            We specialize in building beautiful, intuitive websites that deliver a rich user experience and feature your business content in an elegant and meaningful way.   Have a look at some of our projects.
+            We specialize in building beautiful, intuitive websites that deliver
+            a rich user experience and feature your business content in an
+            elegant and meaningful way. Have a look at some of our projects.
           </p>
           <Link href="/portfolio" className="button">
             OUR WORK

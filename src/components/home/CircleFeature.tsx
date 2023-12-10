@@ -30,15 +30,24 @@ const CircleFeature = () => {
 
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
   return (
     <section className={classes.section}>
-      <div className={classes["text-container"]}>
+      <div
+        ref={sectionRef}
+        // className={classes["text-container"]}
+        className={`${classes["text-container"]} ${
+          !sectionRevealed ? classes["hidden"] : ""
+        }`}
+      >
         <h1>
           LET THE <span className="highlight-1">CREATIVITY </span>&nbsp;FLOW
         </h1>
         <div className={classes.accent}></div>
         <p>
-          Aether works with you to enhance your brand by conceiving bold artistic designs and translating them into an immersive and memorable website that will leave a lasting impression on your customers.
+          Aether works with you to enhance your brand by conceiving bold
+          artistic designs and translating them into an immersive and memorable
+          website that will leave a lasting impression on your customers.
         </p>
         <Link href="/services" className="button">
           OUR SERVICES

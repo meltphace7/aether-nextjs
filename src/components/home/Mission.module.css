@@ -8,6 +8,7 @@
 
   background-color: var(--color-green-darkest);
   z-index: 1;
+  transition: all 1000ms ease-in-out;
 }
 
 .feature-title h1 {
@@ -54,6 +55,10 @@
   background-color: var(--color-primary);
   transform: skew(-25deg);
 
+}
+
+.hidden {
+  opacity: 0;
 }
 
 @media (max-width: 55em) {

@@ -18,10 +18,9 @@ const Feature: React.FC = () => {
   return (
     <section
       ref={sectionRef}
-      className={classes.feature}
-      // className={`${classes["feature"]} ${
-      //   !sectionRevealed ? classes["feature--hidden"] : ""
-      // }`}
+      className={`${classes["feature"]} ${
+        !sectionRevealed ? classes["hidden"] : ""
+      }`}
     >
       <div className={classes["feature-title"]}>
         <h1>
