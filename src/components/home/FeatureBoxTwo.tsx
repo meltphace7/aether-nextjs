@@ -51,7 +51,7 @@ const FeatureTwo: React.FC = () => {
             Let us help you expand your business. We foster growth by providing
             bold style, and presence to all availbale customers.
           </p>
-          <Link href="/about" className="button">
+          <Link href="/portfolio" className="button">
             OUR WORK
           </Link>
         </div>

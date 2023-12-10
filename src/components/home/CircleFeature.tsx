@@ -40,7 +40,7 @@ const CircleFeature = () => {
         <p>
           AETHER works with you to enhance your brand by conceiving bold artistic designs and translating them into an immersive and memorable website that will leave a lasting impression on your customers.
         </p>
-        <Link href="#" className="button">
+        <Link href="/services" className="button">
           OUR SERVICES
         </Link>
       </div>
