@@ -145,4 +145,8 @@
     margin-top: 2rem;
     width: 98%;
   }
+
+  .tm-text p {
+    padding: 0;
+  }
 }

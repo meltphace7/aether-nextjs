@@ -71,4 +71,10 @@
   font-size: 2.75rem;
 }
 
+.feature-box p {
+  color: var(--color-gray-light);
+  font-size: 2rem;
+  margin: 2rem 2rem;
+}
+
 }

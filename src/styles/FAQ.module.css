@@ -55,7 +55,7 @@
 
 @media (max-width: 35em) {
   .faq-section {
-  padding: 4rem 2rem;
+  padding: 4rem .5rem;
 }
 
 .hero-text h1 {

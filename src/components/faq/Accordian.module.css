@@ -43,9 +43,10 @@
 }
 
 .plus {
-  margin: 0 2rem;
+  margin: 0 0 0 2rem;
   width: 4rem;
   height: 4rem;
+   min-width: 4rem;
   position: relative;
 }
 
@@ -89,4 +90,13 @@
   .accordian {
     width: 98%;
   }
+
+.plus {
+    width: 3rem;
+    min-width: 3rem;
 }
+
+
+}
+
+

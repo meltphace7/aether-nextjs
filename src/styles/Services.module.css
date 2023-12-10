@@ -192,14 +192,16 @@
 }
 
 @media (max-width: 35em) {
-
-
   .services-hero {
     height: 50rem;
   }
 
   .hero-text {
   margin-top: 6rem;
+}
+
+.hero-text h1 {
+  font-size: 8vw;
 }
 
   .world-container {
