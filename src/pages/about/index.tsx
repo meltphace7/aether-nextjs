@@ -44,7 +44,7 @@ const AboutPage: React.FC = () => {
         <section className={classes["team-section"]}>
           <h1>PERSONNEL</h1>
           <div className={classes.accent}></div>
-          <div className={classes["blurb"]}>
+          {/* <div className={classes["blurb"]}>
             <p>
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;At
               Tieton Construction, our team is a dynamic blend of adaptability,
@@ -56,10 +56,10 @@ const AboutPage: React.FC = () => {
               experience where professionalism meets warmth, and where expertise
               meets innovation.
             </p>
-          </div>
+          </div> */}
           <div className={classes["team-member"]}>
             <div className={classes["tm-text"]}>
-              <h1>Brock Dallman</h1>
+              <h1>BROCK DALLMAN</h1>
               <h2>
                 Lead Designer <span>|</span> Developer <span>|</span> Creator
               </h2>

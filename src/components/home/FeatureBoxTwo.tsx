@@ -48,8 +48,7 @@ const FeatureTwo: React.FC = () => {
 
           <div className={classes.accent}></div>
           <p>
-            Let us help you expand your business. We foster growth by providing
-            bold style, and presence to all availbale customers.
+            We specialize in building beautiful, intuitive websites that deliver a rich user experience and feature your business content in an elegant and meaningful way.   Have a look at some of our projects.
           </p>
           <Link href="/portfolio" className="button">
             OUR WORK

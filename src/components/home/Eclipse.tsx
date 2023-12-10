@@ -28,11 +28,7 @@ const QuadFeature = () => {
         </div>
         <div className={classes.accent}></div>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa
-          laudantium, incidunt ab assumenda ratione eaque quis veniam doloremque
-          nobis consequatur nihil laboriosam vitae nulla cupiditate voluptatum
-          eius possimus id dolor. Nobis suscipit explicabo unde sint ratione,
-          magnam laudantium laboriosam impedit!
+          We sit down with you to find out your unique needs and preferences and then translate them to a beautiful, responsive website that can grow with your business.    At Aether your needs are out number one priority.
         </p>
       </div>
       <div className={classes.feature}>
@@ -44,11 +40,7 @@ const QuadFeature = () => {
         </div>
         <div className={classes.accent}></div>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa
-          laudantium, incidunt ab assumenda ratione eaque quis veniam doloremque
-          nobis consequatur nihil laboriosam vitae nulla cupiditate voluptatum
-          eius possimus id dolor. Nobis suscipit explicabo unde sint ratione,
-          magnam laudantium laboriosam impedit!
+          At Aether we specialize in the NextJS framework, which is a javascript framework which features server side rendering and superior search engine optimization.  In Leyman&apos;s terms, NextJS allows for a lightning fast website that is easy for your potential customers to find on the web.
         </p>
       </div>
 
@@ -61,11 +53,7 @@ const QuadFeature = () => {
         </div>
         <div className={classes.accent}></div>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa
-          laudantium, incidunt ab assumenda ratione eaque quis veniam doloremque
-          nobis consequatur nihil laboriosam vitae nulla cupiditate voluptatum
-          eius possimus id dolor. Nobis suscipit explicabo unde sint ratione,
-          magnam laudantium laboriosam impedit!
+          Aether takes pride in our stylish designs!  There&apos;s a lot of bland and uninspiring websites out there.  We strive to make your website stand out and deviver a unique and captivating experience that have your customers returning time and time again!
         </p>
       </div>
       <div className={classes.bg}></div>

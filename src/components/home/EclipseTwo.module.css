@@ -37,8 +37,10 @@ z-index: -1;
 }
 
 .section-text h1{
+  font-family: "General-Station";
+  font-weight: 200;
   color: #fff;
-  font-size: 7rem;
+  font-size: 4rem;
 }
 
 
@@ -58,6 +60,7 @@ z-index: -1;
 
 @media (max-width: 35em) {
   .section-text h1{
-  font-size: 13vw;
+  font-size: 6.5vw;
+  text-align: center;
 }
 }

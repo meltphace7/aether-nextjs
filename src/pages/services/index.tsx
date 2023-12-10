@@ -50,31 +50,33 @@ const ServicesPage: React.FC = () => {
             <h1>EXPANDING YOUR SPHERE</h1>
             <div className={classes.accent}></div>
             <p>
-              Our comprehensive services cover the spectrum of construction
-              needs. From commercial construction that establishes solid
-              foundations for businesses to residential construction, home
-              additions, and remodels that transform living spaces, our
-              versatile team excels in every project. Committed to excellence
-              and quality, we bring expertise to each service, ensuring the
-              highest standards of craftsmanship. Whether it&apos;s building the
-              future of commercial spaces or enhancing the warmth of homes,
-              Tieton Construction stands as a trusted partner in delivering
-              unparalleled construction solutions.
+              At Aether, we believe in crafting digital experiences that
+              resonate with your brand identity. Our dedicated team sits down
+              with you to unravel the essence of your unique style, ensuring a
+              tailor-made web design that captivates your audience. We go beyond
+              aesthetics, creating websites that not only wow your customers but
+              also elevate your online presence. Trust us to transform your
+              vision into a stunning reality, providing a superior web platform
+              that reflects the true essence of your brand.
             </p>
           </div>
           <div className={classes["service"]}>
             <div className={classes["service__img-container"]}>
-              <Image src={branding} alt="branding" 
-              className={classes['branding-img']}
+              <Image
+                src={branding}
+                alt="branding"
+                className={classes["branding-img"]}
               />
             </div>
             <div className={classes["service__text-container"]}>
               <h1>GRAPHIC DESIGN</h1>
               <div className={classes.accent}></div>
               <p>
-                Our commercial construction service guarantees efficiency. Our
-                dedicated team consistently delivers projects ahead of schedule
-                and under budget, ensuring optimal value for our clients.
+                Elevate your brand with our graphic design service. From
+                distinctive logos and icons to comprehensive design solutions,
+                we craft visuals that captivate and communicate your identity.
+                Unleash creativity and make a lasting impression with our
+                unparalleled design expertise.
               </p>
               {/* <Link href="/services/branding" className="button">
                 Learn More
@@ -84,16 +86,21 @@ const ServicesPage: React.FC = () => {
 
           <div className={`${classes["service"]} ${classes["service-alt"]}`}>
             <div className={classes["service__img-container"]}>
-              <Image src={design} alt="design" className={classes['design-img']}/>
+              <Image
+                src={design}
+                alt="design"
+                className={classes["design-img"]}
+              />
             </div>
             <div className={classes["service__text-container"]}>
               <h1>WEB DESIGN</h1>
               <div className={classes.accent}></div>
               <p>
-                We bring dreams to life with our residential construction
-                service. Crafting homes with timeless elegance, we create more
-                than houses; we build cherished homes, tailored to reflect your
-                unique vision.
+                Transform your brand's essence into a captivating online
+                experience with our web design service. We seamlessly translate
+                your unique aesthetic into a stunning website layout, combining
+                functionality with aesthetic appeal for a digital presence that
+                truly stands out.
               </p>
               {/* <Link
                 href="/services/design"
@@ -106,24 +113,26 @@ const ServicesPage: React.FC = () => {
 
           <div className={classes["service"]}>
             <div className={classes["service__img-container"]}>
-              <Image src={development} alt="development" className={classes['development-img']} />
+              <Image
+                src={development}
+                alt="development"
+                className={classes["development-img"]}
+              />
             </div>
             <div className={classes["service__text-container"]}>
               <h1>WEB DEVELOPMENT</h1>
               <div className={classes.accent}></div>
               <p>
-                Tieton Construction&apos;s home additions service seamlessly
-                expands your living space. Whether a new deck or a wing, we
-                deliver top-notch quality, minimizing disruption to your
-                lifestyle for a stress-free enhancement.
+                Experience seamless transition from design to functionality with
+                our web development service. We meticulously transform concepts
+                into fast, efficient, and accessible websites tailored to meet
+                your business needs.  Your site will look and perform with excellence on a phone, desktop and everything in between.
               </p>
               {/* <Link href="/services/development" className="button">
                 Learn More
               </Link> */}
             </div>
           </div>
-
-
         </section>
       </div>
     </Fragment>

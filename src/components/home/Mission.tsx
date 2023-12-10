@@ -34,9 +34,9 @@ const Feature: React.FC = () => {
         </h2>
         <div className={classes.accent}></div>
         <p>
-          Elevate your business with our seasoned web design and development
-          experts. Harnessing creativity and technical prowess, we craft
-          powerful brands and compelling web experiences that propel your
+          Take your business to the stratosphere with our web design and development
+          service. Harnessing creativity and technical prowess, Aether craft&apos;s
+          powerful compelling web experiences that propel your
           business to new heights of success.
         </p>
       </div>

@@ -36,13 +36,13 @@ const FeatureTwo: React.FC = () => {
 
             <div className={classes.accent}></div>
             <p>
-              Our mission is to expand your business by the merger of form and
+              Our mission is to give your business an outstanding web presence by the merger of form and
               functionality. We cultivate your brands growth with creativity and
               technology to deliver a dynamic, outstanding user experience for
               your customers.
             </p>
             <Link href="/about" className="button">
-              About Us
+              ABOUT US
             </Link>
           </div>
         </div>

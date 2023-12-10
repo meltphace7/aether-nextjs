@@ -18,7 +18,8 @@
   z-index: 1;
 }
 
-.about-section h1 {
+.about-section h1,
+.team-section h1 {
   font-size: 4rem;
   color: #fff;
 }
@@ -26,8 +27,9 @@
 .accent {
   margin: 1rem 0 4rem 0;
   width: 10rem;
-  height: 0.2rem;
+  height: 0.75rem;
   background-color: var(--color-primary);
+  transform: skew(-15deg);
 }
 
 .blurb {
@@ -81,15 +83,15 @@
 
 .tm-text h1 {
   font-size: 4rem;
-  color: var(--color-cream);
-}
-
-.tm-text h2 {
   color: var(--color-primary);
 }
 
-.tm-text h2 span {
+.tm-text h2 {
   color: var(--color-cream);
+}
+
+.tm-text h2 span {
+  color: var(--color-primary);
   font-weight: 100;
 }
 
@@ -103,6 +105,7 @@
 
 .tm-text p {
   padding: 0 5rem 0 0;
+  font-size: 2rem;
 }
 
 .tm-img__container {
