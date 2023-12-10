@@ -96,7 +96,7 @@ const ServicesPage: React.FC = () => {
               <h1>WEB DESIGN</h1>
               <div className={classes.accent}></div>
               <p>
-                Transform your brand's essence into a captivating online
+                Transform your brand&apos;s essence into a captivating online
                 experience with our web design service. We seamlessly translate
                 your unique aesthetic into a stunning website layout, combining
                 functionality with aesthetic appeal for a digital presence that
