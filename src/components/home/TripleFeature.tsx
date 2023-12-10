@@ -37,7 +37,10 @@ const TripleFeature: React.FC = () => {
           </h2>
           <div className={classes.accent}></div>
           <p>
-            AETHER utilizes the latest in web technologies to transform your dream design into a beautiful, impactful, interactive website which will look stellar on any device and deliver a memorable user experience.   
+            AETHER utilizes the latest in web technologies to transform your
+            dream design into a beautiful, impactful, interactive website which
+            will look stellar on any device and deliver a memorable user
+            experience.
           </p>
         </div>
         <div className={classes["feature-img-container"]}>
@@ -52,7 +55,10 @@ const TripleFeature: React.FC = () => {
           </h2>
           <div className={classes.accent}></div>
           <p>
-            Time for your brand to blast off!  AETHER will help you secure a custom web domain if you don't already have one.  Then we deploy your site to the web on a safe and secure web server, protected with SSL encryption.
+            Time for your brand to blast off! AETHER will help you secure a
+            custom web domain if you don&apos;t already have one. Then we deploy
+            your site to the web on a safe and secure web server, protected with
+            SSL encryption.
           </p>
         </div>
         <div className={classes["feature-img-container"]}>
