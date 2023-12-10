@@ -5,10 +5,6 @@ import Image from 'next/image';
 import prevIcon from "../../../public/icons/chevron-back-outline.svg";
 import nextIcon from "../../../public/icons/chevron-forward-outline.svg";
 
-import remodel from '../../../public/imgs/gallery/remodel-2.jpg'
-
-//<Image src={props.images[curSlide]} alt="sdsd" width={300} height={300} />;
-
 const Backdrop = (props) => {
 
   return <div className={classes.backdrop} />;
@@ -77,15 +73,6 @@ const SliderOverlay = (props) => {
           <Image src={nextIcon} alt="next icon" />
         </button>
       </div>
-      {/* <div className={classes["slide-count"]}>
-        <p>{`${curSlide + 1} / ${maxSlide + 1}`}</p>
-        <button
-          onClick={closeSliderHandler}
-          className={classes["close-button"]}
-        >
-          X
-        </button>
-      </div> */}
     </div>
   );
 };

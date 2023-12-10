@@ -50,50 +50,9 @@ z-index: -1;
     transform: skew(-25deg);
 }
 
-.button {
-  padding: 2rem 4rem;
-  display: flex;
-  align-items: center;
-  background-color: red;
-}
-
 .section a {
   margin-top: auto;
   margin-bottom: 15rem;
-}
-
-.icon {
-  position: relative;
-  width: 5rem;
-  height: 5rem;
-}
-
-.icon:hover .line {
-  background-color: red;
-}
-
-.line {
-  position: absolute;
-  width: 5rem;
-  height: .3rem;
-  background-color: #fff;
-}
-
-.line-1 {
-  top: 0;;
-}
-
-.line-2 {
-  top: 2.35rem;
-  right:-2.4rem;
-  transform: rotate(90deg);
-}
-
-.line-3 {
-  width: 7rem;
-  top: 2.5rem;
-  left: -1.1rem;
-  transform: rotate(-45deg);
 }
 
 

@@ -65,32 +65,6 @@ const BrandingPage: React.FC = () => {
             expertise as we reimagine and elevate your living spaces, creating a
             home that reflects your unique lifestyle and aspirations.
           </p>
-          {/* <div className={classes["service-section__imgs"]}>
-            <div className={classes["service-section__img-container"]}>
-              <Image
-                src={remodelOne}
-                alt="Nice remodeled kitchen"
-                data-image="1"
-                onClick={imageClickHandler}
-              />
-            </div>
-            <div className={classes["service-section__img-container"]}>
-              <Image
-                src={remodelTwo}
-                alt="Nice remodeled bathroom"
-                data-image="2"
-                onClick={imageClickHandler}
-              />
-            </div>
-            <div className={classes["service-section__img-container"]}>
-              <Image
-                src={remodelThree}
-                alt="Nice remodeled kitchen"
-                data-image="3"
-                onClick={imageClickHandler}
-              />
-            </div>
-          </div> */}
         </section>
     
       </div>

@@ -1,8 +1,7 @@
-import React, { useEffect, useState } from 'react'
-import classes from './Hero.module.css';
-import Image from 'next/image';
-import shard from '../../../public/imgs/shard.svg';
-
+import React, { useEffect, useState } from "react";
+import classes from "./Hero.module.css";
+import Image from "next/image";
+import shard from "../../../public/imgs/shard.svg";
 
 const Hero: React.FC = () => {
   // Parallax effect for Header
@@ -36,6 +35,6 @@ const Hero: React.FC = () => {
       <Image className={classes.shard} src={shard} alt="shard" />
     </div>
   );
-}
+};
 
-export default Hero
+export default Hero;

@@ -2,8 +2,6 @@ import React, { Fragment, useState, useEffect } from "react";
 import classes from "@/styles/Portfolio.module.css";
 import Head from "next/head";
 import Project from '../../components/projects/Project';
-import Image, { StaticImageData } from "next/image";
-import Link from 'next/link';
 import alipineIMG from '../../../public/imgs/projects/ALPINEPRINTS_SCREENSHOT.jpg';
 import bdArtIMG from "../../../public/imgs/projects/BDART_SCREENSHOT.jpg";
 import bdPhotoIMG from "../../../public/imgs/projects/BDPHOTO_SCREENSHOT.jpg";
@@ -76,24 +74,6 @@ const PortfolioPage: React.FC = () => {
             <span>&nbsp;</span>
           </div>
           <div className={classes.projects}>
-            {/* <div className={classes["grid-item"]}>
-              <Image src={trailIMG} alt="img" />
-            </div>
-            <div className={classes["grid-item"]}>
-              <Image src={alipineIMG} alt="img" />
-            </div>
-            <div className={classes["grid-item"]}>
-              <Image src={bdArtIMG} alt="img" />
-            </div>
-            <div className={classes["grid-item"]}>
-              <Image src={trailIMG} alt="img" />
-            </div>
-            <div className={classes["grid-item"]}>
-              <Image src={bdPhotoIMG} alt="img" />
-            </div>
-            <div className={classes["grid-item"]}>
-              <Image src={trailIMG} alt="img" />
-            </div> */}
             <Project
               name="Trail Tracker"
               description="An app where you can discover and share hiking trails."

@@ -5,7 +5,7 @@ import classes from './HeroVideo.module.css'
 const HeroVideo:React.FC = () => {
     return (
       <header className={classes["video-header"]}>
-        <video
+        {/* <video
           src={require("../../../public/videos/skyscraper(720p).mp4")}
           autoPlay
           muted
@@ -24,7 +24,7 @@ const HeroVideo:React.FC = () => {
             </Link>
           </div>
           <div className={classes.stripe}></div>
-        </div>
+        </div> */}
       </header>
     );
 }

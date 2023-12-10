@@ -18,7 +18,7 @@
 
 .feature-title span {
   color: #fff;
-  border-bottom: 3px solid var(--color-primary);
+  border-bottom: .3rem solid var(--color-primary);
 }
 
 .feature-box {

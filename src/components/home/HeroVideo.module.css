@@ -15,7 +15,7 @@
   height: 100%;
   object-fit: cover;
   z-index: -1;
-  background-image: url('../../../public/imgs/skyscraper-video-still.jpg');
+  /* background-image: url('../../../public/imgs/skyscraper-video-still.jpg'); */
   background-size: cover;
 }
 

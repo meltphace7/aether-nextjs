@@ -10,29 +10,32 @@
 }
 
 .feature-box {
-  /* padding: 4rem 2rem; */
   width: 90%;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
   color: var(--color-gray-light);
-  border: 1px solid var(--color-gray-dark);
+  border: .1rem solid var(--color-gray-dark);
   border-radius: var(--border-radius);
-  background-image: url('../../../public/imgs/roots.jpg');
+  background-image: url("../../../public/imgs/roots.jpg");
   background-size: cover;
-
 }
 
 .feature-box__overlay {
-   padding: 4rem 2rem;
-   width: 100%;
-    display: flex;
+  padding: 4rem 2rem;
+  width: 100%;
+  display: flex;
   align-items: center;
   justify-content: center;
-     /* background: var( --feature-bg-gradient-radial); */
- background: rgb(90,90,43);
-background: radial-gradient(circle, rgba(90,90,43,0.776829481792717) 2%, rgba(72,72,33,0.8720675770308124) 18%, rgba(38,38,17,0.8804709383753502) 40%, rgba(11,13,6,0.9252888655462185) 67%);
+  background: rgb(90, 90, 43);
+  background: radial-gradient(
+    circle,
+    rgba(90, 90, 43, 0.776829481792717) 2%,
+    rgba(72, 72, 33, 0.8720675770308124) 18%,
+    rgba(38, 38, 17, 0.8804709383753502) 40%,
+    rgba(11, 13, 6, 0.9252888655462185) 67%
+  );
 }
 
 /*_____IMAGE CONTAINER_____*/
@@ -44,14 +47,14 @@ background: radial-gradient(circle, rgba(90,90,43,0.776829481792717) 2%, rgba(72
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  box-shadow: 5px 6px 0px 10px rgba(204, 233, 103, 0.75);
-  -webkit-box-shadow: 5px 6px 0px 10px rgba(204, 233, 103, 0.75);
-  -moz-box-shadow: 5px 6px 0px 10px rgba(204, 233, 103, 0.75);
+  box-shadow: .5rem .6rem 0rem 1rem rgba(204, 233, 103, 0.75);
+  -webkit-box-shadow: .5rem .6rem 0rem 1rem rgba(204, 233, 103, 0.75);
+  -moz-box-shadow: .5rem .6rem 0rem 1rem rgba(204, 233, 103, 0.75);
 }
 
 .feature-box__img-container img {
   width: 100%;
-  height: 100%;;
+  height: 100%;
   object-fit: cover;
 }
 
@@ -93,11 +96,9 @@ background: radial-gradient(circle, rgba(90,90,43,0.776829481792717) 2%, rgba(72
   transform: translateY(8rem);
 }
 
-
 @media (max-width: 60em) {
   .feature-box {
     width: 95%;
-
   }
 
   .feature-box__text-container {
@@ -124,10 +125,10 @@ background: radial-gradient(circle, rgba(90,90,43,0.776829481792717) 2%, rgba(72
   }
 
   .feature-box__overlay {
-  flex-direction: column;
+    flex-direction: column;
   }
 
-    .feature-box__img-container {
+  .feature-box__img-container {
     width: 80vw;
     height: 80vw;
     margin-bottom: 3rem;

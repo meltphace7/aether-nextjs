@@ -10,7 +10,6 @@ import EclipseFeature from "../components/home/Eclipse";
 import EclipseTwo from "../components/home/EclipseTwo";
 import ParallaxText from '../components/home/ParallaxText';
 import FeatureBoxTwo from "../components/home/FeatureBoxTwo";
-import FeatureOverlay from "../components/home/FeatureOverlay";
 import CircleFeature from '../components/home/CircleFeature';
 //
 

@@ -2,7 +2,7 @@
   position: relative;
   width: 100%;
   min-height: 80rem;
-  background-color: rgb(29, 29, 29);
+  background-color: #1d1d1d;
   z-index: 0;
   display: flex;
   align-items: center;

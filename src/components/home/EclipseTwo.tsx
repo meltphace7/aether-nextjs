@@ -1,8 +1,6 @@
 import React from 'react'
 import classes from './EclipseTwo.module.css';
 import Link from 'next/link';
-import Image from 'next/image';
-import arrowIcon from '../../../public/icons/out-icon.svg';
 
 const EclipseTwo: React.FC = () => {
 
@@ -19,12 +17,7 @@ const EclipseTwo: React.FC = () => {
             <span className="highlight-1">BEYOND.</span>
           </h1>
         </div>
-
-       
           <Link className="button" href="/contact">CONTACT</Link>
-        
-       
-
         <div className={classes.bg}></div>
         <div className={classes.sphere}></div>
       </section>

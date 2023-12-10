@@ -1,8 +1,5 @@
 import React, { useState, useEffect } from "react";
 import classes from "./Mission.module.css";
-import Image from "next/image";
-import Link from "next/link";
-import modern from "../../../public/imgs/modern-4.jpg";
 import { useInView } from "react-intersection-observer";
 
 const Feature: React.FC = () => {

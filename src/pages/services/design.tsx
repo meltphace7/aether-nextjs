@@ -1,8 +1,6 @@
 import React, { Fragment, useState, useEffect } from "react";
 import classes from "@/styles/Service.module.css";
-import Image from "next/image";
 import Head from "next/head";
-import Slider from "../../components/gallery/Slider";
 
 const DesignPage: React.FC = () => {
   // Parallax effect for Header

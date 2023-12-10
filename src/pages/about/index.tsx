@@ -4,7 +4,6 @@ import Image from "next/image";
 import classes from "@/styles/About.module.css";
 import Hero from '../../components/about/Hero';
 import AboutOverlay from '../../components/about/AboutOverlay';
-import TeamMember from '../../components/about/TeamMember'
 import brock from '../../../public/imgs/BROCK-DALLMAN_PORTRAIT.jpg'
 
 const AboutPage: React.FC = () => {

@@ -6,7 +6,6 @@ import Link from "next/link";
 import branding from "../../../public/imgs/circle-mosaic.jpg";
 import design from "../../../public/imgs/fisheye-world-beach.jpg";
 import development from "../../../public/imgs/abstract-stripes.jpg";
-import remodel from "../../../public/imgs/gallery/remodel-3.jpg";
 import world from "../../../public/imgs/diagonal-lines-bw.jpg";
 const ServicesPage: React.FC = () => {
   // Parallax effect for Header

@@ -23,9 +23,6 @@ const FeatureTwo: React.FC = () => {
     <section
       ref={sectionRef}
       className={classes["feature-box-section"]}
-      // className={`${classes["feature-box-section"]} ${
-      //   !sectionRevealed ? classes["feature--hidden"] : ""
-      // }`}
     >
       <div className={classes["feature-box"]}>
         <div className={classes["feature-box__overlay"]}>

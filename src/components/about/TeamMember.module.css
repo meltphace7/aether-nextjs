@@ -31,9 +31,9 @@ padding: 0 5rem 0 0;
     height: 35rem;
     border-radius: 400rem;
     overflow: hidden;
-       box-shadow: 5px 6px 0px 10px rgba(205, 233, 103, 0.486);
-  -webkit-box-shadow: 5px 6px 0px 10px rgba(205, 233, 103, 0.308);
-  -moz-box-shadow: 5px 6px 0px 10px rgba(205, 233, 103, 0.342);
+       box-shadow: .5rem .6rem 0rem 1rem rgba(205, 233, 103, 0.486);
+  -webkit-box-shadow: .5rem .6rem 0rem 1rem rgba(205, 233, 103, 0.308);
+  -moz-box-shadow: .5rem .6rem 0rem 1rem rgba(205, 233, 103, 0.342);
 }
 
 .tm-img__container img {

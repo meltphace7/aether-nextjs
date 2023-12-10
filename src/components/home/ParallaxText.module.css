@@ -59,22 +59,21 @@
   }
 }
 
- @media (max-width: 35em) {
-   .feature-overlay {
-  min-height: 40rem;
-}
+@media (max-width: 35em) {
+  .feature-overlay {
+    min-height: 40rem;
+  }
 
-.overlay {
-  height: 40rem;
-}
+  .overlay {
+    height: 40rem;
+  }
 
   .feature-overlay img {
-      left: -7rem;
-      width: 140%;
+    left: -7rem;
+    width: 140%;
   }
 
   .feature-box__text-container h1 {
     font-size: 7vw;
   }
-
-} 
+}

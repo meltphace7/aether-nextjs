@@ -1,41 +1,41 @@
 .project {
-    position: relative;
-    width: 100%;
-    height: 35vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--color-primary);
-    color: #000;
-    overflow: hidden;
-    border-radius: 5px;
+  position: relative;
+  width: 100%;
+  height: 35vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-primary);
+  color: #000;
+  overflow: hidden;
+  border-radius: 5px;
 }
 
 .img-container {
-    width: 100%;
-    height: 100%;
-        opacity: 1;
-            transition: all 500ms ease-in-out;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  transition: all 500ms ease-in-out;
 }
 
 .img-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .text {
-    position: absolute;
-    top: 90%;
-   
-    padding: 1rem;
-    width: 100%;
-    height: 20rem;
-    min-height: 7rem;
-    background-color: var(--color-primary);
-    z-index: 2;
-    transition: all 500ms ease-in-out;
+  position: absolute;
+  top: 90%;
+
+  padding: 1rem;
+  width: 100%;
+  height: 20rem;
+  min-height: 7rem;
+  background-color: var(--color-primary);
+  z-index: 2;
+  transition: all 500ms ease-in-out;
 }
 
 .project:hover .text {
@@ -43,33 +43,31 @@
 }
 
 .project:hover .img-container {
- opacity: .8;
+  opacity: 0.8;
 }
 
 .text h1 {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 @media (max-width: 75em) {
-
-.text {
+  .text {
     top: 87%;
-}
+  }
 }
 
 @media (max-width: 65em) {
-
-.text h1 {
-   font-size: 2.5rem;
-}
+  .text h1 {
+    font-size: 2.5rem;
+  }
 }
 
 @media (max-width: 40em) {
-.project {
+  .project {
     height: 80vw;
-}
+  }
 
-.text {
+  .text {
     top: 70%;
-}
+  }
 }

@@ -1,9 +1,9 @@
 import classes from './Navigation.module.css';
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import Logo from '../logo/Logo';
 import Link from 'next/link';
-import Image from 'next/image';
-import arrowDown from "../../../public/icons/chevron-down-outline.svg";
+// import Image from 'next/image';
+// import arrowDown from "../../../public/icons/chevron-down-outline.svg";
 import { usePathname } from "next/navigation";
 
 const Navigation: React.FC = () => {

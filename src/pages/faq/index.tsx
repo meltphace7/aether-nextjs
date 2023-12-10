@@ -1,7 +1,7 @@
-import React, { Fragment, useState, useEffect } from 'react'
-import Head from 'next/head';
+import React, { Fragment, useState, useEffect } from "react";
+import Head from "next/head";
 import classes from "@/styles/FAQ.module.css";
-import Accordian from '../../components/faq/Accordian';
+import Accordian from "../../components/faq/Accordian";
 
 const FaqPage: React.FC = () => {
   // Parallax effect for Header
@@ -67,6 +67,6 @@ const FaqPage: React.FC = () => {
       </div>
     </Fragment>
   );
-}
+};
 
 export default FaqPage;

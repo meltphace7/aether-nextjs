@@ -4,7 +4,6 @@ import Image from 'next/image';
 import code from '../../../public/icons/code.svg';
 import create from "../../../public/icons/edit.svg";
 import earth from "../../../public/icons/globe.svg";
-
 import codeIMG from '../../../public/imgs/code.jpg';
 import designIMG from "../../../public/imgs/design.jpg";
 import deployIMG from "../../../public/imgs/deploy.jpg";
