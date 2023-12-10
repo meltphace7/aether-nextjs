@@ -38,9 +38,14 @@
 }
 
 .feature-box p {
+  padding: 1rem 1rem 2rem 1rem;
   color: var(--color-gray-light);
   font-size: 2rem;
   margin: 2rem 5rem;
+
+   box-shadow: 1rem 1.3rem 0rem -0.2rem var(--color-primary);
+  -webkit-box-shadow: 1rem 1.3rem 0rem -0.2rem var(--color-primary);
+  -moz-box-shadow: 1rem 1.3rem 0rem -0.2rem var(--color-primary);
 }
 
 .accent {

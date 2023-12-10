@@ -30,10 +30,16 @@
   background-color: var(--color-primary);
 }
 
-.about-section p {
+.blurb {
+  width: 80%;
+  padding: 1rem 1rem 3rem 1rem;
+    box-shadow: 1rem 1.3rem 0rem -0.2rem var(--color-primary);
+  -webkit-box-shadow: 1rem 1.3rem 0rem -0.2rem var(--color-primary);
+  -moz-box-shadow: 1rem 1.3rem 0rem -0.2rem var(--color-primary);
+}
+
+.blurb p {
   font-size: 2rem;
-  padding: 0 15rem;
-  margin-bottom: 2rem;
   color: #fff;
 }
 
@@ -47,12 +53,16 @@
   z-index: 1;
 }
 
-.team-section p {
+.team-section .blurb {
+  margin-bottom: 4rem;
+}
+
+.team-section .blurb p {
   font-size: 2rem;
-  padding: 0 15rem;
-  margin-bottom: 2rem;
   color: #fff;
 }
+
+
 
 .team-member {
   width: 80%;
@@ -124,6 +134,11 @@
     padding: 0 2rem;
     margin-bottom: 2rem;
   }
+
+  .blurb {
+  width: 95%;
+
+}
 
   .about-image__overlay {
     margin-top: 10rem;

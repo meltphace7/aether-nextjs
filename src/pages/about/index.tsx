@@ -18,48 +18,52 @@ const AboutPage: React.FC = () => {
         <section className={classes["about-section"]}>
           <h1>DRIVEN BY CREATIVE PASSION</h1>
           <div className={classes.accent}></div>
-          <p>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Founded
-            in 2023 by Brock Dallman, Aether has thrived by
-            upholding core values of quality, integrity, and community. Evolving
-            to meet the demands of our fast-paced world, we remain committed to
-            delivering exceptional web development services. With a focus on
-            craftsmanship and ethical practices, we build not only awesome websites
-            but enduring relationships with the clients serve. Explore
-            our journey and discover how we transform visions into quality-built
-            realities.
-          </p>
-          <p>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;At
-            Aether, our commitment revolves around you—the
-            customer. Experience worry-free projects as we blend craftsmanship
-            with efficiency, ensuring beautiful results delivered on time. Trust
-            us to bring your vision to life, surpassing expectations with every
-            detail and timeline met.
-          </p>
+          <div className={classes["blurb"]}>
+            <p>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Founded
+              in 2023 by Brock Dallman, Aether has thrived by upholding core
+              values of quality, integrity, and community. Evolving to meet the
+              demands of our fast-paced world, we remain committed to delivering
+              exceptional web development services. With a focus on
+              craftsmanship and ethical practices, we build not only awesome
+              websites but enduring relationships with the clients serve.
+              Explore our journey and discover how we transform visions into
+              quality-built realities.
+            </p>
+            <p>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;At
+              Aether, our commitment revolves around you—the customer.
+              Experience worry-free projects as we blend craftsmanship with
+              efficiency, ensuring beautiful results delivered on time. Trust us
+              to bring your vision to life, surpassing expectations with every
+              detail and timeline met.
+            </p>
+          </div>
         </section>
         <AboutOverlay />
         <section className={classes["team-section"]}>
           <h1>PERSONNEL</h1>
           <div className={classes.accent}></div>
-          <p>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;At
-            Tieton Construction, our team is a dynamic blend of adaptability,
-            efficiency, friendliness, and talent. Hailing from diverse
-            backgrounds, we are united by a common cause—to build beautiful,
-            functional projects that fulfill our customers&apos; needs. With a
-            shared commitment to perfection, our team collaborates seamlessly,
-            ensuring every project is a success. Embrace a construction
-            experience where professionalism meets warmth, and where expertise
-            meets innovation.
-          </p>
+          <div className={classes["blurb"]}>
+            <p>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;At
+              Tieton Construction, our team is a dynamic blend of adaptability,
+              efficiency, friendliness, and talent. Hailing from diverse
+              backgrounds, we are united by a common cause—to build beautiful,
+              functional projects that fulfill our customers&apos; needs. With a
+              shared commitment to perfection, our team collaborates seamlessly,
+              ensuring every project is a success. Embrace a construction
+              experience where professionalism meets warmth, and where expertise
+              meets innovation.
+            </p>
+          </div>
           <div className={classes["team-member"]}>
             <div className={classes["tm-text"]}>
               <h1>Brock Dallman</h1>
               <h2>
                 Lead Designer <span>|</span> Developer <span>|</span> Creator
               </h2>
-              <div className={classes['tm-accent']}></div>
+              <div className={classes["tm-accent"]}></div>
               <p>
                 Creating and learning things as always been my passion. I take
                 inspiration from everywhere and converge it all with a different

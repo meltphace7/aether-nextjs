@@ -120,4 +120,22 @@
     grid-template-columns: repeat(1, 1fr);
     gap: 4rem;
   }
+
+  .aesthetic-stripes {
+  width: 100rem;
+  height: 3.5rem;
+  background-color: var(--color-primary);
+  margin-bottom: 5rem;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.aesthetic-stripes span {
+  height: 3.5rem;
+  width: 2rem;
+  background-color: #000;
+  transform: skew(-15deg);
+  margin: 0 .8rem;
+}
 }

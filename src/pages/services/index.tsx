@@ -76,9 +76,9 @@ const ServicesPage: React.FC = () => {
                 dedicated team consistently delivers projects ahead of schedule
                 and under budget, ensuring optimal value for our clients.
               </p>
-              <Link href="/services/branding" className="button">
+              {/* <Link href="/services/branding" className="button">
                 Learn More
-              </Link>
+              </Link> */}
             </div>
           </div>
 
@@ -95,12 +95,12 @@ const ServicesPage: React.FC = () => {
                 than houses; we build cherished homes, tailored to reflect your
                 unique vision.
               </p>
-              <Link
+              {/* <Link
                 href="/services/design"
                 className="button"
               >
                 Learn More
-              </Link>
+              </Link> */}
             </div>
           </div>
 
@@ -117,9 +117,9 @@ const ServicesPage: React.FC = () => {
                 deliver top-notch quality, minimizing disruption to your
                 lifestyle for a stress-free enhancement.
               </p>
-              <Link href="/services/development" className="button">
+              {/* <Link href="/services/development" className="button">
                 Learn More
-              </Link>
+              </Link> */}
             </div>
           </div>
 

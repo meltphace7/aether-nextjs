@@ -40,9 +40,9 @@
   height: 50rem;
   border-radius: 200rem;
   overflow: hidden;
-  box-shadow: 1.2rem .6rem 0rem 3.4rem rgba(205, 233, 103, 0.486);
-  -webkit-box-shadow: 1.2rem .6rem 0rem 3.4rem rgba(205, 233, 103, 0.486);
-  -moz-box-shadow: 1.2rem .6rem 0rem 3.4rem rgba(205, 233, 103, 0.486);
+  box-shadow: 1.2rem 0.6rem 0rem 3.4rem rgba(205, 233, 103, 0.486);
+  -webkit-box-shadow: 1.2rem 0.6rem 0rem 3.4rem rgba(205, 233, 103, 0.486);
+  -moz-box-shadow: 1.2rem 0.6rem 0rem 3.4rem rgba(205, 233, 103, 0.486);
 }
 
 .world-overlay {
@@ -123,7 +123,12 @@
 
 .services-blurb p {
   font-size: 2rem;
+  padding: 1rem;
   color: #fff;
+
+  box-shadow: 1rem 1.3rem 0rem -0.2rem var(--color-primary);
+  -webkit-box-shadow: 1rem 1.3rem 0rem -0.2rem var(--color-primary);
+  -moz-box-shadow: 1rem 1.3rem 0rem -0.2rem var(--color-primary);
 }
 
 .service {
@@ -180,15 +185,19 @@
 }
 
 .service__text-container p {
+  padding: 1rem;
   font-size: 2rem;
   margin: 0rem 0rem 2rem 0rem;
   color: #fff;
+  box-shadow: 1rem 1.3rem 0rem -0.2rem var(--color-primary);
+  -webkit-box-shadow: 1rem 1.3rem 0rem -0.2rem var(--color-primary);
+  -moz-box-shadow: 1rem 1.3rem 0rem -0.2rem var(--color-primary);
 }
 
 @media (max-width: 70em) {
   .services-blurb h1 {
-  font-size: 5vw;
-}
+    font-size: 5vw;
+  }
 }
 
 @media (max-width: 35em) {
@@ -197,25 +206,25 @@
   }
 
   .hero-text {
-  margin-top: 6rem;
-}
+    margin-top: 6rem;
+  }
 
-.hero-text h1 {
-  font-size: 8vw;
-}
+  .hero-text h1 {
+    font-size: 8vw;
+  }
 
   .world-container {
-  width: 55vw;
-  height: 55vw;
-   box-shadow: .6rem .3rem 0rem 1.7rem rgba(205, 233, 103, 0.486);
-  -webkit-box-shadow: .6rem .3rem 0rem 1.7rem rgba(205, 233, 103, 0.486);
-  -moz-box-shadow: .6rem .3rem 0rem 1.7rem rgba(205, 233, 103, 0.486);
-}
+    width: 55vw;
+    height: 55vw;
+    box-shadow: 0.6rem 0.3rem 0rem 1.7rem rgba(205, 233, 103, 0.486);
+    -webkit-box-shadow: 0.6rem 0.3rem 0rem 1.7rem rgba(205, 233, 103, 0.486);
+    -moz-box-shadow: 0.6rem 0.3rem 0rem 1.7rem rgba(205, 233, 103, 0.486);
+  }
 
-.bg-circle {
-  width: 97vw;
-  height: 97vw;
-}
+  .bg-circle {
+    width: 97vw;
+    height: 97vw;
+  }
 
   .services-blurb {
     padding: 4rem 2rem 10rem 2rem;

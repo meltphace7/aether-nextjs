@@ -20,6 +20,8 @@
   border-radius: var(--border-radius);
   background: var(--feature-bg);
   background: var(--feaature-bg-gradient-radial);
+
+  
 }
 
 .feature-text {
@@ -53,10 +55,11 @@
 
 .feature-img-container {
   margin-top: 2rem;
-  width: 27vw;
+  width: 28vw;
   height: auto;
   border-radius: 3rem;
   overflow: hidden;
+    border: .2rem solid var(--color-primary);
 }
 
 .feature-img-container img {
