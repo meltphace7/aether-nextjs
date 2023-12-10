@@ -2,7 +2,6 @@ import React, { Fragment, useState, useEffect } from "react";
 import Head from "next/head";
 import classes from "@/styles/Services.module.css";
 import Image from "next/image";
-import Link from "next/link";
 import branding from "../../../public/imgs/circle-mosaic.jpg";
 import design from "../../../public/imgs/fisheye-world-beach.jpg";
 import development from "../../../public/imgs/abstract-stripes.jpg";
