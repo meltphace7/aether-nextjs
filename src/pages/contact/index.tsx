@@ -40,7 +40,7 @@ const ContactPage: React.FC = () => {
         <title>Contact | AETHER DESIGN</title>
         <meta
           name="description"
-          content="Contact page for Tieton Construction"
+          content="Contact page for Aether Design"
         />
       </Head>
       <div className={classes["contact-page"]}>

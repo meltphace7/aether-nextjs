@@ -21,7 +21,7 @@ const FaqPage: React.FC = () => {
         <title>FAQ | AETHER DESIGN</title>
         <meta
           name="description"
-          content="Frequently Asked Questions page for Tieton Construction"
+          content="Frequently Asked Questions page for Aether Design"
         />
       </Head>
       <div className={classes["faq-page"]}>

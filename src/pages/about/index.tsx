@@ -11,7 +11,7 @@ const AboutPage: React.FC = () => {
     <Fragment>
       <Head>
         <title>About | AETHER DESIGN</title>
-        <meta name="description" content="About page for Tieton Construction" />
+        <meta name="description" content="About page for Aether Design" />
       </Head>
       <div className={classes["about-page"]}>
         <Hero />
@@ -44,19 +44,6 @@ const AboutPage: React.FC = () => {
         <section className={classes["team-section"]}>
           <h1>PERSONNEL</h1>
           <div className={classes.accent}></div>
-          {/* <div className={classes["blurb"]}>
-            <p>
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;At
-              Tieton Construction, our team is a dynamic blend of adaptability,
-              efficiency, friendliness, and talent. Hailing from diverse
-              backgrounds, we are united by a common cause—to build beautiful,
-              functional projects that fulfill our customers&apos; needs. With a
-              shared commitment to perfection, our team collaborates seamlessly,
-              ensuring every project is a success. Embrace a construction
-              experience where professionalism meets warmth, and where expertise
-              meets innovation.
-            </p>
-          </div> */}
           <div className={classes["team-member"]}>
             <div className={classes["tm-text"]}>
               <h1>BROCK DALLMAN</h1>
