@@ -37,7 +37,7 @@ const TripleFeature: React.FC = () => {
           </h2>
           <div className={classes.accent}></div>
           <p>
-            AETHER utilizes the latest in web technologies to transform your
+            Aether utilizes the latest in web technologies to transform your
             dream design into a beautiful, impactful, interactive website which
             will look stellar on any device and deliver a memorable user
             experience.
