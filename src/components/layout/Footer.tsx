@@ -14,7 +14,7 @@ import googleLogo from "../../../public/icons/logo-google.svg";
 const Footer: React.FC = () => {
   return (
     <footer className={classes.footer}>
-      <div className={classes["footer-top-row"]}>
+      {/* <div className={classes["footer-top-row"]}>
         <div className={classes["contact"]}>
           <Image src={phoneIcon} alt="Phone icon" />
           <p>(503) 710-2781</p>
@@ -33,7 +33,7 @@ const Footer: React.FC = () => {
           <p>Monday - Friday</p>
           <p> 7:30AM - 5:30PM</p>
         </div>
-      </div>
+      </div> */}
       <div className={classes["footer-bottom-row"]}>
         <div className={classes["footer-text"]}>
           <p>&copy; 2023 AETHER All Right Reserved</p>

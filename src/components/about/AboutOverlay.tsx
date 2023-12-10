@@ -19,7 +19,7 @@ const AboutOverlay: React.FC = () => {
     <section className={classes.section}>
       <div className={classes.text}>
         <h1>
-          FEARLESS, INNOVATIVE AND <span>BOLD</span>
+          FEARLESS INNOVATIVE AND <span>BOLD</span>
         </h1>
         <h2>
           AETHER STRIVES TO BUILD YOUR DIGITAL WORLD TO IT'S FULL POTENTIAL

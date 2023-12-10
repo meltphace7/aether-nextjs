@@ -52,7 +52,7 @@ const ContactPage: React.FC = () => {
           style={{ transform: `translateY(${offsetY * 0.5}px)` }}
         >
           <div className={classes["hero-overlay"]}>
-            <h1>LET&apos;S GET IN TOUCH</h1>
+            <h1>CONTACT</h1>
           </div>
         </header>
         <section className={classes["contact-main"]}>

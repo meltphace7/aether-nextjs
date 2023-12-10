@@ -7,7 +7,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  z-index: 2;
+  z-index: 99;
 }
 
 .logo-container {
@@ -36,19 +36,20 @@
   letter-spacing: .1rem;
 }
 
-/*______HAMBURGER MENU_______*/
+/*______MENU BG WHEN MENU OPEN_______*/
 .nav__nav {
   height: 100vh;
   position: fixed;
   top: 0;
   right: 0;
-  z-index: 999999;
+  z-index: 9999;
   opacity: 0;
   width: 0;
   transition: all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
   background-color: #000;
 }
 
+/*__ CIRCLE HAMBUGER MENU BUTTON  __*/
 .nav__button {
   height: 4.5rem;
   width: 4.5rem;
@@ -56,7 +57,7 @@
   position: fixed;
   top: 2.5rem;
   right: 2rem;
-  z-index: 99999999;
+  z-index: 99999;
   box-shadow: 0 1rem 3rem rgba(#000000, 0.1);
   text-align: center;
   cursor: pointer;
@@ -73,7 +74,7 @@
   height: 100%;
   width: 100%;
   position: fixed;
-  z-index: 1000;
+  z-index: 99;
   transition: transform 500ms ease-in;
 }
 

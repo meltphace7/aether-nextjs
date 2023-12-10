@@ -24,8 +24,9 @@
 }
 
 .contact-hero h1 {
-  font-weight: bold;
-  font-size: var(--hero-font-size-h1);
+  font-family: "General-Station";
+  font-weight: 300;
+  font-size: 7vw;
   color: var(--color-primary);
   margin: 1rem;
 }

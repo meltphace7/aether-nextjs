@@ -48,7 +48,7 @@ const ServicesPage: React.FC = () => {
         </header>
         <section className={classes["services-section"]}>
           <div className={classes["services-blurb"]}>
-            <h1>Building On Purpose</h1>
+            <h1>EXPANDING YOUR SPHERE</h1>
             <div className={classes.accent}></div>
             <p>
               Our comprehensive services cover the spectrum of construction

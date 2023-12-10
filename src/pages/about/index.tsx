@@ -41,7 +41,7 @@ const AboutPage: React.FC = () => {
         </section>
         <AboutOverlay />
         <section className={classes["team-section"]}>
-          <h1>Our Team</h1>
+          <h1>PERSONNEL</h1>
           <div className={classes.accent}></div>
           <p>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;At
@@ -56,7 +56,7 @@ const AboutPage: React.FC = () => {
           </p>
           <div className={classes["team-member"]}>
             <div className={classes["tm-text"]}>
-              <h1>Brock Dalman</h1>
+              <h1>Brock Dallman</h1>
               <h2>
                 Lead Designer <span>|</span> Developer <span>|</span> Creator
               </h2>

@@ -46,3 +46,40 @@
   background-color: var(--color-green-overlay-light);
   z-index: 1;
 }
+
+@media (max-width: 65em) {
+  .section {
+    height: 45rem;
+  }
+
+  .section img {
+  top: -67rem;
+  width: 160%;
+ 
+}
+}
+
+@media (max-width: 45em) {
+  .section {
+    height: 30rem;
+  }
+
+}
+
+@media (max-width: 35em) {
+  .section {
+    height: 20rem;
+  }
+
+  .text h2 {
+  font-size: 2.3vw;
+}
+
+
+  .section img {
+  top: -63rem;
+    left: -22rem;
+  width: 190%;
+ 
+}
+}

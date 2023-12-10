@@ -101,9 +101,9 @@ padding: 0 5rem 0 0;
     height: 35rem;
     border-radius: 400rem;
     overflow: hidden;
-       box-shadow: 5px 6px 0px 10px rgba(205, 233, 103, 0.486);
-  -webkit-box-shadow: 5px 6px 0px 10px rgba(205, 233, 103, 0.308);
-  -moz-box-shadow: 5px 6px 0px 10px rgba(205, 233, 103, 0.342);
+       box-shadow: 5px 6px 0px 10px #cce967;
+  -webkit-box-shadow: 5px 6px 0px 10px #cce967;
+  -moz-box-shadow: 5px 6px 0px 10px #cce967;
 }
 
 .tm-img__container img {
@@ -115,6 +115,8 @@ padding: 0 5rem 0 0;
 @media (max-width: 35em) {
   .about-section h1 {
     font-size: 3rem;
+    margin: 0 3rem;
+    text-align: center;
   }
 
   .about-section p,

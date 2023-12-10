@@ -28,21 +28,21 @@
   align-items: center;
   justify-content: center;
   background-color: var(--color-green-overlay);
-    z-index: 0;
+  z-index: 0;
 }
 
 .world-container {
-position: absolute;
-top: 55%;
-left: 50%;
-transform: translate(-50%, -50%);
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 50rem;
   height: 50rem;
   border-radius: 200rem;
   overflow: hidden;
-  box-shadow: 12px 6px 0px 34px rgba(205, 233, 103, 0.486);;
--webkit-box-shadow: 12px 6px 0px 34px rgba(205, 233, 103, 0.486);;
--moz-box-shadow: 12px 6px 0px 34px rgba(205, 233, 103, 0.486);;
+  box-shadow: 1.2rem .6rem 0rem 3.4rem rgba(205, 233, 103, 0.486);
+  -webkit-box-shadow: 1.2rem .6rem 0rem 3.4rem rgba(205, 233, 103, 0.486);
+  -moz-box-shadow: 1.2rem .6rem 0rem 3.4rem rgba(205, 233, 103, 0.486);
 }
 
 .world-overlay {
@@ -50,7 +50,7 @@ transform: translate(-50%, -50%);
   top: 0;
   width: 100%;
   height: 100%;
- background-color: var(--color-green-overlay);
+  background-color: var(--color-green-overlay);
 }
 
 .world-container img {
@@ -77,19 +77,19 @@ transform: translate(-50%, -50%);
 .hero-text h2 {
   font-size: var(--hero-font-size-h2);
   color: var(--color-primary);
-   font-size: 4vw;
-   font-weight: 200;
+  font-size: 4vw;
+  font-weight: 200;
 }
 
 .bg-circle {
-    position: absolute;
-    top: 55%;
-    left: 50%;
-    width: 90vw;
-    height: 90vw;
-    transform: translate(-50%, -50%);
-    border-radius: 200rem;
-    border: 5vw solid #cde96733;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  width: 90vw;
+  height: 90vw;
+  transform: translate(-50%, -50%);
+  border-radius: 200rem;
+  border: 5vw solid #cde96733;
 }
 
 .services-section {
@@ -123,7 +123,7 @@ transform: translate(-50%, -50%);
 
 .services-blurb p {
   font-size: 2rem;
-    color: #fff;
+  color: #fff;
 }
 
 .service {
@@ -133,8 +133,6 @@ transform: translate(-50%, -50%);
   align-items: center;
   background-color: var(--color-bg-dark);
 }
-
-
 
 .service__img-container {
   margin-left: 4rem;
@@ -146,15 +144,12 @@ transform: translate(-50%, -50%);
   align-items: center;
   justify-content: center;
   background-color: black;
-
-box-shadow: 4px 4px 0px 13px rgba(205, 233, 103, 0.486);
--webkit-box-shadow: 4px 4px 0px 13px rgba(205, 233, 103, 0.486);
--moz-box-shadow: 4px 4px 0px 13px rgba(205, 233, 103, 0.486);
+  box-shadow: 4px 4px 0px 13px #cce967;
+  -webkit-box-shadow: 4px 4px 0px 13px #cce967;
+  -moz-box-shadow: 4px 4px 0px 13px #cce967;
 }
 
 .service__img-container img {
-  /* height: 100%;
-  width: auto; */
   object-fit: cover;
 }
 
@@ -164,12 +159,8 @@ box-shadow: 4px 4px 0px 13px rgba(205, 233, 103, 0.486);
 }
 
 .design-img {
- height: 120%;
+  height: 120%;
   width: auto;
-}
-
-.development-img {
-
 }
 
 .service__text-container {
@@ -191,34 +182,67 @@ box-shadow: 4px 4px 0px 13px rgba(205, 233, 103, 0.486);
 .service__text-container p {
   font-size: 2rem;
   margin: 0rem 0rem 2rem 0rem;
-    color: #fff;
+  color: #fff;
 }
 
+@media (max-width: 70em) {
+  .services-blurb h1 {
+  font-size: 5vw;
+}
+}
 
 @media (max-width: 35em) {
+
+
   .services-hero {
     height: 50rem;
   }
+
+  .hero-text {
+  margin-top: 6rem;
+}
+
+  .world-container {
+  width: 55vw;
+  height: 55vw;
+   box-shadow: .6rem .3rem 0rem 1.7rem rgba(205, 233, 103, 0.486);
+  -webkit-box-shadow: .6rem .3rem 0rem 1.7rem rgba(205, 233, 103, 0.486);
+  -moz-box-shadow: .6rem .3rem 0rem 1.7rem rgba(205, 233, 103, 0.486);
+}
+
+.bg-circle {
+  width: 97vw;
+  height: 97vw;
+}
 
   .services-blurb {
     padding: 4rem 2rem 10rem 2rem;
   }
 
+  .services-blurb h1 {
+    font-size: 8vw;
+    text-align: center;
+  }
+
   .service {
     flex-direction: column;
+    margin-bottom: 4rem;
   }
 
   .service__img-container {
-    margin: 0;
-    width: 100%;
+    margin: 0 0 2rem 0;
+    width: 60vw;
+    height: 60vw;
   }
 
   .service__text-container {
     width: 100%;
     padding: 2rem 2rem 4rem 2rem;
-    height: 100%;
-    display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  .service__text-container h1 {
+    font-size: 8vw;
   }
 }
