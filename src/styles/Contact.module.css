@@ -12,6 +12,16 @@
   background-image: url("../../public/imgs/dark-abstract-3.jpg");
   background-size: cover;
   z-index: -1;
+  animation: fadeIn var(--hero-timer) ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .hero-overlay {
