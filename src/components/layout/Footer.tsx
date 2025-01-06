@@ -8,11 +8,14 @@ import instagramLogo from "../../../public/icons/logo-instagram.svg";
 import googleLogo from "../../../public/icons/logo-google.svg";
 
 const Footer: React.FC = () => {
+  const date = new Date();
+  const year = date.getFullYear();
+
   return (
     <footer className={classes.footer}>
       <div className={classes["footer-bottom-row"]}>
         <div className={classes["footer-text"]}>
-          <p>&copy; 2023 AETHER All Right Reserved</p>
+          <p>&copy; {`${year}  AETHER All Right Reserved`}</p>
           <p>Website by Brock Dallman</p>
         </div>
 
